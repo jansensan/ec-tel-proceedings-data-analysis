@@ -2,7 +2,7 @@
 
 Data analysis conducted for [TIDE Research Group of Interactive and Distributed Technologies for Education (UPF)](https://www.upf.edu/web/tide).
 
-Currently visible at <https://projects.jansensan.net/ec-tel-2017/>.
+Currently visible at <https://projects.jansensan.net/ec-tel-data-analysis/>.
 
 
 ## References
