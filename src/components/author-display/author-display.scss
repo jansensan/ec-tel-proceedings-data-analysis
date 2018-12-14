@@ -1,0 +1,26 @@
+.author-display {
+  display: inline-block;
+  position: relative;
+  width: 304px;
+  padding: 0 16px;
+  vertical-align: top;
+
+  hr {
+    margin-bottom: 48px;
+  }
+
+  .author-name {
+    text-align: left;
+    font-size: 16pt;
+    font-weight: bold;
+    line-height: 1;
+  }
+  
+  .author-uni {
+    text-align: left;
+  }
+  
+  .author-fields {
+    text-align: left;
+  }
+}

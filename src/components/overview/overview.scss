@@ -1,0 +1,29 @@
+.overview {
+  display: inline-block;
+  position: relative;
+  
+  .cover {
+    display: inline-block;
+    width: 25%;
+    margin-right: 20px;
+
+    img {
+      max-width: 100%;
+      max-height: 100%;
+    }
+  }
+
+  .generalities {
+    display: inline-block;
+    vertical-align: top;
+
+    .value-label {
+      display: inline-block;
+      margin-right: 8px;
+    }
+
+    .value-display {
+      font-weight: bold;
+    }
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "name": "tide-ec-tel-2017-data-analysis",
+  "description": "",
+  "version": "0.0.1",
+  "author": "Mat Janson Blanchet <mat.jb@jansensan.net> (https://jansensan.net)",
+  "scripts": {
+    "styles": "gulp build",
+    "dev": "webpack -d --watch --progress"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "css-loader": "^0.28.11",
+    "file-loader": "^1.1.11",
+    "gulp": "^3.9.1",
+    "gulp-load-plugins": "^1.5.0",
+    "gulp-sass": "^4.0.1",
+    "jansensan-stylesheets": "^0.7.3",
+    "node-sass": "^4.9.0",
+    "normalize.css": "^8.0.0",
+    "require-dir": "^1.0.0",
+    "run-sequence": "^2.2.1",
+    "sass-loader": "^7.0.1",
+    "style-loader": "^0.21.0",
+    "url-loader": "^1.1.2",
+    "webpack": "^4.8.3",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.4"
+  },
+  "dependencies": {
+    "chart.js": "^2.7.3",
+    "lodash": "^4.17.11",
+    "react": "^16.5.2",
+    "react-chartjs-2": "^2.7.4",
+    "react-dom": "^16.5.2",
+    "signals": "^1.0.0"
+  }
+}
