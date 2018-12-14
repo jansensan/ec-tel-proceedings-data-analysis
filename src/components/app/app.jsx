@@ -9,11 +9,13 @@ import papersModel from '../../models/papers-model';
 import AuthorDisplay from '../author-display/author-display.jsx';
 import CountryDistributionChart from '../country-distribution-chart/country-distribution-chart.jsx';
 import FieldDistributionChart from '../field-distribution-chart/field-distribution-chart.jsx';
+import GenderDistOverview from '../gender-dist-overview/gender-dist-overview.jsx';
 import GenderDistPerFieldChart from '../gender-dist-per-field-chart/gender-dist-per-field-chart.jsx';
 import GenderDistributionChart from '../gender-distribution-chart/gender-distribution-chart.jsx';
 import Overview from '../overview/overview.jsx';
 import PaperDisplay from '../paper-display/paper-display.jsx';
 import UniDistributionChart from '../uni-distribution-chart/uni-distribution-chart.jsx';
+import WomenFirstAuthorChart from '../women-first-author-chart/women-first-author-chart.jsx';
 
 // styles
 require('./app.scss');
@@ -74,8 +76,21 @@ export default class App extends Component {
             <h2>Gender Diversity</h2>
 
             <section>
+              <h3>Some Statistics</h3>
+              <GenderDistOverview />
+              <hr/>
+            </section>
+
+            <section>
               <h3>Gender Distribution</h3>
               <GenderDistributionChart />
+              <hr/>
+            </section>
+
+            <section>
+              <h3>Women as First Author</h3>
+              <p>Papers in which women are the first name in the author list.</p>
+              <WomenFirstAuthorChart />
               <hr/>
             </section>
           </section>

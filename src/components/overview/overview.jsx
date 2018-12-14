@@ -35,22 +35,24 @@ export default class Overview extends Component {
         {
           (dataModel.data.length > 0) &&
           <div className="generalities">
-            <p>
-              <span className="value-label">Number of papers:</span>
-              <span className="value-display">{papersModel.getPapers().length}</span>
-            </p>
-            <p>
-              <span className="value-label">Number of authors:</span>
-              <span className="value-display">{authorsModel.authors.length}</span>
-            </p>
-            <p>
-              <span className="value-label">Number of countries represented:</span>
-              <span className="value-display">{authorsModel.getUniqueCountries().length}</span>
-            </p>
-            <p>
-              <span className="value-label">Number of universities/research centers/etc. represented:</span>
-              <span className="value-display">{authorsModel.getUniqueUniversities().length}</span>
-            </p>
+            <ul>
+              <li>
+                <span className="value-label">Number of papers:</span>
+                <span className="value-display">{papersModel.getPapers().length}</span>
+              </li>
+              <li>
+                <span className="value-label">Number of authors:</span>
+                <span className="value-display">{authorsModel.authors.length}</span>
+              </li>
+              <li>
+                <span className="value-label">Number of countries represented:</span>
+                <span className="value-display">{authorsModel.getUniqueCountries().length}</span>
+              </li>
+              <li>
+                <span className="value-label">Number of universities/research centers/etc. represented:</span>
+                <span className="value-display">{authorsModel.getUniqueUniversities().length}</span>
+              </li>
+            </ul>
           </div>
         }
       </div>

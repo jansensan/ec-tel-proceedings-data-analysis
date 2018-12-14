@@ -45,10 +45,10 @@ class GenderDistributionModel {
     }
   }
 
-  updateData(newValue) {
+  updateData(newValues) {
     // TODO: ensure it's array
     // TODO: ensure it's array with length of 2
-    this.data.datasets[0].data = newValue;
+    this.data.datasets[0].data = newValues;
   }
 }
 

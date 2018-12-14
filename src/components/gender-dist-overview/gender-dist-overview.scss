@@ -1,0 +1,18 @@
+.gender-dist-overview {
+  display: block;
+  position: relative;
+
+  .generalities {
+    display: inline-block;
+    vertical-align: top;
+
+    .value-label {
+      display: inline-block;
+      margin-right: 8px;
+    }
+
+    .value-display {
+      font-weight: bold;
+    }
+  }
+}

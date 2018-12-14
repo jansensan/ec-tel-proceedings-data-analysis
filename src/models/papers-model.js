@@ -17,6 +17,20 @@ class PapersModel {
 
     return papers;
   }
+
+  getNumPapersWithWomenAsFirstAuthor() {
+    let papers = this.getPapers();
+    let sum = 0;
+    _.forEach(
+      papers,
+      (paper) => {
+        if (paper.authors[0].gender === 'f') {
+          sum++;
+        }
+      }
+    );
+    return sum;
+  }
 }
 
 
