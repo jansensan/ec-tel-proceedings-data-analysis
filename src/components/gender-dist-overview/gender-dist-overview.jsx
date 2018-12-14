@@ -1,3 +1,4 @@
+import _ from 'lodash';
 import React, { Component } from 'react';
 
 // models
@@ -39,6 +40,10 @@ export default class GenderDistOverview extends Component {
                 <span className="value-label">Number of men authors:</span>
                 <span className="value-display">{authorsModel.getMaleAuthors().length}</span>
               </li>
+              <li>
+                <span className="value-label">Mean representation of women per paper:</span>
+                <span className="value-display">{this.state.womenRepresentationMean}</span>
+              </li>
             </ul>
           </div>
         }
@@ -55,7 +60,10 @@ export default class GenderDistOverview extends Component {
 
   // methods definitions
   onDataUpdated() {
-    let n = papersModel.getNumPapersWithWomenAsFirstAuthor()
-    console.log('n: ', n);
+    let mean = papersModel.getWomenMeanRepresentation();
+    this.setState({
+      womenRepresentationMean: _.round(mean, 2),
+      womenRepresentationPercentage: _.round(mean * 100, 1)
+    });
   }
 }

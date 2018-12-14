@@ -31,6 +31,25 @@ class PapersModel {
     );
     return sum;
   }
+
+  getWomenMeanRepresentation() {
+    let papers = this.getPapers();
+    let means = [];
+    _.forEach(
+      papers,
+      (paper) => {
+        let numAuthors = paper.authors.length;
+        let womenAuthors = _.filter(
+          paper.authors,
+          (author) => {
+            return author.gender === 'f'
+          }
+        );
+        means.push(womenAuthors.length / numAuthors);
+      }
+    );
+    return _.sum(means) / papers.length;
+  }
 }
 
 
