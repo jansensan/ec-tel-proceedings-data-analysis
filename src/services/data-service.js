@@ -15,7 +15,7 @@ function fetch() {
     let request = new XMLHttpRequest();
     request.onload = onRequestCompleted;
     request.onerror = onRequestFailed;
-    request.open('GET', 'ec-tel-2017.json', true);
+    request.open('GET', 'data/ec-tel-2017.json', true);
     request.send();
 
     function onRequestCompleted() {
