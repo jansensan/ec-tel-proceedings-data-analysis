@@ -12,6 +12,7 @@ import FieldDistributionChart from '../field-distribution-chart/field-distributi
 import GenderDistOverview from '../gender-dist-overview/gender-dist-overview.jsx';
 import GenderDistPerFieldChart from '../gender-dist-per-field-chart/gender-dist-per-field-chart.jsx';
 import GenderDistributionChart from '../gender-distribution-chart/gender-distribution-chart.jsx';
+import GenderDiversityChart from '../gender-diversity-chart/gender-diversity-chart.jsx';
 import Overview from '../overview/overview.jsx';
 import PaperDisplay from '../paper-display/paper-display.jsx';
 import UniDistributionChart from '../uni-distribution-chart/uni-distribution-chart.jsx';
@@ -91,6 +92,12 @@ export default class App extends Component {
               <h3>Women as First Author</h3>
               <p>Papers in which women are the first name in the author list.</p>
               <WomenFirstAuthorChart />
+              <hr/>
+            </section>
+
+            <section>
+              <h3>Gender Diversity by Paper</h3>
+              <GenderDiversityChart />
               <hr/>
             </section>
           </section>

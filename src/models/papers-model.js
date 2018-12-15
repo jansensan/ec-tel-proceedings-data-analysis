@@ -32,6 +32,56 @@ class PapersModel {
     return sum;
   }
 
+  getNumPapersWithOnlyMenAuthors() {
+    let papers = this.getPapers();
+    let sum = 0;
+
+    _.forEach(
+      papers,
+      (paper) => {
+
+        let femaleAuthors = _.filter(
+          paper.authors,
+          (author) => {
+            return author.gender === 'm';
+          }
+        );
+        if (femaleAuthors.length === paper.authors.length) {
+          sum++;
+        }
+
+      }
+    );
+    return sum;
+  }
+
+  getNumPapersWithOnlyWomenAuthors() {
+    let papers = this.getPapers();
+    let sum = 0;
+
+    _.forEach(
+      papers,
+      (paper) => {
+
+        let femaleAuthors = _.filter(
+          paper.authors,
+          (author) => {
+            return author.gender === 'f';
+          }
+        );
+        if (femaleAuthors.length === paper.authors.length) {
+          sum++;
+        }
+
+      }
+    );
+    return sum;
+  }
+
+  getNumPapersWithAuthorsOfBothGenders() {
+
+  }
+
   getWomenMeanRepresentation() {
     let papers = this.getPapers();
     let means = [];
