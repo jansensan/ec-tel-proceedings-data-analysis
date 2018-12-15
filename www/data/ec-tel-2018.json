@@ -1,0 +1,34 @@
+{
+  "papers": [
+    {
+      "title": "A Classification of Barriers that Influence Intention Achievement in MOOCs",
+      "type": "research",
+      "authors": [
+        {
+          "name": "Maartje Henderikx",
+          "gender": "f",
+          "dept": "Welten Institute – Research Centre for Learning, Teaching and Technology",
+          "uni": "Open Universiteit",
+          "country": "NL",
+          "field": "soc"
+        },
+        {
+          "name": "Karel Kreijns",
+          "gender": "m",
+          "dept": "Welten Institute – Research Centre for Learning, Teaching and Technology",
+          "uni": "Open Universiteit",
+          "country": "NL",
+          "field": "soc"
+        },
+        {
+          "name": "Marco Kalz",
+          "gender": "f",
+          "dept": "Welten Institute – Research Centre for Learning, Teaching and Technology",
+          "uni": "Open Universiteit",
+          "country": "NL",
+          "field": "soc"
+        }
+      ]
+    }
+  ]
+}
