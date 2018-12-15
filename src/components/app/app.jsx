@@ -163,9 +163,6 @@ export default class App extends Component {
       return;
     }
 
-    // authorsModel.logGenderDistribution();
-    // authorsModel.logGenderDistPerField();
-
     this.forceUpdate();
   }
 }
