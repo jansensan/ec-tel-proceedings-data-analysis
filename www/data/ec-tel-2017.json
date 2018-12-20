@@ -137,7 +137,7 @@
         {
           "name": "Mihai Dascalu",
           "gender": "m",
-          "dept": "",
+          "dept": "Department of Computer Science",
           "uni": "University Politehnica of Bucharest",
           "country": "RO",
           "field": "eng"
@@ -620,7 +620,7 @@
           "dept": "",
           "uni": "Zuyd University of Applied Sciences",
           "country": "NL",
-          "field": "soc"
+          "field": "eng"
         },
         {
           "name": "Evelien van Limbeek",
@@ -628,7 +628,7 @@
           "dept": "",
           "uni": "Zuyd University of Applied Sciences",
           "country": "NL",
-          "field": "soc"
+          "field": "eng"
         },
         {
           "name": "Wolfgang Greller",
@@ -1809,10 +1809,10 @@
         {
           "name": "Mihai Dascalu",
           "gender": "m",
-          "dept": "",
+          "dept": "Department of Computer Science",
           "uni": "University Politehnica of Bucharest",
           "country": "RO",
-          "field": "soc"
+          "field": "eng"
         },
         {
           "name": "Gabriel Gutu",
@@ -2364,7 +2364,7 @@
           "name": "Sergey Sosnovsky",
           "gender": "m",
           "dept": "",
-          "uni": "Utrecht University",
+          "uni": "Universiteit Utrecht",
           "country": "NL",
           "field": "eng"
         }
@@ -2655,7 +2655,7 @@
         {
           "name": "Mihai Dascalu",
           "gender": "m",
-          "dept": "",
+          "dept": "Department of Computer Science",
           "uni": "University Politehnica of Bucharest",
           "country": "RO",
           "field": "eng"

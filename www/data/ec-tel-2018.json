@@ -29,6 +29,2480 @@
           "field": "soc"
         }
       ]
+    },
+    {
+      "title": "Tools to Support Self-Regulated Learning in Online Environments: Literature Review",
+      "type": "research",
+      "authors": [
+        {
+          "name": "Ronald Pérez-Álvarez",
+          "gender": "m",
+          "dept": "Department of Computer Science",
+          "uni": "Pontificia Universidad Católica de Chile",
+          "country": "CL",
+          "field": "eng"
+        },
+        {
+          "name": "Jorge Maldonado-Mahauad",
+          "gender": "m",
+          "dept": "Department of Computer Science",
+          "uni": "Pontificia Universidad Católica de Chile",
+          "country": "CL",
+          "field": "eng"
+        },
+        {
+          "name": "Mar Pérez-Sanagustín",
+          "gender": "m",
+          "dept": "Department of Computer Science",
+          "uni": "Pontificia Universidad Católica de Chile",
+          "country": "CL",
+          "field": "eng"
+        }
+      ]
+    },
+    {
+      "title": "The Psychometric Properties of a Preliminary Social Presence Measure Using Rasch Analysis",
+      "type": "research",
+      "authors": [
+        {
+          "name": "Karel Kreijns",
+          "gender": "m",
+          "dept": "Welten Institute – Research Centre for Learning, Teaching and Technology",
+          "uni": "Open Universiteit",
+          "country": "NL",
+          "field": "soc"
+        },
+        {
+          "name": "Joshua Weidlich",
+          "gender": "m",
+          "dept": "Welten Institute – Research Centre for Learning, Teaching and Technology",
+          "uni": "Open Universiteit",
+          "country": "NL",
+          "field": "soc"
+        },
+        {
+          "name": "Kamakshi Rajagopal",
+          "gender": "f",
+          "dept": "Welten Institute – Research Centre for Learning, Teaching and Technology",
+          "uni": "Open Universiteit",
+          "country": "NL",
+          "field": "soc"
+        }
+      ]
+    },
+    {
+      "title": "Multimodal Learning Hub: A Tool for Capturing Customizable Multimodal Learning Experiences",
+      "type": "research",
+      "authors": [
+        {
+          "name": "Jan Schneider",
+          "gender": "m",
+          "dept": "DIPF",
+          "uni": "Frankfurt am Main",
+          "country": "DE",
+          "field": "soc"
+        },
+        {
+          "name": "Daniele Di Mitri",
+          "gender": "m",
+          "dept": "Welten Institute – Research Centre for Learning, Teaching and Technology",
+          "uni": "Open Universiteit",
+          "country": "NL",
+          "field": "soc"
+        },
+        {
+          "name": "Bibeg Limbu",
+          "gender": "m",
+          "dept": "Welten Institute – Research Centre for Learning, Teaching and Technology",
+          "uni": "Open Universiteit",
+          "country": "NL",
+          "field": "soc"
+        },
+        {
+          "name": "Hendrik Drachsler",
+          "gender": "m",
+          "dept": "DIPF",
+          "uni": "Frankfurt am Main",
+          "country": "DE",
+          "field": "soc"
+        }
+      ]
+    },
+    {
+      "title": "How Teachers Prepare for the Unexpected Bright Spots and Breakdowns in Enacting Pedagogical Plans in Class",
+      "type": "research",
+      "authors": [
+        {
+          "name": "Ghita Jalal",
+          "gender": "f",
+          "dept": "",
+          "uni": "Université de Lyon",
+          "country": "FR",
+          "field": "soc"
+        },
+        {
+          "name": "Valentin Lachand",
+          "gender": "m",
+          "dept": "",
+          "uni": "Université de Lyon",
+          "country": "FR",
+          "field": "soc"
+        },
+        {
+          "name": "Aurélien Tabard",
+          "gender": "m",
+          "dept": "",
+          "uni": "Université de Lyon",
+          "country": "FR",
+          "field": "soc"
+        },
+        {
+          "name": "Christine Michel",
+          "gender": "f",
+          "dept": "",
+          "uni": "Université de Lyon",
+          "country": "FR",
+          "field": "soc"
+        }
+      ]
+    },
+    {
+      "title": "Evaluating the Robustness of Learning Analytics Results Against Fake Learners",
+      "type": "research",
+      "authors": [
+        {
+          "name": "Giora Alexandron",
+          "gender": "m",
+          "dept": "",
+          "uni": "Weizmann Institute of Science",
+          "country": "IL",
+          "field": "eng"
+        },
+        {
+          "name": "José A. Ruipérez-Valiente",
+          "gender": "m",
+          "dept": "",
+          "uni": "Massachusetts Institute of Technology",
+          "country": "US",
+          "field": "eng"
+        },
+        {
+          "name": "Sunbok Lee",
+          "gender": "m",
+          "dept": "",
+          "uni": "University of Houston",
+          "country": "US",
+          "field": "eng"
+        },
+        {
+          "name": "David E. Pritchard",
+          "gender": "m",
+          "dept": "",
+          "uni": "Massachusetts Institute of Technology",
+          "country": "US",
+          "field": "eng"
+        }
+      ]
+    },
+    {
+      "title": "Where Is the Learning in Learning Analytics?",
+      "type": "research",
+      "authors": [
+        {
+          "name": "Justian Knobbout",
+          "gender": "m",
+          "dept": "Research Centre for Learning and Innovation",
+          "uni": "HU University of Applied Sciences",
+          "country": "NL",
+          "field": "soc"
+        },
+        {
+          "name": "Esther van der Stappen",
+          "gender": "f",
+          "dept": "Research Centre for Learning and Innovation",
+          "uni": "HU University of Applied Sciences",
+          "country": "NL",
+          "field": "soc"
+        }
+      ]
+    },
+    {
+      "title": "Can I Have a Mooc2Go, Please? On the Viability of Mobile vs. Stationary Learning",
+      "type": "research",
+      "authors": [
+        {
+          "name": "Yue Zhao",
+          "gender": "m",
+          "dept": "",
+          "uni": "Delft University of Technology",
+          "country": "NL",
+          "field": "eng"
+        },
+        {
+          "name": "Tarmo Robal",
+          "gender": "m",
+          "dept": "",
+          "uni": "Tallinn University of Technology",
+          "country": "EE",
+          "field": "eng"
+        },
+        {
+          "name": "Christoph Lofi",
+          "gender": "m",
+          "dept": "",
+          "uni": "Delft University of Technology",
+          "country": "NL",
+          "field": "eng"
+        },
+        {
+          "name": "Claudia Hauff",
+          "gender": "f",
+          "dept": "",
+          "uni": "Delft University of Technology",
+          "country": "NL",
+          "field": "eng"
+        }
+      ]
+    },
+    {
+      "title": "Validation of the Revised Self-regulated Online Learning Questionnaire",
+      "type": "research",
+      "authors": [
+        {
+          "name": "Renée S. Jansen",
+          "gender": "f",
+          "dept": "",
+          "uni": "Universiteit Utrecht",
+          "country": "NL",
+          "field": "soc"
+        },
+        {
+          "name": "Anouschka van Leeuwen",
+          "gender": "f",
+          "dept": "",
+          "uni": "Universiteit Utrecht",
+          "country": "NL",
+          "field": "soc"
+        },
+        {
+          "name": "Jeroen Janssen",
+          "gender": "m",
+          "dept": "",
+          "uni": "Universiteit Utrecht",
+          "country": "NL",
+          "field": "soc"
+        },
+        {
+          "name": "Liesbeth Kester",
+          "gender": "m",
+          "dept": "",
+          "uni": "Universiteit Utrecht",
+          "country": "NL",
+          "field": "soc"
+        }
+      ]
+    },
+    {
+      "title": "SRLx: A Personalized Learner Interface for MOOCs",
+      "type": "research",
+      "authors": [
+        {
+          "name": "Dan Davis",
+          "gender": "m",
+          "dept": "Web Information Systems",
+          "uni": "Delft University of Technology",
+          "country": "NL",
+          "field": "eng"
+        },
+        {
+          "name": "Vasileios Triglianos",
+          "gender": "m",
+          "dept": "Faculty of Informatics",
+          "uni": "University of Lugano",
+          "country": "CH",
+          "field": "eng"
+        },
+        {
+          "name": "Claudia Hauff",
+          "gender": "f",
+          "dept": "Web Information Systems",
+          "uni": "Delft University of Technology",
+          "country": "NL",
+          "field": "eng"
+        },
+        {
+          "name": "Geert-Jan Houben",
+          "gender": "m",
+          "dept": "Web Information Systems",
+          "uni": "Delft University of Technology",
+          "country": "NL",
+          "field": "eng"
+        }
+      ]
+    },
+    {
+      "title": "Motivating Students to Enhance Their Knowledge Levels Through Personalized and Scrutable Visual Narratives",
+      "type": "research",
+      "authors": [
+        {
+          "name": "Bilal Yousuf",
+          "gender": "m",
+          "dept": "ADAPT Centre, School of Computer Science and Statistics",
+          "uni": "Trinity College Dublin",
+          "country": "IE",
+          "field": "eng"
+        },
+        {
+          "name": "Athanasios Staikopoulos",
+          "gender": "m",
+          "dept": "ADAPT Centre, School of Computer Science and Statistics",
+          "uni": "Trinity College Dublin",
+          "country": "IE",
+          "field": "eng"
+        },
+        {
+          "name": "Owen Conlan",
+          "gender": "m",
+          "dept": "ADAPT Centre, School of Computer Science and Statistics",
+          "uni": "Trinity College Dublin",
+          "country": "IE",
+          "field": "eng"
+        }
+      ]
+    },
+    {
+      "title": "Supporting the Adaptive Generation of Learning Game Scenarios with a Model-Driven Engineering Framework",
+      "type": "research",
+      "authors": [
+        {
+          "name": "Pierre Laforcade",
+          "gender": "m",
+          "dept": "Computer Science Laboratory",
+          "uni": "Le Mans Université",
+          "country": "FR",
+          "field": "eng"
+        },
+        {
+          "name": "Youness Laghouaouta",
+          "gender": "m",
+          "dept": "Computer Science Laboratory",
+          "uni": "Le Mans Université",
+          "country": "FR",
+          "field": "eng"
+        }
+      ]
+    },
+    {
+      "title": "Student Drop-out Modelling Using Virtual Learning Environment Behaviour Data",
+      "type": "research",
+      "authors": [
+        {
+          "name": "Jakub Kuzilek",
+          "gender": "m",
+          "dept": "CIIRC",
+          "uni": "Czech Technical University",
+          "country": "CZ",
+          "field": "eng"
+        },
+        {
+          "name": "Jonas Vaclavek",
+          "gender": "m",
+          "dept": "CIIRC",
+          "uni": "Czech Technical University",
+          "country": "CZ",
+          "field": "eng"
+        },
+        {
+          "name": "Viktor Fuglik",
+          "gender": "m",
+          "dept": "CIIRC",
+          "uni": "Czech Technical University",
+          "country": "CZ",
+          "field": "eng"
+        },
+        {
+          "name": "Zdenek Zdrahal",
+          "gender": "m",
+          "dept": "CIIRC",
+          "uni": "Czech Technical University",
+          "country": "CZ",
+          "field": "eng"
+        }
+      ]
+    },
+    {
+      "title": "A Microservice Infrastructure for Distributed Communities of Practice",
+      "type": "research",
+      "authors": [
+        {
+          "name": "Peter de Lange",
+          "gender": "m",
+          "dept": "Advanced Community Information Systems (ACIS) Group",
+          "uni": "RWTH Aachen University",
+          "country": "DE",
+          "field": "eng"
+        },
+        {
+          "name": "Bernhard Göschlberger",
+          "gender": "m",
+          "dept": "",
+          "uni": "Research Studios Austria FG",
+          "country": "AT",
+          "field": "eng"
+        },
+        {
+          "name": "Tracie Farell-Frey",
+          "gender": "f",
+          "dept": "",
+          "uni": "Open University",
+          "country": "UK",
+          "field": "soc"
+        },
+        {
+          "name": "Ralf Klamma",
+          "gender": "m",
+          "dept": "",
+          "uni": "Johannes Kepler University Linz",
+          "country": "AT",
+          "field": "eng"
+        }
+      ]
+    },
+    {
+      "title": "Multimodal Analytics for Real-Time Feedback in Co-located Collaboration",
+      "type": "research",
+      "authors": [
+        {
+          "name": "Sambit Praharaj",
+          "gender": "m",
+          "dept": "",
+          "uni": "Open Universiteit",
+          "country": "NL",
+          "field": "eng"
+        },
+        {
+          "name": "Maren Scheffel",
+          "gender": "f",
+          "dept": "",
+          "uni": "Open Universiteit",
+          "country": "NL",
+          "field": "eng"
+        },
+        {
+          "name": "Hendrik Drachsler",
+          "gender": "m",
+          "dept": "",
+          "uni": "Open Universiteit",
+          "country": "NL",
+          "field": "soc"
+        },
+        {
+          "name": "Marcus Specht",
+          "gender": "m",
+          "dept": "",
+          "uni": "Open Universiteit",
+          "country": "NL",
+          "field": "soc"
+        }
+      ]
+    },
+    {
+      "title": "Towards Personalized Learning Objectives in MOOCs",
+      "type": "research",
+      "authors": [
+        {
+          "name": "Tobias Rohloff",
+          "gender": "m",
+          "dept": "",
+          "uni": "Hasso Plattner Institute",
+          "country": "DE",
+          "field": "eng"
+        },
+        {
+          "name": "Christoph Meinel",
+          "gender": "m",
+          "dept": "",
+          "uni": "Hasso Plattner Institute",
+          "country": "DE",
+          "field": "eng"
+        }
+      ]
+    },
+    {
+      "title": "PsychOut! a Mobile App to Support Mental Status Assessment Training",
+      "type": "research",
+      "authors": [
+        {
+          "name": "Carrie Demmans Epp",
+          "gender": "f",
+          "dept": "EdTeKLA Research Group",
+          "uni": "University of Alberta",
+          "country": "CA",
+          "field": "soc"
+        },
+        {
+          "name": "Joe Horne",
+          "gender": "m",
+          "dept": "",
+          "uni": "University of Pittsburgh",
+          "country": "US",
+          "field": "soc"
+        },
+        {
+          "name": "Britney B. Scolieri",
+          "gender": "f",
+          "dept": "",
+          "uni": "University of Pittsburgh",
+          "country": "US",
+          "field": "soc"
+        },
+        {
+          "name": "Irene Kane",
+          "gender": "f",
+          "dept": "",
+          "uni": "University of Pittsburgh",
+          "country": "US",
+          "field": "soc"
+        },
+        {
+          "name": "Amy S. Bowser",
+          "gender": "f",
+          "dept": "",
+          "uni": "University of Pittsburgh",
+          "country": "US",
+          "field": "soc"
+        }
+      ]
+    },
+    {
+      "title": "Exploring Gamification to Prevent Gaming the System and Help Refusal in Tutoring Systems",
+      "type": "research",
+      "authors": [
+        {
+          "name": "Otávio Azevedo",
+          "gender": "m",
+          "dept": "Programa de Pós-Graduação em Computação Aplicada (PPGCA)",
+          "uni": "Universidade do Vale do Rio dos Sinos (UNISINOS)",
+          "country": "BR",
+          "field": "eng"
+        },
+        {
+          "name": "Felipe de Morais",
+          "gender": "m",
+          "dept": "Programa de Pós-Graduação em Computação Aplicada (PPGCA)",
+          "uni": "Universidade do Vale do Rio dos Sinos (UNISINOS)",
+          "country": "BR",
+          "field": "eng"
+        },
+        {
+          "name": "Patricia A. Jaques",
+          "gender": "f",
+          "dept": "Programa de Pós-Graduação em Computação Aplicada (PPGCA)",
+          "uni": "Universidade do Vale do Rio dos Sinos (UNISINOS)",
+          "country": "BR",
+          "field": "eng"
+        }
+      ]
+    },
+    {
+      "title": "Automated Analysis of Cognitive Presence in Online Discussions Written in Portuguese",
+      "type": "research",
+      "authors": [
+        {
+          "name": "Valter Neto",
+          "gender": "m",
+          "dept": "Departamento de Computação",
+          "uni": "Universidade Federal Rural de Pernambuco",
+          "country": "BR",
+          "field": "eng"
+        },
+        {
+          "name": "Vitor Rolim",
+          "gender": "m",
+          "dept": "Departamento de Computação",
+          "uni": "Universidade Federal Rural de Pernambuco",
+          "country": "BR",
+          "field": "eng"
+        },
+        {
+          "name": "Rafael Ferreira",
+          "gender": "m",
+          "dept": "Departamento de Computação",
+          "uni": "Universidade Federal Rural de Pernambuco",
+          "country": "BR",
+          "field": "eng"
+        },
+        {
+          "name": "Vitomir Kovanović",
+          "gender": "m",
+          "dept": "",
+          "uni": "University of South Australia",
+          "country": "AU",
+          "field": "eng"
+        },
+        {
+          "name": "Dragan Gašević",
+          "gender": "m",
+          "dept": "",
+          "uni": "University of Edinburgh",
+          "country": "UK",
+          "field": "eng"
+        },
+        {
+          "name": "Rafael Dueire Lins",
+          "gender": "m",
+          "dept": "Departamento de Computação",
+          "uni": "Universidade Federal Rural de Pernambuco",
+          "country": "BR",
+          "field": "eng"
+        },
+        {
+          "name": "Rodrigo Lins",
+          "gender": "m",
+          "dept": "Departamento de Computação",
+          "uni": "Universidade Federal Rural de Pernambuco",
+          "country": "BR",
+          "field": "eng"
+        }
+      ]
+    },
+    {
+      "title": "Fine-Grained Cognitive Assessment Based on Free-Form Input for Math Story Problems",
+      "type": "research",
+      "authors": [
+        {
+          "name": "Bastiaan Heeren",
+          "gender": "m",
+          "dept": "Faculty of Management, Science and Technology",
+          "uni": "Open Universiteit",
+          "country": "NL",
+          "field": "eng"
+        },
+        {
+          "name": "Johan Jeuring",
+          "gender": "m",
+          "dept": "Faculty of Management, Science and Technology",
+          "uni": "Open Universiteit",
+          "country": "NL",
+          "field": "eng"
+        },
+        {
+          "name": "Sergey Sosnovsky",
+          "gender": "m",
+          "dept": "Department of Information and Computing Sciences",
+          "uni": "Universiteit Utrecht",
+          "country": "NL",
+          "field": "eng"
+        },
+        {
+          "name": "Paul Drijvers",
+          "gender": "m",
+          "dept": "Freudenthal Institute",
+          "uni": "Universiteit Utrecht",
+          "country": "NL",
+          "field": "soc"
+        },
+        {
+          "name": "Peter Boon",
+          "gender": "m",
+          "dept": "Freudenthal Institute",
+          "uni": "Universiteit Utrecht",
+          "country": "NL",
+          "field": "soc"
+        },
+        {
+          "name": "Sietske Tacoma",
+          "gender": "f",
+          "dept": "Freudenthal Institute",
+          "uni": "Universiteit Utrecht",
+          "country": "NL",
+          "field": "soc"
+        },
+        {
+          "name": "Jesse Koops",
+          "gender": "m",
+          "dept": "",
+          "uni": "Cito",
+          "country": "NL",
+          "field": "soc"
+        },
+        {
+          "name": "Armin Weinberger",
+          "gender": "m",
+          "dept": "Department of Educational Technology",
+          "uni": "Saarland University",
+          "country": "DE",
+          "field": "soc"
+        },
+        {
+          "name": "Brigitte Grugeon-Allys",
+          "gender": "m",
+          "dept": "Laboratoire de Didactique André Revuz",
+          "uni": "Université Paris Est Créteil",
+          "country": "FR",
+          "field": "soc"
+        },
+        {
+          "name": "Françoise Chenevotot-Quentin",
+          "gender": "m",
+          "dept": "Laboratoire de Didactique André Revuz",
+          "uni": "Université Paris Est Créteil",
+          "country": "FR",
+          "field": "soc"
+        },
+        {
+          "name": "Jorn van Wijk",
+          "gender": "m",
+          "dept": "Faculty of Management, Science and Technology",
+          "uni": "Open Universiteit",
+          "country": "NL",
+          "field": "eng"
+        },
+        {
+          "name": "Ferdinand van Walree",
+          "gender": "m",
+          "dept": "Faculty of Management, Science and Technology",
+          "uni": "Open Universiteit",
+          "country": "NL",
+          "field": "eng"
+        }
+      ]
+    },
+    {
+      "title": "Extending the SIPS-Model: A Research Framework for Online Collaborative Learning",
+      "type": "research",
+      "authors": [
+        {
+          "name": "Karel Kreijns",
+          "gender": "m",
+          "dept": "Welten Institute – Research Centre for Learning, Teaching and Technology",
+          "uni": "Open Universiteit",
+          "country": "NL",
+          "field": "soc"
+        },
+        {
+          "name": "Paul A. Kirschner",
+          "gender": "m",
+          "dept": "",
+          "uni": "University of Oulu",
+          "country": "FI",
+          "field": "soc"
+        }
+      ]
+    },
+    {
+      "title": "A Syllogism for Designing Collaborative Learning Technologies in the Age of AI and Multimodal Data",
+      "type": "research",
+      "authors": [
+        {
+          "name": "Mutlu Cukurova",
+          "gender": "m",
+          "dept": "UCL Knowledge Lab",
+          "uni": "University College London",
+          "country": "UK",
+          "field": "soc"
+        }
+      ]
+    },
+    {
+      "title": "“Make It Personal!” - Gathering Input from Stakeholders for a Learning Analytics-Supported Learning Design Tool",
+      "type": "research",
+      "authors": [
+        {
+          "name": "Marcel Schmitz",
+          "gender": "m",
+          "dept": "",
+          "uni": "Zuyd University of Applied Sciences",
+          "country": "NL",
+          "field": "eng"
+        },
+        {
+          "name": "Maren Scheffel",
+          "gender": "f",
+          "dept": "",
+          "uni": "Open Universiteit",
+          "country": "NL",
+          "field": "eng"
+        },
+        {
+          "name": "Evelien van Limbeek",
+          "gender": "f",
+          "dept": "",
+          "uni": "Zuyd University of Applied Sciences",
+          "country": "NL",
+          "field": "eng"
+        },
+        {
+          "name": "Roger Bemelmans",
+          "gender": "m",
+          "dept": "",
+          "uni": "Zuyd University of Applied Sciences",
+          "country": "NL",
+          "field": "eng"
+        },
+        {
+          "name": "Hendrik Drachsler",
+          "gender": "m",
+          "dept": "",
+          "uni": "Open Universiteit",
+          "country": "NL",
+          "field": "eng"
+        }
+      ]
+    },
+    {
+      "title": "Investigating the Relationships Between Online Activity, Learning Strategies and Grades to Create Learning Analytics-Supported Learning Designs",
+      "type": "research",
+      "authors": [
+        {
+          "name": "Marcel Schmitz",
+          "gender": "m",
+          "dept": "",
+          "uni": "Zuyd University of Applied Sciences",
+          "country": "NL",
+          "field": "eng"
+        },
+        {
+          "name": "Maren Scheffel",
+          "gender": "f",
+          "dept": "",
+          "uni": "Open Universiteit",
+          "country": "NL",
+          "field": "eng"
+        },
+        {
+          "name": "Evelien van Limbeek",
+          "gender": "f",
+          "dept": "",
+          "uni": "Zuyd University of Applied Sciences",
+          "country": "NL",
+          "field": "eng"
+        },
+        {
+          "name": "Nicolette van Halem",
+          "gender": "f",
+          "dept": "",
+          "uni": "Vrije Universiteit",
+          "country": "NL",
+          "field": "soc"
+        },
+        {
+          "name": "Ilja Cornelisz",
+          "gender": "m",
+          "dept": "",
+          "uni": "Vrije Universiteit",
+          "country": "NL",
+          "field": "soc"
+        },
+        {
+          "name": "Chris van Klaveren",
+          "gender": "m",
+          "dept": "",
+          "uni": "Vrije Universiteit",
+          "country": "NL",
+          "field": "soc"
+        },
+        {
+          "name": "Chris van Klaveren",
+          "gender": "m",
+          "dept": "",
+          "uni": "Vrije Universiteit",
+          "country": "NL",
+          "field": "soc"
+        },
+        {
+          "name": "Roger Bemelmans",
+          "gender": "m",
+          "dept": "",
+          "uni": "Zuyd University of Applied Sciences",
+          "country": "NL",
+          "field": "eng"
+        },
+        {
+          "name": "Hendrik Drachsler",
+          "gender": "m",
+          "dept": "",
+          "uni": "Open Universiteit",
+          "country": "NL",
+          "field": "eng"
+        }
+      ]
+    },
+    {
+      "title": "Evidence for Programming Strategies in University Coding Exercises",
+      "type": "research",
+      "authors": [
+        {
+          "name": "Kshitij Sharma",
+          "gender": "m",
+          "dept": "",
+          "uni": "Norwegian University of Science and Technology",
+          "country": "NO",
+          "field": "eng"
+        },
+        {
+          "name": "Katerina Mangaroska",
+          "gender": "f",
+          "dept": "",
+          "uni": "Norwegian University of Science and Technology (NTNU)",
+          "country": "NO",
+          "field": "eng"
+        },
+        {
+          "name": "Halvard Trætteberg",
+          "gender": "m",
+          "dept": "",
+          "uni": "Norwegian University of Science and Technology (NTNU)",
+          "country": "NO",
+          "field": "eng"
+        },
+        {
+          "name": "Serena Lee-Cultura",
+          "gender": "f",
+          "dept": "",
+          "uni": "Norwegian University of Science and Technology (NTNU)",
+          "country": "NO",
+          "field": "eng"
+        },
+        {
+          "name": "Michail Giannakos",
+          "gender": "m",
+          "dept": "",
+          "uni": "Norwegian University of Science and Technology (NTNU)",
+          "country": "NO",
+          "field": "eng"
+        }
+      ]
+    },
+    {
+      "title": "Incorporating Blended Learning Processes in K12 Mathematics Education Through BA-Khan Platform",
+      "type": "research",
+      "authors": [
+        {
+          "name": "Valeria Henríquez",
+          "gender": "f",
+          "dept": "",
+          "uni": "Universidad Austral de Chile",
+          "country": "CL",
+          "field": "eng"
+        },
+        {
+          "name": "Eliana Scheihing",
+          "gender": "f",
+          "dept": "",
+          "uni": "Universidad Austral de Chile",
+          "country": "CL",
+          "field": "eng"
+        },
+        {
+          "name": "Marta Silva",
+          "gender": "f",
+          "dept": "",
+          "uni": "Universidad Austral de Chile",
+          "country": "CL",
+          "field": "soc"
+        }
+      ]
+    },
+    {
+      "title": "Predicting Learners’ Success in a Self-paced MOOC Through Sequence Patterns of Self-regulated Learning",
+      "type": "research",
+      "authors": [
+        {
+          "name": "Jorge Maldonado-Mahauad",
+          "gender": "m",
+          "dept": "Department of Computer Science",
+          "uni": "Pontificia Universidad Católica de Chile",
+          "country": "CL",
+          "field": "eng"
+        },
+        {
+          "name": "Mar Pérez-Sanagustín",
+          "gender": "f",
+          "dept": "Department of Computer Science",
+          "uni": "Pontificia Universidad Católica de Chile",
+          "country": "CL",
+          "field": "eng"
+        },
+        {
+          "name": "Pedro Manuel Moreno-Marcos",
+          "gender": "m",
+          "dept": "Department of Telematics Engineering",
+          "uni": "Universidad Carlos III de Madrid",
+          "country": "ES",
+          "field": "eng"
+        },
+        {
+          "name": "Carlos Alario-Hoyos",
+          "gender": "m",
+          "dept": "Department of Telematics Engineering",
+          "uni": "Universidad Carlos III de Madrid",
+          "country": "ES",
+          "field": "eng"
+        },
+        {
+          "name": "Pedro J. Muñoz-Merino",
+          "gender": "m",
+          "dept": "Department of Telematics Engineering",
+          "uni": "Universidad Carlos III de Madrid",
+          "country": "ES",
+          "field": "eng"
+        },
+        {
+          "name": "Carlos Delgado-Kloos",
+          "gender": "m",
+          "dept": "Department of Telematics Engineering",
+          "uni": "Universidad Carlos III de Madrid",
+          "country": "ES",
+          "field": "eng"
+        }
+      ]
+    },
+    {
+      "title": "Semantically Meaningful Cohorts Enable Specialized Knowledge Sharing in a Collaborative MOOC",
+      "type": "research",
+      "authors": [
+        {
+          "name": "Stian Håklev",
+          "gender": "m",
+          "dept": "",
+          "uni": "École Polytechnique Fédérale de Lausanne",
+          "country": "CH",
+          "field": "eng"
+        },
+        {
+          "name": "Kshitij Sharma",
+          "gender": "m",
+          "dept": "",
+          "uni": "Norwegian University of Science and Technology",
+          "country": "NO",
+          "field": "eng"
+        },
+        {
+          "name": "Jim Slotta",
+          "gender": "m",
+          "dept": "",
+          "uni": "University of Toronto",
+          "country": "CA",
+          "field": "eng"
+        },
+        {
+          "name": "Pierre Dillenbourg",
+          "gender": "m",
+          "dept": "",
+          "uni": "École Polytechnique Fédérale de Lausanne",
+          "country": "CH",
+          "field": "soc"
+        }
+      ]
+    },
+    {
+      "title": "Detecting Learning Strategies Through Process Mining",
+      "type": "research",
+      "authors": [
+        {
+          "name": "John Saint",
+          "gender": "m",
+          "dept": "",
+          "uni": "University of Edinburgh",
+          "country": "UK",
+          "field": "soc"
+        },
+        {
+          "name": "Dragan Gašević",
+          "gender": "m",
+          "dept": "",
+          "uni": "University of Edinburgh",
+          "country": "UK",
+          "field": "eng"
+        },
+        {
+          "name": "Abelardo Pardo",
+          "gender": "m",
+          "dept": "",
+          "uni": "University of South Australia",
+          "country": "AU",
+          "field": "eng"
+        }
+      ]
+    },
+    {
+      "title": "Low-Investment, Realistic-Return Business Cases for Learning Analytics Dashboards: Leveraging Usage Data and Microinteractions",
+      "type": "research",
+      "authors": [
+        {
+          "name": "Tom Broos",
+          "gender": "m",
+          "dept": "",
+          "uni": "Catholic University of Leuven",
+          "country": "BE",
+          "field": "soc"
+        },
+        {
+          "name": "Katrien Verbert",
+          "gender": "f",
+          "dept": "",
+          "uni": "Catholic University of Leuven",
+          "country": "BE",
+          "field": "eng"
+        },
+        {
+          "name": "Greet Langie",
+          "gender": "f",
+          "dept": "",
+          "uni": "Catholic University of Leuven",
+          "country": "BE",
+          "field": "eng"
+        },
+        {
+          "name": "Carolien Van Soom",
+          "gender": "f",
+          "dept": "",
+          "uni": "Catholic University of Leuven",
+          "country": "BE",
+          "field": "soc"
+        },
+        {
+          "name": "Tinne De Laet",
+          "gender": "f",
+          "dept": "",
+          "uni": "Catholic University of Leuven",
+          "country": "BE",
+          "field": "eng"
+        }
+      ]
+    },
+    {
+      "title": "Identifying Design Principles for Learning Design Tools: The Case of edCrumble",
+      "type": "research",
+      "authors": [
+        {
+          "name": "Laia Albó",
+          "gender": "f",
+          "dept": "ICT Department",
+          "uni": "Universitat Pompeu Fabra",
+          "country": "ES",
+          "field": "soc"
+        },
+        {
+          "name": "Davinia Hernández-Leo",
+          "gender": "f",
+          "dept": "ICT Department",
+          "uni": "Universitat Pompeu Fabra",
+          "country": "ES",
+          "field": "soc"
+        }
+      ]
+    },
+    {
+      "title": "Exploring Causality Within Collaborative Problem Solving Using Eye-Tracking",
+      "type": "research",
+      "authors": [
+        {
+          "name": "Kshitij Sharma",
+          "gender": "m",
+          "dept": "",
+          "uni": "Norwegian University of Science and Technology",
+          "country": "NO",
+          "field": "eng"
+        },
+        {
+          "name": "Jennifer K. Olsen",
+          "gender": "f",
+          "dept": "",
+          "uni": "Ecole Polytechnique Fédérale de Lausanne",
+          "country": "CH",
+          "field": "eng"
+        },
+        {
+          "name": "Vincent Aleven",
+          "gender": "m",
+          "dept": "",
+          "uni": "Carnegie Mellon",
+          "country": "US",
+          "field": "eng"
+        },
+        {
+          "name": "Nikol Rummel",
+          "gender": "f",
+          "dept": "",
+          "uni": "Ruhr University Bochum",
+          "country": "DE",
+          "field": "soc"
+        }
+      ]
+    },
+    {
+      "title": "Towards an Automated Model of Comprehension (AMoC)",
+      "type": "research",
+      "authors": [
+        {
+          "name": "Mihai Dascalu",
+          "gender": "m",
+          "dept": "Department of Computer Science",
+          "uni": "University Politehnica of Bucharest",
+          "country": "RO",
+          "field": "eng"
+        },
+        {
+          "name": "Ionut Cristian Paraschiv",
+          "gender": "m",
+          "dept": "Department of Computer Science",
+          "uni": "University Politehnica of Bucharest",
+          "country": "RO",
+          "field": "eng"
+        },
+        {
+          "name": "Danielle S. McNamara",
+          "gender": "f",
+          "dept": "Institute for the Science of Teaching and Learning",
+          "uni": "Arizona State University",
+          "country": "US",
+          "field": "soc"
+        },
+        {
+          "name": "Stefan Trausan-Matu",
+          "gender": "m",
+          "dept": "Department of Computer Science",
+          "uni": "University Politehnica of Bucharest",
+          "country": "RO",
+          "field": "eng"
+        }
+      ]
+    },
+    {
+      "title": "Course-Adaptive Content Recommender for Course Authoring",
+      "type": "research",
+      "authors": [
+        {
+          "name": "Hung Chau",
+          "gender": "m",
+          "dept": "School of Computing and Information",
+          "uni": "University of Pittsburg",
+          "country": "US",
+          "field": "eng"
+        },
+        {
+          "name": "Jordan Barria-Pineda",
+          "gender": "m",
+          "dept": "School of Computing and Information",
+          "uni": "University of Pittsburg",
+          "country": "US",
+          "field": "eng"
+        },
+        {
+          "name": "Peter Brusilovsky",
+          "gender": "m",
+          "dept": "School of Computing and Information",
+          "uni": "University of Pittsburg",
+          "country": "US",
+          "field": "eng"
+        }
+      ]
+    },
+    {
+      "title": "Assessing Leadership Competencies Through Social Network Analysis",
+      "type": "research",
+      "authors": [
+        {
+          "name": "Faisal Ghaffar",
+          "gender": "m",
+          "dept": "",
+          "uni": "IBM Ireland",
+          "country": "IE",
+          "field": "eng"
+        },
+        {
+          "name": "Neil Peirce",
+          "gender": "m",
+          "dept": "School of Computer Science and Statistics",
+          "uni": "Trinity College Dublin",
+          "country": "IE",
+          "field": "eng"
+        },
+        {
+          "name": "Alec Serlie",
+          "gender": "m",
+          "dept": "",
+          "uni": "GITP-Research and Erasmus University",
+          "country": "NL",
+          "field": "eng"
+        }
+      ]
+    },
+    {
+      "title": "Concept Focus: Semantic Meta-Data for Describing MOOC Content",
+      "type": "research",
+      "authors": [
+        {
+          "name": "Sepideh Mesbah",
+          "gender": "f",
+          "dept": "",
+          "uni": "Delft University Of Technology",
+          "country": "NL",
+          "field": "eng"
+        },
+        {
+          "name": "Guanliang Chen",
+          "gender": "m",
+          "dept": "",
+          "uni": "Delft University Of Technology",
+          "country": "NL",
+          "field": "eng"
+        },
+        {
+          "name": "Manuel Valle Torre",
+          "gender": "m",
+          "dept": "",
+          "uni": "Delft University Of Technology",
+          "country": "NL",
+          "field": "eng"
+        },
+        {
+          "name": "Alessandro Bozzon",
+          "gender": "m",
+          "dept": "",
+          "uni": "Delft University Of Technology",
+          "country": "NL",
+          "field": "eng"
+        },
+        {
+          "name": "Christoph Lofi",
+          "gender": "m",
+          "dept": "",
+          "uni": "Delft University of Technology",
+          "country": "NL",
+          "field": "eng"
+        },
+        {
+          "name": "Geert-Jan Houben",
+          "gender": "m",
+          "dept": "Web Information Systems",
+          "uni": "Delft University of Technology",
+          "country": "NL",
+          "field": "eng"
+        }
+      ]
+    },
+    {
+      "title": "Help Me Understand This Conversation: Methods of Identifying Implicit Links Between CSCL Contributions",
+      "type": "research",
+      "authors": [
+        {
+          "name": "Mihai Masala",
+          "gender": "m",
+          "dept": "",
+          "uni": "University Politehnica of Bucharest",
+          "country": "RO",
+          "field": "eng"
+        },
+        {
+          "name": "Stefan Ruseti",
+          "gender": "m",
+          "dept": "",
+          "uni": "University Politehnica of Bucharest",
+          "country": "RO",
+          "field": "eng"
+        },
+        {
+          "name": "Gabriel Gutu-Robu",
+          "gender": "m",
+          "dept": "",
+          "uni": "University Politehnica of Bucharest",
+          "country": "RO",
+          "field": "eng"
+        },
+        {
+          "name": "Traian Rebedea",
+          "gender": "m",
+          "dept": "",
+          "uni": "University Politehnica of Bucharest",
+          "country": "RO",
+          "field": "eng"
+        },
+        {
+          "name": "Mihai Dascalu",
+          "gender": "m",
+          "dept": "Department of Computer Science",
+          "uni": "University Politehnica of Bucharest",
+          "country": "RO",
+          "field": "eng"
+        },
+        {
+          "name": "Stefan Trausan-Matu",
+          "gender": "m",
+          "dept": "Department of Computer Science",
+          "uni": "University Politehnica of Bucharest",
+          "country": "RO",
+          "field": "eng"
+        }
+      ]
+    },
+    {
+      "title": "The Effect of Personality and Course Attributes on Academic Performance in MOOCs",
+      "type": "research",
+      "authors": [
+        {
+          "name": "Mahdi Rahmani Hanzaki",
+          "gender": "m",
+          "dept": "Department of Computing Science",
+          "uni": "University of Alberta",
+          "country": "CA",
+          "field": "eng"
+        },
+        {
+          "name": "Carrie Demmans Epp",
+          "gender": "f",
+          "dept": "Department of Computing Science",
+          "uni": "University of Alberta",
+          "country": "CA",
+          "field": "eng"
+        }
+      ]
+    },
+    {
+      "title": "Learning by Reviewing Paper-Based Programming Assessments",
+      "type": "research",
+      "authors": [
+        {
+          "name": "Yancy Vance Paredes",
+          "gender": "m",
+          "dept": "",
+          "uni": "Arizona State University",
+          "country": "US",
+          "field": "eng"
+        },
+        {
+          "name": "David Azcona",
+          "gender": "m",
+          "dept": "",
+          "uni": "Dublin City University",
+          "country": "IE",
+          "field": "eng"
+        },
+        {
+          "name": "I-Han Hsiao",
+          "gender": "f",
+          "dept": "",
+          "uni": "Arizona State University",
+          "country": "US",
+          "field": "eng"
+        },
+        {
+          "name": "Alan Smeaton",
+          "gender": "m",
+          "dept": "",
+          "uni": "Dublin City University",
+          "country": "IE",
+          "field": "eng"
+        }
+      ]
+    },
+    {
+      "title": "Which Learning Visualisations to Offer Students?",
+      "type": "research",
+      "authors": [
+        {
+          "name": "Susan Bull",
+          "gender": "f",
+          "dept": "",
+          "uni": "Consultant",
+          "country": "UK",
+          "field": "eng"
+        },
+        {
+          "name": "Peter Brusilovsky",
+          "gender": "m",
+          "dept": "School of Information Sciences",
+          "uni": "University of Pittsburgh",
+          "country": "US",
+          "field": "eng"
+        },
+        {
+          "name": "Julio Guerra",
+          "gender": "m",
+          "dept": "Instituto de Informática",
+          "uni": "Universidad Austral de Chile",
+          "country": "CL",
+          "field": "eng"
+        }
+      ]
+    },
+    {
+      "title": "Detection of Student Modelling Anomalies",
+      "type": "research",
+      "authors": [
+        {
+          "name": "Sergey Sosnovsky",
+          "gender": "m",
+          "dept": "",
+          "uni": "Universiteit Utrecht",
+          "country": "NL",
+          "field": "eng"
+        },
+        {
+          "name": "Laurens Müter",
+          "gender": "m",
+          "dept": "",
+          "uni": "Universiteit Utrecht",
+          "country": "NL",
+          "field": "eng"
+        },
+        {
+          "name": "Marc Valkenier",
+          "gender": "m",
+          "dept": "",
+          "uni": "Universiteit Utrecht",
+          "country": "NL",
+          "field": "eng"
+        },
+        {
+          "name": "Matthieu Brinkhuis",
+          "gender": "m",
+          "dept": "",
+          "uni": "Universiteit Utrecht",
+          "country": "NL",
+          "field": "eng"
+        },
+        {
+          "name": "Abe Hofman",
+          "gender": "m",
+          "dept": "",
+          "uni": "Universiteit Utrecht",
+          "country": "NL",
+          "field": "eng"
+        }
+      ]
+    },
+    {
+      "title": "Expanding the Curricular Space with Educational Robotics: A Creative Course on Road Safety",
+      "type": "research",
+      "authors": [
+        {
+          "name": "Andri Ioannou",
+          "gender": "f",
+          "dept": "Cyprus Interaction Lab",
+          "uni": "Cyprus University of Technology",
+          "country": "CY",
+          "field": "eng"
+        },
+        {
+          "name": "Chrysanthos Socratous",
+          "gender": "m",
+          "dept": "Cyprus Interaction Lab",
+          "uni": "Cyprus University of Technology",
+          "country": "CY",
+          "field": "eng"
+        },
+        {
+          "name": "Elena Nikolaedou",
+          "gender": "f",
+          "dept": "Cyprus Interaction Lab",
+          "uni": "Cyprus University of Technology",
+          "country": "CY",
+          "field": "eng"
+        }
+      ]
+    },
+    {
+      "title": "New Approaches to Training of Power Substation Operators Based on Interactive Virtual Reality",
+      "type": "posterOrDemo",
+      "authors": [
+        {
+          "name": "Rinat R. Nasyrov",
+          "gender": "m",
+          "dept": "",
+          "uni": "National Research University Moscow Power Engineering Institute",
+          "country": "RU",
+          "field": "eng"
+        },
+        {
+          "name": "Peter S. Excell",
+          "gender": "m",
+          "dept": "",
+          "uni": "Wrexham Glyndwr University",
+          "country": "UK",
+          "field": "eng"
+        }
+      ]
+    },
+    {
+      "title": "Enabling Systematic Adoption of Learning Analytics through a Policy Framework",
+      "type": "posterOrDemo",
+      "authors": [
+        {
+          "name": "Yi-Shan Tsai",
+          "gender": "f",
+          "dept": "",
+          "uni": "University of Edinburgh",
+          "country": "UK",
+          "field": "soc"
+        },
+        {
+          "name": "Maren Scheffel",
+          "gender": "f",
+          "dept": "",
+          "uni": "Open Universiteit",
+          "country": "NL",
+          "field": "eng"
+        },
+        {
+          "name": "Dragan Gašević",
+          "gender": "m",
+          "dept": "",
+          "uni": "University of Edinburgh",
+          "country": "UK",
+          "field": "eng"
+        }
+      ]
+    },
+    {
+      "title": "Diversity Profiling of Learners to Understand Their Domain Coverage While Watching Videos",
+      "type": "posterOrDemo",
+      "authors": [
+        {
+          "name": "Entisar Abolkasim",
+          "gender": "m",
+          "dept": "School of Computing",
+          "uni": "University of Leeds",
+          "country": "UK",
+          "field": "eng"
+        },
+        {
+          "name": "Lydia Lau",
+          "gender": "f",
+          "dept": "School of Computing",
+          "uni": "University of Leeds",
+          "country": "UK",
+          "field": "eng"
+        },
+        {
+          "name": "Vania Dimitrova",
+          "gender": "f",
+          "dept": "School of Computing",
+          "uni": "University of Leeds",
+          "country": "UK",
+          "field": "eng"
+        },
+        {
+          "name": "Antonija Mitrovic",
+          "gender": "f",
+          "dept": "Intelligent Computer Tutoring Group",
+          "uni": "University of Canterbury",
+          "country": "NZ",
+          "field": "eng"
+        }
+      ]
+    },
+    {
+      "title": "Using Digital Medical Collections to Support Radiology Training in E-learning Platforms",
+      "type": "posterOrDemo",
+      "authors": [
+        {
+          "name": "Félix Buendía",
+          "gender": "m",
+          "dept": "",
+          "uni": "Universitat Politècnica de València",
+          "country": "ES",
+          "field": "eng"
+        },
+        {
+          "name": "Joaquín Gayoso-Cabada",
+          "gender": "m",
+          "dept": "",
+          "uni": "Universidad Complutense de Madrid",
+          "country": "ES",
+          "field": "eng"
+        },
+        {
+          "name": "José-Luis Sierra",
+          "gender": "m",
+          "dept": "",
+          "uni": "Universidad Complutense de Madrid",
+          "country": "ES",
+          "field": "eng"
+        }
+      ]
+    },
+    {
+      "title": "Temporal Analytics of Workplace-Based Assessment Data to Support Self-regulated Learning",
+      "type": "posterOrDemo",
+      "authors": [
+        {
+          "name": "Alicja Piotrkowicz",
+          "gender": "f",
+          "dept": "Leeds Institute of Medical Education",
+          "uni": "University of Leeds",
+          "country": "UK",
+          "field": "soc"
+        },
+        {
+          "name": "Vania Dimitrova",
+          "gender": "f",
+          "dept": "Leeds Institute of Medical Education",
+          "uni": "University of Leeds",
+          "country": "UK",
+          "field": "eng"
+        },
+        {
+          "name": "Trudie E. Roberts",
+          "gender": "f",
+          "dept": "Leeds Institute of Medical Education",
+          "uni": "University of Leeds",
+          "country": "UK",
+          "field": "soc"
+        }
+      ]
+    },
+    {
+      "title": "Learning Analytics Dashboard Analysing First-Year Engineering Students",
+      "type": "posterOrDemo",
+      "authors": [
+        {
+          "name": "Jonas Vaclavek",
+          "gender": "m",
+          "dept": "CIIRC",
+          "uni": "Czech Technical University",
+          "country": "CZ",
+          "field": "eng"
+        },
+        {
+          "name": "Jakub Kuzilek",
+          "gender": "m",
+          "dept": "CIIRC",
+          "uni": "Czech Technical University",
+          "country": "CZ",
+          "field": "eng"
+        },
+        {
+          "name": "Jan Skocilas",
+          "gender": "m",
+          "dept": "FME, Technicka",
+          "uni": "Czech Technical University",
+          "country": "CZ",
+          "field": "eng"
+        },
+        {
+          "name": "Zdenek Zdrahal",
+          "gender": "m",
+          "dept": "FME, Technicka",
+          "uni": "Czech Technical University",
+          "country": "CZ",
+          "field": "eng"
+        },
+        {
+          "name": "Viktor Fuglik",
+          "gender": "m",
+          "dept": "FME, Technicka",
+          "uni": "Czech Technical University",
+          "country": "CZ",
+          "field": "eng"
+        }
+      ]
+    },
+    {
+      "title": "The Learning Analytics Indicator Repository",
+      "type": "posterOrDemo",
+      "authors": [
+        {
+          "name": "Daniel Biedermann",
+          "gender": "m",
+          "dept": "",
+          "uni": "German Institute for Educational Research",
+          "country": "DE",
+          "field": "soc"
+        },
+        {
+          "name": "Jan Schneider",
+          "gender": "m",
+          "dept": "",
+          "uni": "German Institute for Educational Research",
+          "country": "DE",
+          "field": "soc"
+        },
+        {
+          "name": "Hendrik Drachsler",
+          "gender": "m",
+          "dept": "",
+          "uni": "Goethe University Frankfurt",
+          "country": "DE",
+          "field": "soc"
+        }
+      ]
+    },
+    {
+      "title": "Eye-Tracking for User Attention Evaluation in Adaptive Serious Games",
+      "type": "posterOrDemo",
+      "authors": [
+        {
+          "name": "Alexander Streicher",
+          "gender": "m",
+          "dept": "",
+          "uni": "Fraunhofer IOSB",
+          "country": "DE",
+          "field": "eng"
+        },
+        {
+          "name": "Sebastian Leidig",
+          "gender": "m",
+          "dept": "",
+          "uni": "Fraunhofer IOSB",
+          "country": "DE",
+          "field": "eng"
+        },
+        {
+          "name": "Wolfgang Roller",
+          "gender": "m",
+          "dept": "",
+          "uni": "Fraunhofer IOSB",
+          "country": "DE",
+          "field": "eng"
+        }
+      ]
+    },
+    {
+      "title": "Development of a Learning Economy Platform Based on Blockchain",
+      "type": "posterOrDemo",
+      "authors": [
+        {
+          "name": "Masumi Hori",
+          "gender": "f",
+          "dept": "",
+          "uni": "NPO CCC-TIES",
+          "country": "JP",
+          "field": "soc"
+        },
+        {
+          "name": "Seishi Ono",
+          "gender": "m",
+          "dept": "",
+          "uni": "NPO CCC-TIES",
+          "country": "JP",
+          "field": "soc"
+        },
+        {
+          "name": "Toshihiro Kita",
+          "gender": "m",
+          "dept": "",
+          "uni": "Kumamoto University",
+          "country": "JP",
+          "field": "eng"
+        },
+        {
+          "name": "Hiroki Miyahara",
+          "gender": "m",
+          "dept": "",
+          "uni": "University of Yamanashi",
+          "country": "JP",
+          "field": "soc"
+        },
+        {
+          "name": "Shiu Sakashita",
+          "gender": "m",
+          "dept": "",
+          "uni": "Acutus Software, Inc.",
+          "country": "JP",
+          "field": "eng"
+        },
+        {
+          "name": "Kensuke Miyashita",
+          "gender": "m",
+          "dept": "",
+          "uni": "Kyoto Women’s University",
+          "country": "JP",
+          "field": "eng"
+        },
+        {
+          "name": "Kensuke Miyashita",
+          "gender": "m",
+          "dept": "",
+          "uni": "National Institute of Informatics",
+          "country": "JP",
+          "field": "eng"
+        }
+      ]
+    },
+    {
+      "title": "Enhancing Human Learning of Motions: An Approach Through Clustering",
+      "type": "posterOrDemo",
+      "authors": [
+        {
+          "name": "Quentin Couland",
+          "gender": "m",
+          "dept": "Computer Science Laboratory",
+          "uni": "Le Mans Université",
+          "country": "FR",
+          "field": "eng"
+        },
+        {
+          "name": "Ludovic Hamon",
+          "gender": "m",
+          "dept": "Computer Science Laboratory",
+          "uni": "Le Mans Université",
+          "country": "FR",
+          "field": "eng"
+        },
+        {
+          "name": "Sébastien George",
+          "gender": "m",
+          "dept": "Computer Science Laboratory",
+          "uni": "Le Mans Université",
+          "country": "FR",
+          "field": "eng"
+        }
+      ]
+    },
+    {
+      "title": "How to Help Teachers Adapt to Learners? Teachers’ Perspective on a Competency and Error-Type Centered Dashboard",
+      "type": "posterOrDemo",
+      "authors": [
+        {
+          "name": "Iryna Nikolayeva",
+          "gender": "f",
+          "dept": "Modèles et Outils en ingénierie des Connaissances pour l’Apprentissage Humain (MOCAH), Laboratoire d’Informatique de Paris 6 (LIP6)",
+          "uni": "Sorbonne Université",
+          "country": "FR",
+          "field": "eng"
+        },
+        {
+          "name": "Bruno Martin",
+          "gender": "m",
+          "dept": "Modèles et Outils en ingénierie des Connaissances pour l’Apprentissage Humain (MOCAH), Laboratoire d’Informatique de Paris 6 (LIP6)",
+          "uni": "Sorbonne Université",
+          "country": "FR",
+          "field": "eng"
+        },
+        {
+          "name": "Amel Yessad",
+          "gender": "f",
+          "dept": "Modèles et Outils en ingénierie des Connaissances pour l’Apprentissage Humain (MOCAH), Laboratoire d’Informatique de Paris 6 (LIP6)",
+          "uni": "Sorbonne Université",
+          "country": "FR",
+          "field": "eng"
+        },
+        {
+          "name": "Françoise Chenevotot",
+          "gender": "f",
+          "dept": "Laboratory of Didactics André Revuz (LDAR)",
+          "uni": "Université d'Artois",
+          "country": "FR",
+          "field": "eng"
+        },
+        {
+          "name": "Dominique Prévit",
+          "gender": "f",
+          "dept": "Modèles et Outils en ingénierie des Connaissances pour l’Apprentissage Humain (MOCAH), Laboratoire d’Informatique de Paris 6 (LIP6)",
+          "uni": "Sorbonne Université",
+          "country": "FR",
+          "field": "eng"
+        },
+        {
+          "name": "Brigitte Grugeon-Allys",
+          "gender": "f",
+          "dept": "Laboratory of Didactics André Revuz (LDAR)",
+          "uni": "Université d'Artois",
+          "country": "FR",
+          "field": "eng"
+        },
+        {
+          "name": "Vanda Luengo",
+          "gender": "f",
+          "dept": "Modèles et Outils en ingénierie des Connaissances pour l’Apprentissage Humain (MOCAH), Laboratoire d’Informatique de Paris 6 (LIP6)",
+          "uni": "Sorbonne Université",
+          "country": "FR",
+          "field": "eng"
+        }
+      ]
+    },
+    {
+      "title": "MedSense: The Development of a Gamified Learning Platform for Undergraduate Medical Education",
+      "type": "posterOrDemo",
+      "authors": [
+        {
+          "name": "Justin Choon Hwee Ng",
+          "gender": "m",
+          "dept": "Yong Loo Lin School of Medicine",
+          "uni": "National University of Singapore",
+          "country": "SG",
+          "field": "soc"
+        },
+        {
+          "name": "Sarah Zhuling Tham",
+          "gender": "f",
+          "dept": "Yong Loo Lin School of Medicine",
+          "uni": "National University of Singapore",
+          "country": "SG",
+          "field": "soc"
+        },
+        {
+          "name": "Chin Rui Chew",
+          "gender": "m",
+          "dept": "School of Information Systems",
+          "uni": "National University of Singapore",
+          "country": "SG",
+          "field": "eng"
+        },
+        {
+          "name": "Amelia Jing Hua Lee",
+          "gender": "f",
+          "dept": "School of Information Systems",
+          "uni": "National University of Singapore",
+          "country": "SG",
+          "field": "eng"
+        },
+        {
+          "name": "Sook Muay Tay",
+          "gender": "m",
+          "dept": "Yong Loo Lin School of Medicine",
+          "uni": "National University of Singapore",
+          "country": "SG",
+          "field": "soc"
+        }
+      ]
+    },
+    {
+      "title": "edCrumble: Designing for Learning with Data Analytics",
+      "type": "posterOrDemo",
+      "authors": [
+        {
+          "name": "Laia Albó",
+          "gender": "f",
+          "dept": "ICT Department",
+          "uni": "Universitat Pompeu Fabra",
+          "country": "ES",
+          "field": "soc"
+        },
+        {
+          "name": "Davinia Hernández-Leo",
+          "gender": "f",
+          "dept": "ICT Department",
+          "uni": "Universitat Pompeu Fabra",
+          "country": "ES",
+          "field": "soc"
+        }
+      ]
+    },
+    {
+      "title": "Ensuring Novelty and Transparency in Learning Resource-Recommendation Based on Deep Learning Techniques",
+      "type": "posterOrDemo",
+      "authors": [
+        {
+          "name": "Wael Alkhatib",
+          "gender": "m",
+          "dept": "Fachgebiet Multimedia Kommunikation",
+          "uni": "Technische Universität Darmstadt",
+          "country": "DE",
+          "field": "eng"
+        },
+        {
+          "name": "Eid Araache",
+          "gender": "m",
+          "dept": "Fachgebiet Multimedia Kommunikation",
+          "uni": "Technische Universität Darmstadt",
+          "country": "DE",
+          "field": "eng"
+        },
+        {
+          "name": "Christoph Rensing",
+          "gender": "m",
+          "dept": "Fachgebiet Multimedia Kommunikation",
+          "uni": "Technische Universität Darmstadt",
+          "country": "DE",
+          "field": "eng"
+        },
+        {
+          "name": "Steffen Schnitzer",
+          "gender": "m",
+          "dept": "Fachgebiet Multimedia Kommunikation",
+          "uni": "Technische Universität Darmstadt",
+          "country": "DE",
+          "field": "eng"
+        }
+      ]
+    },
+    {
+      "title": "Exploring Math Achievement Through Gamified Virtual Reality",
+      "type": "posterOrDemo",
+      "authors": [
+        {
+          "name": "Espen Stranger-Johannessen",
+          "gender": "m",
+          "dept": "",
+          "uni": "Inland Norway University of Applied Sciences",
+          "country": "NO",
+          "field": "eng"
+        }
+      ]
+    },
+    {
+      "title": "Observational Scaffolding for Learning Analytics: A Methodological Proposal",
+      "type": "posterOrDemo",
+      "authors": [
+        {
+          "name": "Jairo Rodríguez-Medina",
+          "gender": "m",
+          "dept": "Center for Transdisciplinary Research in Education",
+          "uni": "University of Valladolid",
+          "country": "ES",
+          "field": "soc"
+        },
+        {
+          "name": "María Jesús Rodríguez-Triana",
+          "gender": "f",
+          "dept": "School of Digital Technologies",
+          "uni": "Tallinn University",
+          "country": "EE",
+          "field": "soc"
+        },
+        {
+          "name": "Maka Eradze",
+          "gender": "f",
+          "dept": "School of Digital Technologies",
+          "uni": "Tallinn University",
+          "country": "EE",
+          "field": "soc"
+        },
+        {
+          "name": "Sara García-Sastre",
+          "gender": "f",
+          "dept": "GSIC-EMIC Research Group",
+          "uni": "University of Valladolid",
+          "country": "ES",
+          "field": "soc"
+        }
+      ]
+    },
+    {
+      "title": "Cohesion-Centered Analysis of Sociograms for Online Communities and Courses Using ReaderBench",
+      "type": "posterOrDemo",
+      "authors": [
+        {
+          "name": "Mihai Dascalu",
+          "gender": "m",
+          "dept": "",
+          "uni": "University Politehnica of Bucharest",
+          "country": "RO",
+          "field": "eng"
+        },
+        {
+          "name": "Maria-Dorinela Sirbu",
+          "gender": "f",
+          "dept": "",
+          "uni": "University Politehnica of Bucharest",
+          "country": "RO",
+          "field": "eng"
+        },
+        {
+          "name": "Maria-Dorinela Sirbu",
+          "gender": "f",
+          "dept": "",
+          "uni": "University Politehnica of Bucharest",
+          "country": "RO",
+          "field": "eng"
+        },
+        {
+          "name": "Gabriel Gutu-Robu",
+          "gender": "m",
+          "dept": "",
+          "uni": "University Politehnica of Bucharest",
+          "country": "RO",
+          "field": "eng"
+        },
+        {
+          "name": "Stefan Ruseti",
+          "gender": "m",
+          "dept": "",
+          "uni": "University Politehnica of Bucharest",
+          "country": "RO",
+          "field": "eng"
+        },
+        {
+          "name": "Scott A. Crossley",
+          "gender": "m",
+          "dept": "",
+          "uni": "Department of Applied Linguistics/ESL",
+          "country": "US",
+          "field": "soc"
+        },
+        {
+          "name": "Stefan Trausan-Matu",
+          "gender": "m",
+          "dept": "Department of Computer Science",
+          "uni": "University Politehnica of Bucharest",
+          "country": "RO",
+          "field": "eng"
+        }
+      ]
+    },
+    {
+      "title": "A Digital Ecosystem for Digital Competences: The CRISS Project Demo",
+      "type": "posterOrDemo",
+      "authors": [
+        {
+          "name": "Manolis Mavrikis",
+          "gender": "m",
+          "dept": "UCL Knowledge Lab",
+          "uni": "University College London",
+          "country": "UK",
+          "field": "soc"
+        },
+        {
+          "name": "Lourdes Guardia",
+          "gender": "f",
+          "dept": "",
+          "uni": "Universitat Oberta de Catalunya",
+          "country": "ES",
+          "field": "soc"
+        },
+        {
+          "name": "Lourdes Guardia",
+          "gender": "f",
+          "dept": "",
+          "uni": "Universitat Oberta de Catalunya",
+          "country": "ES",
+          "field": "soc"
+        },
+        {
+          "name": "Mutlu Cukurova",
+          "gender": "m",
+          "dept": "UCL Knowledge Lab",
+          "uni": "University College London",
+          "country": "UK",
+          "field": "soc"
+        },
+        {
+          "name": "Marcelo Maina",
+          "gender": "m",
+          "dept": "",
+          "uni": "Universitat Oberta de Catalunya",
+          "country": "ES",
+          "field": "soc"
+        }
+      ]
+    },
+    {
+      "title": "Towards Generation of Ambiguous Situations in Virtual Environments for Training",
+      "type": "posterOrDemo",
+      "authors": [
+        {
+          "name": "Azzeddine Benabbou",
+          "gender": "m",
+          "dept": "Université de technologie de Compiègne",
+          "uni": "Sorbonne universités",
+          "country": "FR",
+          "field": "eng"
+        },
+        {
+          "name": "Domitile Lourdeaux",
+          "gender": "f",
+          "dept": "Université de technologie de Compiègne",
+          "uni": "Sorbonne universités",
+          "country": "FR",
+          "field": "eng"
+        },
+        {
+          "name": "Dominique Lenne",
+          "gender": "f",
+          "dept": "Université de technologie de Compiègne",
+          "uni": "Sorbonne universités",
+          "country": "FR",
+          "field": "eng"
+        }
+      ]
+    },
+    {
+      "title": "Digging for Gold: Motivating Users to Explore Alternative Search Interfaces",
+      "type": "posterOrDemo",
+      "authors": [
+        {
+          "name": "Angela Fessl",
+          "gender": "f",
+          "dept": "",
+          "uni": "Know-Center GmbH",
+          "country": "DE",
+          "field": "soc"
+        },
+        {
+          "name": "Alfred Wertner",
+          "gender": "m",
+          "dept": "",
+          "uni": "Know-Center GmbH",
+          "country": "DE",
+          "field": "soc"
+        },
+        {
+          "name": "Viktoria Pammer-Schindler",
+          "gender": "f",
+          "dept": "Institute for Interactive Systems and Data Science",
+          "uni": "Graz University of Technology",
+          "country": "AT",
+          "field": "eng"
+        }
+      ]
+    },
+    {
+      "title": "The Role of Ubiquitous Computing and the Internet of Things for Developing 21st Century Skills Among Learners: Experts’ Views",
+      "type": "posterOrDemo",
+      "authors": [
+        {
+          "name": "Olga Viberg",
+          "gender": "f",
+          "dept": "",
+          "uni": "KTH Royal Institute of Technology",
+          "country": "SE",
+          "field": "eng"
+        },
+        {
+          "name": "Anna Mavroudi",
+          "gender": "f",
+          "dept": "",
+          "uni": "KTH Royal Institute of Technology",
+          "country": "SE",
+          "field": "eng"
+        }
+      ]
+    },
+    {
+      "title": "An Exploratory Study on Student Engagement with Adaptive Notifications in Programming Courses",
+      "type": "posterOrDemo",
+      "authors": [
+        {
+          "name": "David Azcona",
+          "gender": "m",
+          "dept": "",
+          "uni": "Dublin City University",
+          "country": "IE",
+          "field": "eng"
+        },
+        {
+          "name": "I-Han Hsiao",
+          "gender": "f",
+          "dept": "",
+          "uni": "Arizona State University",
+          "country": "US",
+          "field": "eng"
+        },
+        {
+          "name": "Alan Smeaton",
+          "gender": "m",
+          "dept": "",
+          "uni": "Dublin City University",
+          "country": "IE",
+          "field": "eng"
+        }
+      ]
+    },
+    {
+      "title": "Instrumentation of Classrooms Using Synchronous Speech Transcription",
+      "type": "posterOrDemo",
+      "authors": [
+        {
+          "name": "Vincent Bettenfeld",
+          "gender": "m",
+          "dept": "LIUM-EIAH",
+          "uni": "Le Mans Université",
+          "country": "FR",
+          "field": "eng"
+        },
+        {
+          "name": "Salima Mdhaffar",
+          "gender": "f",
+          "dept": "LIUM-LST",
+          "uni": "Le Mans Université",
+          "country": "FR",
+          "field": "soc"
+        },
+        {
+          "name": "Christophe Choquet",
+          "gender": "m",
+          "dept": "LIUM-EIAH",
+          "uni": "Le Mans Université",
+          "country": "FR",
+          "field": "eng"
+        },
+        {
+          "name": "Claudine Piau-Toffolon",
+          "gender": "f",
+          "dept": "LIUM-EIAH",
+          "uni": "Le Mans Université",
+          "country": "FR",
+          "field": "eng"
+        }
+      ]
+    },
+    {
+      "title": "A Programming Language Independent Platform for Algorithm Learning",
+      "type": "posterOrDemo",
+      "authors": [
+        {
+          "name": "Bruno Burke",
+          "gender": "m",
+          "dept": "Wandelwerk Quality Management Unit",
+          "uni": "Münster University of Applied Sciences",
+          "country": "DE",
+          "field": "eng"
+        },
+        {
+          "name": "Peter Weßeler",
+          "gender": "m",
+          "dept": "Department Electrical Engineering and Computer Science",
+          "uni": "Münster University of Applied Sciences",
+          "country": "DE",
+          "field": "eng"
+        },
+        {
+          "name": "Jürgen te Vrugt",
+          "gender": "m",
+          "dept": "Department Electrical Engineering and Computer Science",
+          "uni": "Münster University of Applied Sciences",
+          "country": "DE",
+          "field": "eng"
+        }
+      ]
+    },
+    {
+      "title": "Using Thematic Analysis to Understand Students’ Learning of Soft Skills from Videos",
+      "type": "posterOrDemo",
+      "authors": [
+        {
+          "name": "Björn Sjödén",
+          "gender": "m",
+          "dept": "",
+          "uni": "Halmstad University",
+          "country": "SE",
+          "field": "soc"
+        },
+        {
+          "name": "Vania Dimitrova",
+          "gender": "f",
+          "dept": "School of Computing",
+          "uni": "University of Leeds",
+          "country": "UK",
+          "field": "eng"
+        },
+        {
+          "name": "Antonija Mitrovic",
+          "gender": "f",
+          "dept": "Intelligent Computer Tutoring Group",
+          "uni": "University of Canterbury",
+          "country": "NZ",
+          "field": "eng"
+        }
+      ]
+    },
+    {
+      "title": "Formalizing CSCL Scripts with Logic and Constraints",
+      "type": "posterOrDemo",
+      "authors": [
+        {
+          "name": "Andreas Papasalouros",
+          "gender": "m",
+          "dept": "Department of Mathematics",
+          "uni": "University of the Aegean",
+          "country": "GR",
+          "field": "eng"
+        }
+      ]
     }
   ]
 }
