@@ -247,7 +247,7 @@ class AuthorsModel {
 
     // loop through papers
     _.forEach(
-      dataModel.data,
+      dataModel.getDataForYear(2017),
       (paper) => {
         
         // extract authors

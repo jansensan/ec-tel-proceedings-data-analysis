@@ -8,7 +8,7 @@ class PapersModel {
   }
 
   getPapers() {
-    let papers = dataModel.data;
+    let papers = dataModel.getDataForYear(2017);
     if (papers) {
       papers = _.sortBy(papers, 'title');
     } else {

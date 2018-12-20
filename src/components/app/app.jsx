@@ -30,7 +30,7 @@ export default class App extends Component {
     };
 
     // pull data
-    dataModel.fetch();
+    dataModel.fetch(2017);
 
     // listen to signals
     authorsModel.updated.add(this.update, this);

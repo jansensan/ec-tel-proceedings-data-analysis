@@ -25,7 +25,7 @@ export default class GenderDistOverview extends Component {
     return (
       <div className="gender-dist-overview">
         {
-          (dataModel.data.length > 0) &&
+          (dataModel.hasData()) &&
           <div className="generalities">
             <ul>
               <li>

@@ -33,7 +33,7 @@ export default class Overview extends Component {
         </div>
 
         {
-          (dataModel.data.length > 0) &&
+          (dataModel.hasData()) &&
           <div className="generalities">
             <ul>
               <li>
