@@ -42,7 +42,7 @@ class AuthorsModel {
     countries = _.sortBy(countries);
 
     // create dist
-    let uniqueCountries = this.getUniqueCountries();
+    let uniqueCountries = this.getUniqueCountries(year);
     let dist = [];
     _.forEach(
       uniqueCountries,
