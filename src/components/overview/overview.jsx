@@ -51,8 +51,6 @@ export default class Overview extends Component {
                 <span className="value-label">Number of universities/research centers/etc. represented:</span>
                 <span className="value-display">{authorsModel.getUniqueUniversities(this.props.year).length}</span>
               </li>
-              {/* 
-               */}
             </ul>
           </div>
         }
