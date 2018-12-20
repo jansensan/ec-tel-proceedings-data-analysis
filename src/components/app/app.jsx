@@ -30,7 +30,9 @@ export default class App extends Component {
     };
 
     // pull data
+    // dataModel.fetch(2016);
     dataModel.fetch(2017);
+    dataModel.fetch(2018);
 
     // listen to signals
     authorsModel.updated.add(this.update, this);
@@ -43,8 +45,8 @@ export default class App extends Component {
       <div className="app">
         <header>
           <div className="centered">
-            <div className="title">EC-TEL 2017</div>
-            <div className="description">12th European Conference on Technology Enhanced Learning</div>
+            <div className="title">EC-TEL</div>
+            <div className="description">European Conference on Technology Enhanced Learning</div>
           </div>
         </header>
 
@@ -53,10 +55,18 @@ export default class App extends Component {
 
           <section>
             <h2>Overview</h2>
-            <Overview />
+            <Overview
+              conferenceTitle="13th European Conference on Technology Enhanced Learning, EC-TEL 2018, Leeds, UK, September 3-5, 2018"
+              year="2018"
+              />
+            <Overview
+              conferenceTitle="12th European Conference on Technology Enhanced Learning, EC-TEL 2017, Tallinn, Estonia, September 12–15, 2017"
+              year="2017"
+            />
             <hr/>
           </section>
 
+          {/*
           <section>
             <h2>Location Diversity</h2>
 
@@ -145,12 +155,13 @@ export default class App extends Component {
             }
             <hr/>
           </section>
+           */}
         </div>
 
         <footer>
           <div className="centered">
-          <div className="title">EC-TEL 2017</div>
-            <div className="description">12th European Conference on Technology Enhanced Learning</div>
+          <div className="title">EC-TEL</div>
+            <div className="description">European Conference on Technology Enhanced Learning</div>
           </div>
         </footer>
       </div>

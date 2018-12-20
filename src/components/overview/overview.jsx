@@ -15,8 +15,6 @@ export default class Overview extends Component {
     this.state = {
       isComponentMounted: false,
     };
-
-    dataModel.updated.add(this.onDataUpdated, this);
   }
 
   // react methods definitions
@@ -26,32 +24,35 @@ export default class Overview extends Component {
 
         <div className="cover">
           <img
-            src="images/ec-tel-proceedings-cover-2017.jpg"
-            alt="EC-TEL 2017 Proceedings Cover Page"
-            title="EC-TEL 2017 Proceedings Cover Page"
+            src={this.getImageURL()}
+            alt={this.getImageAlt()}
+            title={this.getImageAlt()}
           />
         </div>
 
         {
           (dataModel.hasData()) &&
           <div className="generalities">
+            <p className="conference-title">{this.props.conferenceTitle}</p>
             <ul>
               <li>
                 <span className="value-label">Number of papers:</span>
-                <span className="value-display">{papersModel.getPapers().length}</span>
+                <span className="value-display">{papersModel.getNumPapers(this.getYearProp())}</span>
               </li>
               <li>
                 <span className="value-label">Number of authors:</span>
-                <span className="value-display">{authorsModel.authors.length}</span>
+                <span className="value-display">{authorsModel.getNumAuthors(this.props.year)}</span>
               </li>
               <li>
                 <span className="value-label">Number of countries represented:</span>
-                <span className="value-display">{authorsModel.getUniqueCountries().length}</span>
+                <span className="value-display">{authorsModel.getUniqueCountries(this.props.year).length}</span>
               </li>
               <li>
                 <span className="value-label">Number of universities/research centers/etc. represented:</span>
-                <span className="value-display">{authorsModel.getUniqueUniversities().length}</span>
+                <span className="value-display">{authorsModel.getUniqueUniversities(this.props.year).length}</span>
               </li>
+              {/* 
+               */}
             </ul>
           </div>
         }
@@ -67,7 +68,15 @@ export default class Overview extends Component {
 
 
   // methods definitions
-  onDataUpdated() {
-    
+  getImageAlt() {
+    return 'EC-TEL ' + this.props.year + ' Proceedings Cover Page';
+  }
+
+  getImageURL() {
+    return 'images/ec-tel-proceedings-cover-' + this.props.year + '.jpg';
+  }
+
+  getYearProp() {
+    return parseInt(this.props.year, 10);
   }
 }
