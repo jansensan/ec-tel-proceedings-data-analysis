@@ -113,7 +113,6 @@ export default class App extends Component {
             </section>
           </section>
 
-          {/*
           <section>
             <h2>Interdisciplinarity</h2>
 
@@ -123,13 +122,16 @@ export default class App extends Component {
               <hr/>
             </section>
 
+          {/*
             <section>
               <h3>Gender Distribution per Field</h3>
               <GenderDistPerFieldChart />
               <hr/>
             </section>
+          */}
           </section>
 
+          {/*
           <section>
             <h2>Papers</h2>
             {
