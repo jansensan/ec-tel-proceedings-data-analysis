@@ -4,7 +4,6 @@ import DatasetFactory from '../../services/dataset-factory';
 
 class GenderDistributionModel {
   constructor() {
-    
     this.data = {
       labels: ['2018', '2017'],
       datasets: [

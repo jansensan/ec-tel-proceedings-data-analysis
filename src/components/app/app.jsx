@@ -99,14 +99,14 @@ export default class App extends Component {
               <hr/>
             </section>
 
-          {/*
             <section>
               <h3>Women as First Author</h3>
-              <p>Papers in which women are the first name in the author list.</p>
+              <p>Papers in which a woman's name is the first name in the author list.</p>
               <WomenFirstAuthorChart />
               <hr/>
             </section>
 
+          {/*
             <section>
               <h3>Gender Diversity by Paper</h3>
               <GenderDiversityChart />
