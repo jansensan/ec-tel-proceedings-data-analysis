@@ -1,40 +1,20 @@
-// constants
-import ChartColors from '../../constants/chart-colors';
+// services
+import DatasetFactory from '../../services/dataset-factory';
 
 
 class GenderDistPerFieldModel {
   constructor() {
     this.data = {
-      labels: ['Engineering', 'Social Sciences'],
+      labels: ['2018', '2017'],
       datasets: [
-        {
-          label: 'Women',
-          backgroundColor: [ChartColors.ORANGE_TRANSPARENT, ChartColors.ORANGE_TRANSPARENT],
-          borderColor: [ChartColors.ORANGE, ChartColors.ORANGE],
-          borderWidth: 1,
-          hoverBackgroundColor: [ChartColors.ORANGE, ChartColors.ORANGE],
-          hoverBorderColor: [ChartColors.ORANGE, ChartColors.ORANGE],
-          data: []
-        },
-        {
-          label: 'Men',
-          backgroundColor: [ChartColors.GREEN_TRANSPARENT, ChartColors.GREEN_TRANSPARENT],
-          borderColor: [ChartColors.GREEN, ChartColors.GREEN],
-          borderWidth: 1,
-          hoverBackgroundColor: [ChartColors.GREEN, ChartColors.GREEN],
-          hoverBorderColor: [ChartColors.GREEN, ChartColors.GREEN],
-          data: []
-        }
+        DatasetFactory.createGreenDataset('2018'),
+        DatasetFactory.createBlueDataset('2017'),
       ]
     };
     this.options = {
       tooltips: {
         callbacks: {
-          label: function (tooltipItem, data) {
-            let gender = data.datasets[tooltipItem.datasetIndex].label
-            let val = data.datasets[tooltipItem.datasetIndex].data[tooltipItem.index];
-            return gender + ': ' + _.round(val, 1) + '%';
-          }
+          label: this.getTooltipLabel.bind(this)
         }
       },
       scales: {
@@ -52,11 +32,41 @@ class GenderDistPerFieldModel {
     }
   }
 
-  updateData(engDist, socDist) {
-    // TODO: ensure it's array
-    // TODO: ensure it's array with length of 2
-    this.data.datasets[0].data = engDist;
-    this.data.datasets[1].data = socDist;
+  getTooltipLabel(tooltipItem, data) {
+    let val = data.datasets[tooltipItem.datasetIndex].data[tooltipItem.index];
+    let year = data.datasets[tooltipItem.datasetIndex].label;
+    let label = _.round(val, 1) + '%'
+      + ' (' + year + ')'
+
+    return label;
+  }
+
+  updateData(newData) {
+    // set labels
+    this.data.labels = [
+      'Women in Engineering',
+      'Men in Engineering',
+      'Women in Social Sciences',
+      'Men in Social Sciences',
+    ];
+
+    // set data
+
+    // 2018
+    this.data.datasets[0].data = [
+      newData[2018].eng.f * 100,
+      newData[2018].eng.m * 100,
+      newData[2018].soc.f * 100,
+      newData[2018].eng.m * 100,
+    ];
+
+    // 2017
+    this.data.datasets[1].data = [
+      newData[2017].eng.f * 100,
+      newData[2017].eng.m * 100,
+      newData[2017].soc.f * 100,
+      newData[2017].eng.m * 100,
+    ];
   }
 }
 

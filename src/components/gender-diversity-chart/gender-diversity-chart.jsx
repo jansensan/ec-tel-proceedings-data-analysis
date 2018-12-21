@@ -26,7 +26,7 @@ export default class GenderDiversityChart extends Component {
     return (
       <div className="gender-diversity-chart">
         {
-          (this.state.hasData > 0) &&
+          (this.state.hasData) &&
           <Bar
             data={genderDiversityModel.data}
             options={genderDiversityModel.options}

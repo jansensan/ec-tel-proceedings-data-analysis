@@ -122,13 +122,11 @@ export default class App extends Component {
               <hr/>
             </section>
 
-          {/*
             <section>
               <h3>Gender Distribution per Field</h3>
               <GenderDistPerFieldChart />
               <hr/>
             </section>
-          */}
           </section>
 
           {/*

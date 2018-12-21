@@ -3,6 +3,7 @@ import {Bar} from 'react-chartjs-2';
 
 // models
 import authorsModel from '../../models/authors-model';
+import dataModel from '../../models/data-model';
 import genderDistPerFieldModel from './gender-dist-per-field-model';
 
 // styles
@@ -16,7 +17,7 @@ export default class GenderDistPerFieldChart extends Component {
       hasData: false, 
       isComponentMounted: false
     };
-    authorsModel.updated.add(this.onDataObtained, this);
+    dataModel.updated.add(this.onDataUpdated, this);
   }
 
 
@@ -25,7 +26,7 @@ export default class GenderDistPerFieldChart extends Component {
     return (
       <div className="gender-dist-per-field-chart">
         {
-          (this.state.hasData > 0) &&
+          (this.state.hasData) &&
           <Bar
             data={genderDistPerFieldModel.data}
             options={genderDistPerFieldModel.options}
@@ -44,12 +45,16 @@ export default class GenderDistPerFieldChart extends Component {
 
 
   // methods definitions
-  onDataObtained() {
-    let dist = authorsModel.getGenderDistPerField();
-    genderDistPerFieldModel.updateData(
-      [dist.eng.f * 100, dist.soc.f * 100],
-      [dist.eng.m * 100, dist.soc.m * 100]
-    );
+  onDataUpdated() {
+    if (!dataModel.hasData()) {
+      return;
+    }
+
+    genderDistPerFieldModel.updateData({
+      2017: authorsModel.getGenderDistPerField(2017),
+      2018: authorsModel.getGenderDistPerField(2018),
+    });
+
     this.setState({
       hasData: true
     });
