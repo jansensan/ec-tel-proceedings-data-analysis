@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {Bar} from 'react-chartjs-2';
+import {HorizontalBar} from 'react-chartjs-2';
 
 // models
 import authorsModel from '../../models/authors-model';
@@ -26,7 +26,7 @@ export default class UniDistributionChart extends Component {
       <div className="uni-distribution-chart">
         {
           (this.state.hasData) &&
-          <Bar
+          <HorizontalBar
             data={uniDistModel.data}
             options={uniDistModel.options}
             redraw={true}
@@ -45,7 +45,15 @@ export default class UniDistributionChart extends Component {
 
   // methods definitions
   onDataUpdated() {
-    uniDistModel.updateData(authorsModel.getUniversityDistribution());
+    if (!dataModel.hasData()) {
+      return;
+    }
+
+    uniDistModel.updateData({
+      2017: authorsModel.getUniversityDistribution(2017),
+      2018: authorsModel.getUniversityDistribution(2018)
+    });
+
     this.setState({
       hasData: true
     });

@@ -30,7 +30,9 @@ export default class App extends Component {
     };
 
     // pull data
-    dataModel.fetch();
+    // dataModel.fetch(2016);
+    dataModel.fetch(2017);
+    dataModel.fetch(2018);
 
     // listen to signals
     authorsModel.updated.add(this.update, this);
@@ -43,8 +45,8 @@ export default class App extends Component {
       <div className="app">
         <header>
           <div className="centered">
-            <div className="title">EC-TEL 2017</div>
-            <div className="description">12th European Conference on Technology Enhanced Learning</div>
+            <div className="title">EC-TEL</div>
+            <div className="description">European Conference on Technology Enhanced Learning</div>
           </div>
         </header>
 
@@ -53,7 +55,14 @@ export default class App extends Component {
 
           <section>
             <h2>Overview</h2>
-            <Overview />
+            <Overview
+              conferenceTitle="13th European Conference on Technology Enhanced Learning, EC-TEL 2018, Leeds, UK, September 3-5, 2018"
+              year="2018"
+              />
+            <Overview
+              conferenceTitle="12th European Conference on Technology Enhanced Learning, EC-TEL 2017, Tallinn, Estonia, September 12–15, 2017"
+              year="2017"
+            />
             <hr/>
           </section>
 
@@ -62,12 +71,14 @@ export default class App extends Component {
 
             <section>
               <h3>Country Distribution</h3>
+              <p>Percentage of authors per country, sorted in descending order, based on 2018's data.</p>
               <CountryDistributionChart />
               <hr/>
             </section>
 
             <section>
               <h3>Universities Distribution</h3>
+              <p>number of authors per university, sorted in descending order, based on 2018's data.</p>
               <UniDistributionChart />
               <hr/>
             </section>
@@ -77,7 +88,7 @@ export default class App extends Component {
             <h2>Gender Diversity</h2>
 
             <section>
-              <h3>Some Statistics</h3>
+              <h3>Some Numbers</h3>
               <GenderDistOverview />
               <hr/>
             </section>
@@ -90,7 +101,7 @@ export default class App extends Component {
 
             <section>
               <h3>Women as First Author</h3>
-              <p>Papers in which women are the first name in the author list.</p>
+              <p>Papers in which a woman's name is the first name in the author list.</p>
               <WomenFirstAuthorChart />
               <hr/>
             </section>
@@ -118,6 +129,7 @@ export default class App extends Component {
             </section>
           </section>
 
+          {/*
           <section>
             <h2>Papers</h2>
             {
@@ -145,12 +157,13 @@ export default class App extends Component {
             }
             <hr/>
           </section>
+           */}
         </div>
 
         <footer>
           <div className="centered">
-          <div className="title">EC-TEL 2017</div>
-            <div className="description">12th European Conference on Technology Enhanced Learning</div>
+          <div className="title">EC-TEL</div>
+            <div className="description">European Conference on Technology Enhanced Learning</div>
           </div>
         </footer>
       </div>

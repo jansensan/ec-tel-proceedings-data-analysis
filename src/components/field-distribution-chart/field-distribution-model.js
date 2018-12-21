@@ -1,36 +1,23 @@
 import _ from 'lodash';
 
-// constants
-import ChartColors from '../../constants/chart-colors';
+// services
+import DatasetFactory from '../../services/dataset-factory';
 
 
 class FieldDistributionModel {
   constructor() {
     this.data = {
-      labels: ['Engineering', 'Social Sciences'],
+      labels: ['2018', '2017'],
       datasets: [
-        {
-          label: ['Field distribution chart'],
-          backgroundColor: [ChartColors.RED_TRANSPARENT, ChartColors.BLUE_TRANSPARENT],
-          borderColor: [ChartColors.RED, ChartColors.BLUE],
-          borderWidth: 1,
-          hoverBackgroundColor: [ChartColors.RED, ChartColors.BLUE],
-          hoverBorderColor: [ChartColors.RED, ChartColors.BLUE],
-          data: []
-        }
+        DatasetFactory.createGreenDataset('2018'),
+        DatasetFactory.createBlueDataset('2017'),
       ]
     };
     this.options = {
       tooltips: {
         callbacks: {
-          label: function (tooltipItem, data) {
-            let val = data.datasets[tooltipItem.datasetIndex].data[tooltipItem.index];
-            return _.round(val, 1) + '%';
-          }
+          label: this.getTooltipLabel.bind(this)
         }
-      },
-      legend: {
-        display: false
       },
       scales: {
         yAxes: [{
@@ -47,10 +34,30 @@ class FieldDistributionModel {
     }
   }
 
-  updateData(newValue) {
-    // TODO: ensure it's array
-    // TODO: ensure it's array with length of 2
-    this.data.datasets[0].data = newValue;
+  getTooltipLabel(tooltipItem, data) {
+    let tooltipData = data.datasets[tooltipItem.datasetIndex].data;
+    let val = tooltipData[tooltipItem.index];
+    let label = _.round(val, 1) + '%'
+      + ' (' + this.data.datasets[tooltipItem.datasetIndex].label + ')'
+
+    return label;
+  }
+
+  updateData(newData) {
+    // set labels
+    this.data.labels = ['Engineering', 'Social Sciences'],
+
+    // set data
+    this.data.datasets[0].data = [
+      newData[2018].eng * 100,
+      newData[2018].soc * 100,
+    ];
+    
+    // 2017
+    this.data.datasets[1].data = [
+      newData[2017].eng * 100,
+      newData[2017].soc * 100,
+    ];
   }
 }
 
