@@ -84,12 +84,11 @@ export default class App extends Component {
             </section>
           </section>
 
-          {/*
           <section>
             <h2>Gender Diversity</h2>
 
             <section>
-              <h3>Some Statistics</h3>
+              <h3>Some Numbers</h3>
               <GenderDistOverview />
               <hr/>
             </section>
@@ -100,6 +99,7 @@ export default class App extends Component {
               <hr/>
             </section>
 
+          {/*
             <section>
               <h3>Women as First Author</h3>
               <p>Papers in which women are the first name in the author list.</p>
@@ -112,8 +112,10 @@ export default class App extends Component {
               <GenderDiversityChart />
               <hr/>
             </section>
+          */}
           </section>
 
+          {/*
           <section>
             <h2>Interdisciplinarity</h2>
 

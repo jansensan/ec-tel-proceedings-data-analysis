@@ -25,24 +25,60 @@ export default class GenderDistOverview extends Component {
     return (
       <div className="gender-dist-overview">
         {
-          (dataModel.hasData()) &&
+          (this.state.hasData) &&
           <div className="generalities">
             <ul>
               <li>
                 <span className="value-label">Number of authors:</span>
-                <span className="value-display">{authorsModel.authors.length}</span>
+                <ul>
+                  <li>
+                    <span className="value-label">2018:</span>
+                    <span className="value-display">{authorsModel.getNumAuthors(2018)}</span>
+                  </li>
+                  <li>
+                    <span className="value-label">2017:</span>
+                    <span className="value-display">{authorsModel.getNumAuthors(2017)}</span>
+                  </li>
+                </ul>
               </li>
               <li>
                 <span className="value-label">Number of women authors:</span>
-                <span className="value-display">{authorsModel.getFemaleAuthors().length}</span>
+                <ul>
+                  <li>
+                    <span className="value-label">2018:</span>
+                    <span className="value-display">{authorsModel.getFemaleAuthors(2018).length}</span>
+                  </li>
+                  <li>
+                    <span className="value-label">2017:</span>
+                    <span className="value-display">{authorsModel.getFemaleAuthors(2017).length}</span>
+                  </li>
+                </ul>
               </li>
               <li>
                 <span className="value-label">Number of men authors:</span>
-                <span className="value-display">{authorsModel.getMaleAuthors().length}</span>
+                <ul>
+                  <li>
+                    <span className="value-label">2018:</span>
+                    <span className="value-display">{authorsModel.getMaleAuthors(2018).length}</span>
+                  </li>
+                  <li>
+                    <span className="value-label">2017:</span>
+                    <span className="value-display">{authorsModel.getMaleAuthors(2017).length}</span>
+                  </li>
+                </ul>
               </li>
               <li>
                 <span className="value-label">Mean representation of women per paper:</span>
-                <span className="value-display">{this.state.womenRepresentationMean}</span>
+                <ul>
+                  <li>
+                    <span className="value-label">2018:</span>
+                    <span className="value-display">{this.state.womenMean2018}</span>
+                  </li>
+                  <li>
+                    <span className="value-label">2017:</span>
+                    <span className="value-display">{this.state.womenMean2017}</span>
+                  </li>
+                </ul>
               </li>
             </ul>
           </div>
@@ -60,10 +96,17 @@ export default class GenderDistOverview extends Component {
 
   // methods definitions
   onDataUpdated() {
-    let mean = papersModel.getWomenMeanRepresentation();
+    if (!dataModel.hasData()) {
+      return;
+    }
+
+    let mean2018 = papersModel.getWomenMeanRepresentation(2018);
+    let mean2017 = papersModel.getWomenMeanRepresentation(2017);
+
     this.setState({
-      womenRepresentationMean: _.round(mean, 2),
-      womenRepresentationPercentage: _.round(mean * 100, 1)
+      womenMean2018: _.round(mean2018, 2),
+      womenMean2017: _.round(mean2017, 2),
+      hasData: true
     });
   }
 }

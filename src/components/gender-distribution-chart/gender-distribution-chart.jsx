@@ -3,6 +3,7 @@ import {Bar} from 'react-chartjs-2';
 
 // models
 import authorsModel from '../../models/authors-model';
+import dataModel from '../../models/data-model';
 import genderDistModel from './gender-distribution-model';
 
 // styles
@@ -16,7 +17,7 @@ export default class GenderDistributionChart extends Component {
       hasData: false, 
       isComponentMounted: false
     };
-    authorsModel.updated.add(this.onDataObtained, this);
+    dataModel.updated.add(this.onDataUpdated, this);
   }
 
 
@@ -25,7 +26,7 @@ export default class GenderDistributionChart extends Component {
     return (
       <div className="gender-distribution-chart">
         {
-          (this.state.hasData > 0) &&
+          (this.state.hasData) &&
           <Bar
             data={genderDistModel.data}
             options={genderDistModel.options}
@@ -44,12 +45,16 @@ export default class GenderDistributionChart extends Component {
 
 
   // methods definitions
-  onDataObtained() {
-    let dist = authorsModel.getGenderDistribution();
-    genderDistModel.updateData([
-      dist.f * 100,
-      dist.m * 100
-    ]);
+  onDataUpdated() {
+    if (!dataModel.hasData()) {
+      return;
+    }
+
+    genderDistModel.updateData({
+      2017: authorsModel.getGenderDistribution(2017),
+      2018: authorsModel.getGenderDistribution(2018)
+    });
+
     this.setState({
       hasData: true
     });
