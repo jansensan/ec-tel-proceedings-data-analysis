@@ -3,30 +3,17 @@ import _ from 'lodash';
 // constants
 import ChartColors from '../../constants/chart-colors';
 
+// services
+import DatasetFactory from '../../services/dataset-factory';
+
 
 class CountryDistributionModel {
   constructor() {
     this.data = {
       labels: [],
       datasets: [
-        {
-          label: '2018',
-          backgroundColor: ChartColors.GREEN_TRANSPARENT,
-          borderColor: ChartColors.GREEN,
-          borderWidth: 1,
-          hoverBackgroundColor: ChartColors.GREEN,
-          hoverBorderColor: ChartColors.GREEN,
-          data: []
-        },
-        {
-          label: '2017',
-          backgroundColor: ChartColors.BLUE_TRANSPARENT,
-          borderColor: ChartColors.BLUE,
-          borderWidth: 1,
-          hoverBackgroundColor: ChartColors.BLUE,
-          hoverBorderColor: ChartColors.BLUE,
-          data: []
-        }
+        DatasetFactory.createGreenDataset('2018'),
+        DatasetFactory.createBlueDataset('2017'),
       ]
     };
     this.options = {
@@ -54,10 +41,9 @@ class CountryDistributionModel {
   }
 
   updateData(newData) {
-    let countries = [];
-
     // loop through each year
     // to extract a list of unique countries
+    let countries = [];
     _.forEach(
       newData,
       (year) => {
@@ -69,6 +55,7 @@ class CountryDistributionModel {
             countries.push(country.name);
           }
         );
+
       }
     );
     
