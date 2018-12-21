@@ -7,15 +7,16 @@ let DataService = {
 };
 export default DataService;
 
+
 // public methods definitions
-function fetch() {
+function fetch(url) {
   DataService.isFetching = true;
 
   return new Promise((resolve, reject) => {
     let request = new XMLHttpRequest();
     request.onload = onRequestCompleted;
     request.onerror = onRequestFailed;
-    request.open('GET', 'data/ec-tel-2017.json', true);
+    request.open('GET', url, true);
     request.send();
 
     function onRequestCompleted() {

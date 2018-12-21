@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import {Bar} from 'react-chartjs-2';
 
 // models
-import authorsModel from '../../models/authors-model';
+import dataModel from '../../models/data-model';
 import genderDiversityModel from './gender-diversity-model';
 import papersModel from '../../models/papers-model';
 
@@ -17,7 +17,7 @@ export default class GenderDiversityChart extends Component {
       hasData: false, 
       isComponentMounted: false
     };
-    authorsModel.updated.add(this.onDataObtained, this);
+    dataModel.updated.add(this.onDataUpdated, this);
   }
 
 
@@ -26,7 +26,7 @@ export default class GenderDiversityChart extends Component {
     return (
       <div className="gender-diversity-chart">
         {
-          (this.state.hasData > 0) &&
+          (this.state.hasData) &&
           <Bar
             data={genderDiversityModel.data}
             options={genderDiversityModel.options}
@@ -45,17 +45,34 @@ export default class GenderDiversityChart extends Component {
 
 
   // methods definitions
-  onDataObtained() {
-    let numPapersMenAuthors = papersModel.getNumPapersWithOnlyMenAuthors();
-    let numPapersWomenAuthors = papersModel.getNumPapersWithOnlyWomenAuthors();
-    let numPapers = papersModel.getPapers().length;
-    let numRemainingAuthors = numPapers - numPapersMenAuthors - numPapersWomenAuthors;
+  onDataUpdated() {
+    if (!dataModel.hasData()) {
+      return;
+    }
 
-    genderDiversityModel.updateData([
-      (numPapersWomenAuthors / numPapers) * 100,
-      (numPapersMenAuthors / numPapers) * 100,
-      (numRemainingAuthors / numPapers) * 100
-    ]);
+    let numPapersOnlyMen2018 = papersModel.getNumPapersWithOnlyMenAuthors(2018);
+    let numPapersOnlyWomen2018 = papersModel.getNumPapersWithOnlyWomenAuthors(2018);
+    let numPapers2018 = papersModel.getNumPapers(2018);
+    let numRemaining2018 = numPapers2018 - numPapersOnlyMen2018 - numPapersOnlyWomen2018;
+
+    let numPapersOnlyMen2017 = papersModel.getNumPapersWithOnlyMenAuthors(2017);
+    let numPapersOnlyWomen2017 = papersModel.getNumPapersWithOnlyWomenAuthors(2017);
+    let numPapers2017 = papersModel.getNumPapers(2017);
+    let numRemaining2017 = numPapers2017 - numPapersOnlyMen2017 - numPapersOnlyWomen2017;
+
+    genderDiversityModel.updateData({
+      2017: {
+        f: numPapersOnlyWomen2017 / numPapers2017,
+        m: numPapersOnlyMen2017 / numPapers2017,
+        r: numRemaining2017 / numPapers2017,
+      },
+      2018: {
+        f: numPapersOnlyWomen2018 / numPapers2018,
+        m: numPapersOnlyMen2018 / numPapers2018,
+        r: numRemaining2018 / numPapers2018,
+      }
+    });
+
     this.setState({
       hasData: true
     });

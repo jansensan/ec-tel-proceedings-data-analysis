@@ -45,7 +45,14 @@ export default class CountryDistributionChart extends Component {
 
   // methods definitions
   onDataUpdated() {
-    countryDistModel.updateData(authorsModel.getCountryDistribution());
+    if (!dataModel.hasData()) {
+      return;
+    }
+    countryDistModel.updateData({
+      2017: authorsModel.getCountryDistribution(2017),
+      2018: authorsModel.getCountryDistribution(2018)
+    });
+
     this.setState({
       hasData: true
     });

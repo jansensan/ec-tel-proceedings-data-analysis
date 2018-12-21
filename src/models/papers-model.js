@@ -1,5 +1,9 @@
 import _ from 'lodash';
 
+// services
+import Log from '../services/log';
+
+// models
 import dataModel from './data-model';
 
 
@@ -7,8 +11,8 @@ class PapersModel {
   constructor() {
   }
 
-  getPapers() {
-    let papers = dataModel.data;
+  getPapers(year) {
+    let papers = dataModel.getDataForYear(year);
     if (papers) {
       papers = _.sortBy(papers, 'title');
     } else {
@@ -18,8 +22,12 @@ class PapersModel {
     return papers;
   }
 
-  getNumPapersWithWomenAsFirstAuthor() {
-    let papers = this.getPapers();
+  getNumPapers(year) {
+    return this.getPapers(year).length
+  }
+
+  getNumPapersWithWomenAsFirstAuthor(year) {
+    let papers = this.getPapers(year);
     let sum = 0;
     _.forEach(
       papers,
@@ -32,8 +40,8 @@ class PapersModel {
     return sum;
   }
 
-  getNumPapersWithOnlyMenAuthors() {
-    let papers = this.getPapers();
+  getNumPapersWithOnlyMenAuthors(year) {
+    let papers = this.getPapers(year);
     let sum = 0;
 
     _.forEach(
@@ -55,8 +63,8 @@ class PapersModel {
     return sum;
   }
 
-  getNumPapersWithOnlyWomenAuthors() {
-    let papers = this.getPapers();
+  getNumPapersWithOnlyWomenAuthors(year) {
+    let papers = this.getPapers(year);
     let sum = 0;
 
     _.forEach(
@@ -78,12 +86,8 @@ class PapersModel {
     return sum;
   }
 
-  getNumPapersWithAuthorsOfBothGenders() {
-
-  }
-
-  getWomenMeanRepresentation() {
-    let papers = this.getPapers();
+  getWomenMeanRepresentation(year) {
+    let papers = this.getPapers(year);
     let means = [];
     _.forEach(
       papers,

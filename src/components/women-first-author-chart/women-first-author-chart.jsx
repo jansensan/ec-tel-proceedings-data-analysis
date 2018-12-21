@@ -3,8 +3,8 @@ import {Bar} from 'react-chartjs-2';
 
 // models
 import dataModel from '../../models/data-model';
-import womenFirstAuthorModel from './women-first-author-model';
 import papersModel from '../../models/papers-model';
+import womenFirstAuthorModel from './women-first-author-model';
 
 // styles
 require('./women-first-author-chart.scss');
@@ -17,7 +17,7 @@ export default class WomenFirstAuthorChart extends Component {
       hasData: false, 
       isComponentMounted: false
     };
-    dataModel.updated.add(this.onDataObtained, this);
+    dataModel.updated.add(this.onDataUpdated, this);
   }
 
 
@@ -26,7 +26,7 @@ export default class WomenFirstAuthorChart extends Component {
     return (
       <div className="gender-distribution-chart">
         {
-          (this.state.hasData > 0) &&
+          (this.state.hasData) &&
           <Bar
             data={womenFirstAuthorModel.data}
             options={womenFirstAuthorModel.options}
@@ -45,14 +45,29 @@ export default class WomenFirstAuthorChart extends Component {
 
 
   // methods definitions
-  onDataObtained() {
-    let numPapers = papersModel.getPapers().length;
-    let numPaperWomen1stAuthor = papersModel.getNumPapersWithWomenAsFirstAuthor();
-    let numPaperMen1stAuthor = numPapers - numPaperWomen1stAuthor;
-    womenFirstAuthorModel.updateData([
-      (numPaperWomen1stAuthor / numPapers) * 100,
-      (numPaperMen1stAuthor / numPapers) * 100
-    ]);
+  onDataUpdated() {
+    if (!dataModel.hasData()) {
+      return;
+    }
+
+    let num2018Papers = papersModel.getNumPapers(2018);
+    let num2018Women1stAuthor = papersModel.getNumPapersWithWomenAsFirstAuthor(2018);
+    let num2018Men1stAuthor = num2018Papers - num2018Women1stAuthor;
+
+    let num2017Papers = papersModel.getNumPapers(2017);
+    let num2017Women1stAuthor = papersModel.getNumPapersWithWomenAsFirstAuthor(2017);
+    let num2017Men1stAuthor = num2017Papers - num2017Women1stAuthor;
+
+    womenFirstAuthorModel.updateData({
+      2017: {
+        f: num2017Women1stAuthor / num2017Papers,
+        m: num2017Men1stAuthor / num2017Papers,
+      },
+      2018: {
+        f: num2018Women1stAuthor / num2018Papers,
+        m: num2018Men1stAuthor / num2018Papers,
+      },
+    });
 
     this.setState({
       hasData: true

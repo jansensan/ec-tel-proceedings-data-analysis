@@ -1,34 +1,21 @@
-// constants
-import ChartColors from '../../constants/chart-colors';
+// services
+import DatasetFactory from '../../services/dataset-factory';
 
 
 class WomenFirstAuthorModel {
   constructor() {
     this.data = {
-      labels: ['Women', 'Men'],
+      labels: ['2018', '2017'],
       datasets: [
-        {
-          label: 'Gender distribution chart',
-          backgroundColor: [ChartColors.GREEN_TRANSPARENT, ChartColors.ORANGE_TRANSPARENT],
-          borderColor: [ChartColors.GREEN, ChartColors.ORANGE],
-          borderWidth: 1,
-          hoverBackgroundColor: [ChartColors.GREEN, ChartColors.ORANGE],
-          hoverBorderColor: [ChartColors.GREEN, ChartColors.ORANGE],
-          data: []
-        }
+        DatasetFactory.createGreenDataset('2018'),
+        DatasetFactory.createBlueDataset('2017'),
       ]
     };
     this.options = {
       tooltips: {
         callbacks: {
-          label: function (tooltipItem, data) {
-            let val = data.datasets[tooltipItem.datasetIndex].data[tooltipItem.index];
-            return _.round(val, 1) + '%';
-          }
+          label: this.getTooltipLabel.bind(this)
         }
-      },
-      legend: {
-        display: false
       },
       scales: {
         yAxes: [{
@@ -45,10 +32,32 @@ class WomenFirstAuthorModel {
     }
   }
 
-  updateData(newValues) {
-    // TODO: ensure it's array
-    // TODO: ensure it's array with length of 2
-    this.data.datasets[0].data = newValues;
+  getTooltipLabel(tooltipItem, data) {
+    let tooltipData = data.datasets[tooltipItem.datasetIndex].data;
+    let val = tooltipData[tooltipItem.index];
+    let label = _.round(val, 1) + '%'
+      + ' (' + this.data.datasets[tooltipItem.datasetIndex].label + ')'
+
+    return label;
+  }
+
+  updateData(newData) {
+    // set labels
+    this.data.labels = ['Women', 'Men'];
+
+    // set data
+
+    // 2018
+    this.data.datasets[0].data = [
+      newData[2018].f * 100,
+      newData[2018].m * 100,
+    ];
+    
+    // 2017
+    this.data.datasets[1].data = [
+      newData[2017].f * 100,
+      newData[2017].m * 100,
+    ];
   }
 }
 

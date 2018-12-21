@@ -3,6 +3,7 @@ import {Bar} from 'react-chartjs-2';
 
 // models
 import authorsModel from '../../models/authors-model';
+import dataModel from '../../models/data-model';
 import fieldDistModel from './field-distribution-model';
 
 // styles
@@ -16,7 +17,7 @@ export default class FieldDistributionChart extends Component {
       hasData: false, 
       isComponentMounted: false
     };
-    authorsModel.updated.add(this.onDataObtained, this);
+    dataModel.updated.add(this.onDataUpdated, this);
   }
 
 
@@ -25,7 +26,7 @@ export default class FieldDistributionChart extends Component {
     return (
       <div className="field-distribution-chart">
         {
-          (this.state.hasData > 0) &&
+          (this.state.hasData) &&
           <Bar
             data={fieldDistModel.data}
             options={fieldDistModel.options}
@@ -44,12 +45,25 @@ export default class FieldDistributionChart extends Component {
 
 
   // methods definitions
-  onDataObtained() {
-    let dist = authorsModel.getFieldDistribution();
-    fieldDistModel.updateData([
-      dist.eng * 100,
-      dist.soc * 100
-    ]);
+  onDataUpdated() {
+    if (!dataModel.hasData()) {
+      return;
+    }
+
+    let dist2017 = authorsModel.getFieldDistribution(2017);
+    let dist2018 = authorsModel.getFieldDistribution(2018);
+
+    fieldDistModel.updateData({
+      2017: {
+        eng: dist2017.eng,
+        soc: dist2017.soc,
+      },
+      2018: {
+        eng: dist2018.eng,
+        soc: dist2018.soc,
+      },
+    });
+
     this.setState({
       hasData: true
     });
