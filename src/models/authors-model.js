@@ -317,7 +317,7 @@ class AuthorsModel {
     unis = _.sortBy(unis);
 
     // create dist
-    let uniqueUnis = this.getUniqueUniversities();
+    let uniqueUnis = this.getUniqueUniversities(year);
     let dist = [];
     _.forEach(
       uniqueUnis,
@@ -328,10 +328,9 @@ class AuthorsModel {
             return name === u;
           }
         );
-        
-        this.getUniversityCountry(u);
+
         dist.push({
-          name: u + ' (' + this.getUniversityCountry(u) + ')',
+          name: u + ' (' + this.getUniversityCountry(u, year) + ')',
           numAuthors: sameUni.length
         });
       }
