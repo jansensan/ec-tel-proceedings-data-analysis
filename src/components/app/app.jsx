@@ -71,17 +71,17 @@ export default class App extends Component {
 
             <section>
               <h3>Country Distribution</h3>
+              <p>Percentage of authors per country, sorted in descending order, based on 2018's data.</p>
               <CountryDistributionChart />
               <hr/>
             </section>
 
-            {/* 
             <section>
               <h3>Universities Distribution</h3>
+              <p>number of authors per university, sorted in descending order, based on 2018's data.</p>
               <UniDistributionChart />
               <hr/>
             </section>
-             */}
           </section>
 
           {/*
