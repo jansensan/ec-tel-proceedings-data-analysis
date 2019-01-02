@@ -75,8 +75,10 @@ class UniDistributionModel {
       (uniName) => {
         let array2016 = _.filter(newData[2016], {name: uniName});
         let value2016 = (array2016.length) ? array2016[0].numAuthors : 0;
+
         let array2017 = _.filter(newData[2017], {name: uniName});
         let value2017 = (array2017.length) ? array2017[0].numAuthors : 0;
+
         let array2018 = _.filter(newData[2018], {name: uniName});
         let value2018 = (array2018.length) ? array2018[0].numAuthors : 0;
 
@@ -85,11 +87,12 @@ class UniDistributionModel {
           2016: value2016,
           2017: value2017,
           2018: value2018,
+          sum: value2016 + value2017 + value2018
         };
       }
     );
 
-    dist = _.sortBy(dist, 2018, 'desc');
+    dist = _.sortBy(dist, 'sum', 'desc');
     dist = _.reverse(dist);
 
     // set labels
