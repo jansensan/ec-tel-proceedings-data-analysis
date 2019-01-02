@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import {Bar} from 'react-chartjs-2';
-import {saveSvgAsPng} from 'save-svg-as-png';
 
 // models
 import authorsModel from '../../models/authors-model';
