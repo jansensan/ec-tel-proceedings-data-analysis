@@ -30,7 +30,7 @@ export default class App extends Component {
     };
 
     // pull data
-    // dataModel.fetch(2016);
+    dataModel.fetch(2016);
     dataModel.fetch(2017);
     dataModel.fetch(2018);
 
@@ -62,6 +62,10 @@ export default class App extends Component {
             <Overview
               conferenceTitle="12th European Conference on Technology Enhanced Learning, EC-TEL 2017, Tallinn, Estonia, September 12–15, 2017"
               year="2017"
+            />
+            <Overview
+              conferenceTitle="11th European Conference on Technology Enhanced Learning, EC-TEL 2016, Lyon, France, September 13-16, 2016"
+              year="2016"
             />
             <hr/>
           </section>

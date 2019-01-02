@@ -94,10 +94,8 @@ class DataModel {
     let has2016Data = (this.getDataForYear(2016).length > 0);
     let has2017Data = (this.getDataForYear(2017).length > 0);
     let has2018Data = (this.getDataForYear(2018).length > 0);
-    
-    // TODO: include when dataset available
-    // return has2016Data && has2017Data && has2018Data;
-    return has2017Data && has2018Data;
+
+    return has2016Data && has2017Data && has2018Data;
   }
 
   setDataForYear(year, newData) {

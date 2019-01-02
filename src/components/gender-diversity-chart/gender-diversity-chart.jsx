@@ -60,7 +60,17 @@ export default class GenderDiversityChart extends Component {
     let numPapers2017 = papersModel.getNumPapers(2017);
     let numRemaining2017 = numPapers2017 - numPapersOnlyMen2017 - numPapersOnlyWomen2017;
 
+    let numPapersOnlyMen2016 = papersModel.getNumPapersWithOnlyMenAuthors(2016);
+    let numPapersOnlyWomen2016 = papersModel.getNumPapersWithOnlyWomenAuthors(2016);
+    let numPapers2016 = papersModel.getNumPapers(2016);
+    let numRemaining2016 = numPapers2016 - numPapersOnlyMen2016 - numPapersOnlyWomen2016;
+
     genderDiversityModel.updateData({
+      2016: {
+        f: numPapersOnlyWomen2016 / numPapers2016,
+        m: numPapersOnlyMen2016 / numPapers2016,
+        r: numRemaining2016 / numPapers2016,
+      },
       2017: {
         f: numPapersOnlyWomen2017 / numPapers2017,
         m: numPapersOnlyMen2017 / numPapers2017,

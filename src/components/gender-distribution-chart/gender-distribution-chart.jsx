@@ -51,6 +51,7 @@ export default class GenderDistributionChart extends Component {
     }
 
     genderDistModel.updateData({
+      2016: authorsModel.getGenderDistribution(2016),
       2017: authorsModel.getGenderDistribution(2017),
       2018: authorsModel.getGenderDistribution(2018)
     });

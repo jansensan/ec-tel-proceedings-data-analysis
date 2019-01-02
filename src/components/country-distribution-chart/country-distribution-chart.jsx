@@ -49,6 +49,7 @@ export default class CountryDistributionChart extends Component {
       return;
     }
     countryDistModel.updateData({
+      2016: authorsModel.getCountryDistribution(2016),
       2017: authorsModel.getCountryDistribution(2017),
       2018: authorsModel.getCountryDistribution(2018)
     });

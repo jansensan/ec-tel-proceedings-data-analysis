@@ -9,8 +9,9 @@ class UniDistributionModel {
     this.data = {
       labels: [],
       datasets: [
-        DatasetFactory.createGreenDataset('2018'),
+        DatasetFactory.createOrangeDataset('2018'),
         DatasetFactory.createBlueDataset('2017'),
+        DatasetFactory.createGreenDataset('2016'),
       ]
     };
     this.options = {
@@ -72,6 +73,8 @@ class UniDistributionModel {
      _.forEach(
       unis,
       (uniName) => {
+        let array2016 = _.filter(newData[2016], {name: uniName});
+        let value2016 = (array2016.length) ? array2016[0].numAuthors : 0;
         let array2017 = _.filter(newData[2017], {name: uniName});
         let value2017 = (array2017.length) ? array2017[0].numAuthors : 0;
         let array2018 = _.filter(newData[2018], {name: uniName});
@@ -79,6 +82,7 @@ class UniDistributionModel {
 
         dist[uniName] = {
           name: uniName,
+          2016: value2016,
           2017: value2017,
           2018: value2018,
         };
@@ -90,12 +94,14 @@ class UniDistributionModel {
 
     // set labels
     let labels = [];
+    let values2016 = [];
     let values2017 = [];
     let values2018 = [];
     _.forEach(
       dist,
       (country) => {
         labels.push(country.name);
+        values2016.push(country[2016]);
         values2017.push(country[2017]);
         values2018.push(country[2018]);
       }
@@ -107,6 +113,7 @@ class UniDistributionModel {
     // set data
     this.data.datasets[0].data = values2018;
     this.data.datasets[1].data = values2017;
+    this.data.datasets[2].data = values2016;
   }
 }
 

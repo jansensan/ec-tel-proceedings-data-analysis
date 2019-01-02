@@ -50,10 +50,15 @@ export default class FieldDistributionChart extends Component {
       return;
     }
 
+    let dist2016 = authorsModel.getFieldDistribution(2016);
     let dist2017 = authorsModel.getFieldDistribution(2017);
     let dist2018 = authorsModel.getFieldDistribution(2018);
 
     fieldDistModel.updateData({
+      2016: {
+        eng: dist2016.eng,
+        soc: dist2016.soc,
+      },
       2017: {
         eng: dist2017.eng,
         soc: dist2017.soc,
