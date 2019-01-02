@@ -50,6 +50,7 @@ export default class UniDistributionChart extends Component {
     }
 
     uniDistModel.updateData({
+      2016: authorsModel.getUniversityDistribution(2016),
       2017: authorsModel.getUniversityDistribution(2017),
       2018: authorsModel.getUniversityDistribution(2018)
     });
