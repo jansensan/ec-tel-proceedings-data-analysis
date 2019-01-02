@@ -6,6 +6,9 @@ import dataModel from '../../models/data-model';
 import genderDiversityModel from './gender-diversity-model';
 import papersModel from '../../models/papers-model';
 
+// components
+import DownloadChartButton from '../download-chart-button/download-chart-button.jsx';
+
 // styles
 require('./gender-diversity-chart.scss');
 
@@ -13,6 +16,7 @@ require('./gender-diversity-chart.scss');
 export default class GenderDiversityChart extends Component {
   constructor(props) {
     super(props);
+    this.chartId = 'genderDiversityByPaperChart';
     this.state = {
       hasData: false, 
       isComponentMounted: false
@@ -27,11 +31,17 @@ export default class GenderDiversityChart extends Component {
       <div className="gender-diversity-chart">
         {
           (this.state.hasData) &&
-          <Bar
-            data={genderDiversityModel.data}
-            options={genderDiversityModel.options}
-            redraw={true}
-          />
+          <div>
+            <Bar
+              id={this.chartId}
+              data={genderDiversityModel.data}
+              options={genderDiversityModel.options}
+              redraw={true}
+            />
+            <DownloadChartButton
+              targetId={this.chartId}
+            />
+          </div>
         }
       </div>
     )

@@ -6,6 +6,9 @@ import authorsModel from '../../models/authors-model';
 import dataModel from '../../models/data-model';
 import fieldDistModel from './field-distribution-model';
 
+// components
+import DownloadChartButton from '../download-chart-button/download-chart-button.jsx';
+
 // styles
 require('./field-distribution-chart.scss');
 
@@ -13,6 +16,7 @@ require('./field-distribution-chart.scss');
 export default class FieldDistributionChart extends Component {
   constructor(props) {
     super(props);
+    this.chartId = 'fieldDistChart';
     this.state = {
       hasData: false, 
       isComponentMounted: false
@@ -27,11 +31,17 @@ export default class FieldDistributionChart extends Component {
       <div className="field-distribution-chart">
         {
           (this.state.hasData) &&
-          <Bar
-            data={fieldDistModel.data}
-            options={fieldDistModel.options}
-            redraw={true}
-          />
+          <div>
+            <Bar
+              id={this.chartId}
+              data={fieldDistModel.data}
+              options={fieldDistModel.options}
+              redraw={true}
+            />
+            <DownloadChartButton
+              targetId={this.chartId}
+            />
+          </div>
         }
       </div>
     )

@@ -52,12 +52,6 @@ class GenderDistPerFieldModel {
     ];
 
     // set data
-    console.log(2018);
-    console.table(newData[2018]);
-    console.log(2017);
-    console.table(newData[2017]);
-    console.log(2016);
-    console.table(newData[2016]);
 
     // 2018
     this.data.datasets[0].data = [

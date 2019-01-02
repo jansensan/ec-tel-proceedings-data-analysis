@@ -6,6 +6,9 @@ import authorsModel from '../../models/authors-model';
 import dataModel from '../../models/data-model';
 import uniDistModel from './uni-distribution-model';
 
+// components
+import DownloadChartButton from '../download-chart-button/download-chart-button.jsx';
+
 // styles
 require('./uni-distribution-chart.scss');
 
@@ -13,6 +16,7 @@ require('./uni-distribution-chart.scss');
 export default class UniDistributionChart extends Component {
   constructor(props) {
     super(props);
+    this.chartId = 'uniDistChart';
     this.state = {
       isComponentMounted: false,
     };
@@ -26,11 +30,19 @@ export default class UniDistributionChart extends Component {
       <div className="uni-distribution-chart">
         {
           (this.state.hasData) &&
-          <HorizontalBar
-            data={uniDistModel.data}
-            options={uniDistModel.options}
-            redraw={true}
-          />
+          <div>
+            <div className="chart-container">
+              <HorizontalBar
+                id={this.chartId}
+                data={uniDistModel.data}
+                options={uniDistModel.options}
+                redraw={true}
+                />
+            </div>
+            <DownloadChartButton
+              targetId={this.chartId}
+            />
+          </div>
         }
       </div>
     );

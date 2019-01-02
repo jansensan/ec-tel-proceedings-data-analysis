@@ -6,6 +6,9 @@ import authorsModel from '../../models/authors-model';
 import dataModel from '../../models/data-model';
 import genderDistPerFieldModel from './gender-dist-per-field-model';
 
+// components
+import DownloadChartButton from '../download-chart-button/download-chart-button.jsx';
+
 // styles
 require('./gender-dist-per-field-chart.scss');
 
@@ -13,6 +16,7 @@ require('./gender-dist-per-field-chart.scss');
 export default class GenderDistPerFieldChart extends Component {
   constructor(props) {
     super(props);
+    this.chartId = 'genderDistByFieldChart';
     this.state = {
       hasData: false, 
       isComponentMounted: false
@@ -27,11 +31,17 @@ export default class GenderDistPerFieldChart extends Component {
       <div className="gender-dist-per-field-chart">
         {
           (this.state.hasData) &&
-          <Bar
-            data={genderDistPerFieldModel.data}
-            options={genderDistPerFieldModel.options}
-            redraw={true}
-          />
+          <div>
+            <Bar
+              id={this.chartId}
+              data={genderDistPerFieldModel.data}
+              options={genderDistPerFieldModel.options}
+              redraw={true}
+            />
+            <DownloadChartButton
+              targetId={this.chartId}
+            />
+          </div>
         }
       </div>
     )
