@@ -51,6 +51,7 @@ export default class GenderDistPerFieldChart extends Component {
     }
 
     genderDistPerFieldModel.updateData({
+      2016: authorsModel.getGenderDistPerField(2016),
       2017: authorsModel.getGenderDistPerField(2017),
       2018: authorsModel.getGenderDistPerField(2018),
     });

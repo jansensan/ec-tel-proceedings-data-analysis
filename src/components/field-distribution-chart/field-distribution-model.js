@@ -7,10 +7,11 @@ import DatasetFactory from '../../services/dataset-factory';
 class FieldDistributionModel {
   constructor() {
     this.data = {
-      labels: ['2018', '2017'],
+      labels: ['2018', '2017', '2016'],
       datasets: [
-        DatasetFactory.createGreenDataset('2018'),
-        DatasetFactory.createBlueDataset('2017'),
+        DatasetFactory.createOrangeDataset('2018'),
+        DatasetFactory.createBlueDataset('2016'),
+        DatasetFactory.createGreenDataset('2016'),
       ]
     };
     this.options = {
@@ -48,6 +49,8 @@ class FieldDistributionModel {
     this.data.labels = ['Engineering', 'Social Sciences'],
 
     // set data
+
+    // 2018
     this.data.datasets[0].data = [
       newData[2018].eng * 100,
       newData[2018].soc * 100,
@@ -57,6 +60,12 @@ class FieldDistributionModel {
     this.data.datasets[1].data = [
       newData[2017].eng * 100,
       newData[2017].soc * 100,
+    ];
+    
+    // 2016
+    this.data.datasets[2].data = [
+      newData[2016].eng * 100,
+      newData[2016].soc * 100,
     ];
   }
 }
