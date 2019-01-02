@@ -30,7 +30,7 @@ export default class App extends Component {
     };
 
     // pull data
-    // dataModel.fetch(2016);
+    dataModel.fetch(2016);
     dataModel.fetch(2017);
     dataModel.fetch(2018);
 

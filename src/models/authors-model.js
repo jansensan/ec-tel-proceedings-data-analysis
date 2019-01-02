@@ -346,7 +346,7 @@ class AuthorsModel {
   }
 
   onDataUpdated() {
-    // this.authors[2016] = this.parseAuthors();
+    this.authors[2016] = this.parseAuthors(2016);
     this.authors[2017] = this.parseAuthors(2017);
     this.authors[2018] = this.parseAuthors(2018);
 
