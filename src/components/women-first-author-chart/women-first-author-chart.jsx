@@ -58,7 +58,15 @@ export default class WomenFirstAuthorChart extends Component {
     let num2017Women1stAuthor = papersModel.getNumPapersWithWomenAsFirstAuthor(2017);
     let num2017Men1stAuthor = num2017Papers - num2017Women1stAuthor;
 
+    let num2016Papers = papersModel.getNumPapers(2016);
+    let num2016Women1stAuthor = papersModel.getNumPapersWithWomenAsFirstAuthor(2016);
+    let num2016Men1stAuthor = num2016Papers - num2016Women1stAuthor;
+
     womenFirstAuthorModel.updateData({
+      2016: {
+        f: num2016Women1stAuthor / num2016Papers,
+        m: num2016Men1stAuthor / num2016Papers,
+      },
       2017: {
         f: num2017Women1stAuthor / num2017Papers,
         m: num2017Men1stAuthor / num2017Papers,

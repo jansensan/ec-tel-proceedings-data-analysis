@@ -7,8 +7,9 @@ class GenderDistributionModel {
     this.data = {
       labels: ['2018', '2017'],
       datasets: [
-        DatasetFactory.createGreenDataset('2018'),
+        DatasetFactory.createOrangeDataset('2018'),
         DatasetFactory.createBlueDataset('2017'),
+        DatasetFactory.createGreenDataset('2016'),
       ]
     };
     this.options = {
@@ -57,6 +58,12 @@ class GenderDistributionModel {
     this.data.datasets[1].data = [
       newData[2017].f * 100,
       newData[2017].m * 100,
+    ];
+    
+    // 2016
+    this.data.datasets[2].data = [
+      newData[2016].f * 100,
+      newData[2016].m * 100,
     ];
   }
 }
