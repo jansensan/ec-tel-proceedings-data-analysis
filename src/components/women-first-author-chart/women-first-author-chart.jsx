@@ -6,6 +6,9 @@ import dataModel from '../../models/data-model';
 import papersModel from '../../models/papers-model';
 import womenFirstAuthorModel from './women-first-author-model';
 
+// components
+import DownloadChartButton from '../download-chart-button/download-chart-button.jsx';
+
 // styles
 require('./women-first-author-chart.scss');
 
@@ -13,6 +16,7 @@ require('./women-first-author-chart.scss');
 export default class WomenFirstAuthorChart extends Component {
   constructor(props) {
     super(props);
+    this.chartId = 'womenAs1stAuthorChart';
     this.state = {
       hasData: false, 
       isComponentMounted: false
@@ -27,11 +31,17 @@ export default class WomenFirstAuthorChart extends Component {
       <div className="gender-distribution-chart">
         {
           (this.state.hasData) &&
-          <Bar
-            data={womenFirstAuthorModel.data}
-            options={womenFirstAuthorModel.options}
-            redraw={true}
-          />
+          <div>
+            <Bar
+              id={this.chartId}
+              data={womenFirstAuthorModel.data}
+              options={womenFirstAuthorModel.options}
+              redraw={true}
+            />
+            <DownloadChartButton
+              targetId={this.chartId}
+            />
+          </div>
         }
       </div>
     )

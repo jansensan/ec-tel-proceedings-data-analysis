@@ -58,7 +58,7 @@ class GenderDistPerFieldModel {
       newData[2018].eng.f * 100,
       newData[2018].eng.m * 100,
       newData[2018].soc.f * 100,
-      newData[2018].eng.m * 100,
+      newData[2018].soc.m * 100,
     ];
 
     // 2017
@@ -66,7 +66,7 @@ class GenderDistPerFieldModel {
       newData[2017].eng.f * 100,
       newData[2017].eng.m * 100,
       newData[2017].soc.f * 100,
-      newData[2017].eng.m * 100,
+      newData[2017].soc.m * 100,
     ];
 
     // 2016
@@ -74,7 +74,7 @@ class GenderDistPerFieldModel {
       newData[2016].eng.f * 100,
       newData[2016].eng.m * 100,
       newData[2016].soc.f * 100,
-      newData[2016].eng.m * 100,
+      newData[2016].soc.m * 100,
     ];
   }
 }

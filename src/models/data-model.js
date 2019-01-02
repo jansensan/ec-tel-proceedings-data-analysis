@@ -34,6 +34,7 @@ class DataModel {
         'DataModel', 'fetch',
         'Expecting a `year` (number) as a parameter.'
       );
+      return;
     }
 
     return DataService.fetch(this.getDatasetURLForYear(year))
@@ -49,6 +50,7 @@ class DataModel {
         'DataModel', 'getIndexForYear',
         'Expecting a `year` (number) as a parameter.'
       );
+      return;
     }
 
     let dataIndex = -1;
@@ -74,6 +76,7 @@ class DataModel {
         'DataModel', 'getDataForYear',
         'Expecting a `year` (number) as a parameter.'
       );
+      return;
     }
 
     return this.data[this.getIndexForYear(year)].data;
@@ -85,6 +88,7 @@ class DataModel {
         'DataModel', 'getDatasetURLForYear',
         'Expecting a `year` (number) as a parameter.'
       );
+      return;
     }
 
     return this.data[this.getIndexForYear(year)].datasetURL;
@@ -104,12 +108,14 @@ class DataModel {
         'DataModel', 'setDataForYear',
         'Expecting a `year` (number) as a parameter.'
       );
+      return;
     }
     if (_.isUndefined(newData)) {
       Log.error(
         'DataModel', 'setDataForYear',
         'Expecting a `newData` (object) as a parameter.'
       );
+      return;
     }
 
     this.data[this.getIndexForYear(year)].data = newData;

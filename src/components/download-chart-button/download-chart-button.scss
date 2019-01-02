@@ -1,0 +1,10 @@
+.download-chart-button {
+  // FIXME: jansensan-stylesheet should handle this
+  cursor: pointer;
+
+  margin-top: 32px;
+
+  &:disabled {
+    cursor: not-allowed;
+  }
+}

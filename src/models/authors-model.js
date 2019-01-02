@@ -123,6 +123,8 @@ class AuthorsModel {
 
     // sort data
     let authors = this.authors[year];
+
+    // engineering
     let eng = _.filter(
       authors,
       (author) => {return author.field === 'eng'}
@@ -136,6 +138,7 @@ class AuthorsModel {
       (author) => {return author.gender === 'm'}
     );
 
+    // social sciences
     let soc = _.filter(
       authors,
       (author) => {return author.field === 'soc'}
@@ -149,7 +152,7 @@ class AuthorsModel {
       (author) => {return author.gender === 'm'}
     );
 
-    return {
+    let dist = {
       eng: {
         f: engF.length / eng.length,
         m: engM.length / eng.length
@@ -158,7 +161,9 @@ class AuthorsModel {
         f: socF.length / soc.length,
         m: socM.length / soc.length,
       },
-    }
+    };
+
+    return dist;
   }
 
   getFemaleAuthors(year) {
