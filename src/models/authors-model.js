@@ -204,7 +204,9 @@ class AuthorsModel {
       );
     }
 
-    return this.authors[year].length;
+    let authors = this.authors[year];
+    let numAuthors = authors.length;
+    return numAuthors;
   }
 
   getUniqueCountries(year) {
@@ -227,12 +229,14 @@ class AuthorsModel {
         countries.push(author.country);
       }
     );
-
-    // remove duplicates
-    countries = _.uniqBy(countries);
-
-    // sort by name
-    countries = _.sortBy(countries);
+    
+    if (countries.length > 0) {
+      // remove duplicates
+      countries = _.uniqBy(countries);
+  
+      // sort by name
+      countries = _.sortBy(countries);
+    }
 
     return countries;
   }
@@ -258,11 +262,13 @@ class AuthorsModel {
       }
     );
 
-    // remove duplicates
-    unis = _.uniqBy(unis);
-
-    // sort by name
-    unis = _.sortBy(unis);
+    if (unis.length > 0) {
+      // remove duplicates
+      unis = _.uniqBy(unis);
+  
+      // sort by name
+      unis = _.sortBy(unis);
+    }
 
     return unis;
   }
@@ -381,11 +387,13 @@ class AuthorsModel {
       }
     );
 
-    // remove duplicates
-    authors = _.uniqBy(authors, 'name');
-
-    // sort by name
-    authors = _.sortBy(authors, 'name');
+    if (authors.length > 0) {
+      // remove duplicates
+      authors = _.uniqBy(authors, 'name');
+  
+      // sort by name
+      authors = _.sortBy(authors, 'name');
+    }
 
     return authors;
   }
