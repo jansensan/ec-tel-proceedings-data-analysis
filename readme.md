@@ -2,7 +2,20 @@
 
 Data analysis conducted for [TIDE Research Group of Interactive and Distributed Technologies for Education (UPF)](https://www.upf.edu/web/tide).
 
-Currently visible at <https://projects.jansensan.net/ec-tel-data-analysis/>.
+This analysis explores the gender diversity of authors of the papers and presentations of the [European Conference on Technology Enhanced Learning (EC-TEL)](http://www.ec-tel.eu/) conferences and proceedings.
+
+The data was gathered from the proceedings books available on the conference's website.
+
+- We used binary values for gender: male and female authors;</li>
+- Fields of research and work were separated in two (2) broad categories: engineering and social sciences;</li>
+- For simplicity's sake, we only used the first university or institution mentioned when a researcher/academic listed more than one in their credit.</li>
+
+The results are published at <https://projects.jansensan.net/ec-tel-data-analysis/>.
+
+
+## Contribution
+
+See the [contribution guidelines](./contributing.md).
 
 
 ## References
@@ -17,7 +30,6 @@ Currently visible at <https://projects.jansensan.net/ec-tel-data-analysis/>.
 ### Organizations
 
 - [European Conference on Technology Enhanced Learning](http://www.ec-tel.eu/)
-- [EC-TEL 2017 in Tallinn (EE)](http://ectel2017.httc.de/index.php?id=777)
 - [TIDE Research Group of Interactive and Distributed Technologies for Education (UPF)](https://www.upf.edu/web/tide)
 
 

@@ -91,7 +91,7 @@ export default class App extends Component {
 
             <section>
               <h3>Universities Distribution</h3>
-              <p>number of authors per university, sorted in descending order, based on 2018's data.</p>
+              <p>Number of authors per university, sorted in descending order, based on cumulative number of authors over years covered by the analysis.</p>
               <UniDistributionChart />
               <hr/>
             </section>
