@@ -55,6 +55,15 @@ export default class App extends Component {
 
           <section>
             <h2>Overview</h2>
+            <p>This analysis explores the gender diversity of authors of the papers and presentations of the <a href="http://www.ec-tel.eu/">European Conference on Technology Enhanced Learning (EC-TEL)</a> conferences and proceedings.</p>
+            <p>The data was gathered from the proceedings books available on the conference's website.</p>
+            <ul>
+              <li>We used binary values for gender: male and female authors;</li>
+              <li>Fields of research and work were separated in two (2) broad categories: engineering and social sciences;</li>
+              <li>For simplicity's sake, we only used the first university or institution mentioned when a researcher/academic listed more than one in their credit.</li>
+            </ul>
+            <p>This data analysis has been conducted for <a href="https://www.upf.edu/web/tide">TIDE Research Group of Interactive and Distributed Technologies for Education (UPF)</a>.</p>
+            <h3>Some Numbers</h3>
             <Overview
               conferenceTitle="13th European Conference on Technology Enhanced Learning, EC-TEL 2018, Leeds, UK, September 3-5, 2018"
               year="2018"
@@ -162,6 +171,12 @@ export default class App extends Component {
             <hr/>
           </section>
            */}
+
+           <section>
+             <h2>Source Code</h2>
+             <p>All sources for this page and the related data are hosted on a <a href="https://github.com/jansensan/ec-tel-proceedings-data-analysis">Github repository</a>, so that they can be available for review and reuse.</p>
+             <hr/>
+           </section>
         </div>
 
         <footer>
