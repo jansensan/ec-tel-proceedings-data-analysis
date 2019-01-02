@@ -1,8 +1,5 @@
 import _ from 'lodash';
 
-// constants
-import ChartColors from '../../constants/chart-colors';
-
 // services
 import DatasetFactory from '../../services/dataset-factory';
 
@@ -12,17 +9,15 @@ class CountryDistributionModel {
     this.data = {
       labels: [],
       datasets: [
-        DatasetFactory.createGreenDataset('2018'),
+        DatasetFactory.createOrangeDataset('2018'),
         DatasetFactory.createBlueDataset('2017'),
+        DatasetFactory.createGreenDataset('2016'),
       ]
     };
     this.options = {
       tooltips: {
         callbacks: {
-          label: function (tooltipItem, data) {
-            let val = data.datasets[tooltipItem.datasetIndex].data[tooltipItem.index];
-            return _.round(val, 1) + '%';
-          }
+          label: this.getTooltipLabel.bind(this)
         }
       },
       scales: {
@@ -38,6 +33,14 @@ class CountryDistributionModel {
       },
       maintainAspectRatio: false
     }
+  }
+
+  getTooltipLabel(tooltipItem) {
+    let dataset = this.data.datasets[tooltipItem.datasetIndex];
+    let val = dataset.data[tooltipItem.index];
+    let label = _.round(val, 1) + '%'
+      + ' (' + dataset.label + ')';
+    return label;
   }
 
   updateData(newData) {
@@ -67,6 +70,8 @@ class CountryDistributionModel {
     _.forEach(
       countries,
       (countryName) => {
+        let array2016 = _.filter(newData[2016], {name: countryName});
+        let value2016 = (array2016.length) ? array2016[0].numAuthors : 0;
         let array2017 = _.filter(newData[2017], {name: countryName});
         let value2017 = (array2017.length) ? array2017[0].numAuthors : 0;
         let array2018 = _.filter(newData[2018], {name: countryName});
@@ -74,6 +79,7 @@ class CountryDistributionModel {
 
         dist[countryName] = {
           name: countryName,
+          2016: value2016,
           2017: value2017,
           2018: value2018,
         };
@@ -85,12 +91,14 @@ class CountryDistributionModel {
 
     // set labels
     let labels = [];
+    let values2016 = [];
     let values2017 = [];
     let values2018 = [];
     _.forEach(
       dist,
       (country) => {
         labels.push(country.name);
+        values2016.push(country[2016]);
         values2017.push(country[2017]);
         values2018.push(country[2018]);
       }
@@ -102,6 +110,7 @@ class CountryDistributionModel {
     // set data
     this.data.datasets[0].data = values2018;
     this.data.datasets[1].data = values2017;
+    this.data.datasets[2].data = values2016;
   }
 }
 
