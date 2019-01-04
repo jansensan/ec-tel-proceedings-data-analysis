@@ -936,7 +936,7 @@
           "name": "Kshitij Sharma",
           "gender": "m",
           "dept": "",
-          "uni": "Norwegian University of Science and Technology",
+          "uni": "Norwegian University of Science and Technology (NTNU)",
           "country": "NO",
           "field": "eng"
         },
@@ -1074,7 +1074,7 @@
           "name": "Kshitij Sharma",
           "gender": "m",
           "dept": "",
-          "uni": "Norwegian University of Science and Technology",
+          "uni": "Norwegian University of Science and Technology (NTNU)",
           "country": "NO",
           "field": "eng"
         },
@@ -1134,7 +1134,7 @@
           "name": "Tom Broos",
           "gender": "m",
           "dept": "",
-          "uni": "Catholic University of Leuven",
+          "uni": "KU Leuven",
           "country": "BE",
           "field": "soc"
         },
@@ -1142,7 +1142,7 @@
           "name": "Katrien Verbert",
           "gender": "f",
           "dept": "",
-          "uni": "Catholic University of Leuven",
+          "uni": "KU Leuven",
           "country": "BE",
           "field": "eng"
         },
@@ -1150,7 +1150,7 @@
           "name": "Greet Langie",
           "gender": "f",
           "dept": "",
-          "uni": "Catholic University of Leuven",
+          "uni": "KU Leuven",
           "country": "BE",
           "field": "eng"
         },
@@ -1158,7 +1158,7 @@
           "name": "Carolien Van Soom",
           "gender": "f",
           "dept": "",
-          "uni": "Catholic University of Leuven",
+          "uni": "KU Leuven",
           "country": "BE",
           "field": "soc"
         },
@@ -1166,7 +1166,7 @@
           "name": "Tinne De Laet",
           "gender": "f",
           "dept": "",
-          "uni": "Catholic University of Leuven",
+          "uni": "KU Leuven",
           "country": "BE",
           "field": "eng"
         }
@@ -1202,7 +1202,7 @@
           "name": "Kshitij Sharma",
           "gender": "m",
           "dept": "",
-          "uni": "Norwegian University of Science and Technology",
+          "uni": "Norwegian University of Science and Technology (NTNU)",
           "country": "NO",
           "field": "eng"
         },
@@ -1210,7 +1210,7 @@
           "name": "Jennifer K. Olsen",
           "gender": "f",
           "dept": "",
-          "uni": "Ecole Polytechnique Fédérale de Lausanne",
+          "uni": "École Polytechnique Fédérale de Lausanne",
           "country": "CH",
           "field": "eng"
         },
@@ -1218,7 +1218,7 @@
           "name": "Vincent Aleven",
           "gender": "m",
           "dept": "",
-          "uni": "Carnegie Mellon",
+          "uni": "Carnegie Mellon University",
           "country": "US",
           "field": "eng"
         },
@@ -1278,7 +1278,7 @@
           "name": "Hung Chau",
           "gender": "m",
           "dept": "School of Computing and Information",
-          "uni": "University of Pittsburg",
+          "uni": "University of Pittsburgh",
           "country": "US",
           "field": "eng"
         },
@@ -1286,7 +1286,7 @@
           "name": "Jordan Barria-Pineda",
           "gender": "m",
           "dept": "School of Computing and Information",
-          "uni": "University of Pittsburg",
+          "uni": "University of Pittsburgh",
           "country": "US",
           "field": "eng"
         },
@@ -1294,7 +1294,7 @@
           "name": "Peter Brusilovsky",
           "gender": "m",
           "dept": "School of Computing and Information",
-          "uni": "University of Pittsburg",
+          "uni": "University of Pittsburgh",
           "country": "US",
           "field": "eng"
         }
@@ -1338,7 +1338,7 @@
           "name": "Sepideh Mesbah",
           "gender": "f",
           "dept": "",
-          "uni": "Delft University Of Technology",
+          "uni": "Delft University of Technology",
           "country": "NL",
           "field": "eng"
         },
@@ -1346,7 +1346,7 @@
           "name": "Guanliang Chen",
           "gender": "m",
           "dept": "",
-          "uni": "Delft University Of Technology",
+          "uni": "Delft University of Technology",
           "country": "NL",
           "field": "eng"
         },
@@ -1354,7 +1354,7 @@
           "name": "Manuel Valle Torre",
           "gender": "m",
           "dept": "",
-          "uni": "Delft University Of Technology",
+          "uni": "Delft University of Technology",
           "country": "NL",
           "field": "eng"
         },
@@ -1362,7 +1362,7 @@
           "name": "Alessandro Bozzon",
           "gender": "m",
           "dept": "",
-          "uni": "Delft University Of Technology",
+          "uni": "Delft University of Technology",
           "country": "NL",
           "field": "eng"
         },
@@ -2288,7 +2288,7 @@
           "name": "Azzeddine Benabbou",
           "gender": "m",
           "dept": "Université de technologie de Compiègne",
-          "uni": "Sorbonne universités",
+          "uni": "Sorbonne Universités",
           "country": "FR",
           "field": "eng"
         },
@@ -2296,7 +2296,7 @@
           "name": "Domitile Lourdeaux",
           "gender": "f",
           "dept": "Université de technologie de Compiègne",
-          "uni": "Sorbonne universités",
+          "uni": "Sorbonne Universités",
           "country": "FR",
           "field": "eng"
         },
@@ -2304,7 +2304,7 @@
           "name": "Dominique Lenne",
           "gender": "f",
           "dept": "Université de technologie de Compiègne",
-          "uni": "Sorbonne universités",
+          "uni": "Sorbonne Universités",
           "country": "FR",
           "field": "eng"
         }
