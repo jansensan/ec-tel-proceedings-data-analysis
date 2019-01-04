@@ -27,6 +27,7 @@ class AuthorsModel {
         'AuthorsModel', 'getCountryDistribution',
         'Expecting a `year` (number) as a parameter.'
       );
+      return;
     }
 
     // loop through authors
@@ -76,6 +77,7 @@ class AuthorsModel {
         'AuthorsModel', 'getFieldDistribution',
         'Expecting a `year` (number) as a parameter.'
       );
+      return;
     }
 
     // sort data
@@ -102,6 +104,7 @@ class AuthorsModel {
         'AuthorsModel', 'getGenderDistribution',
         'Expecting a `year` (number) as a parameter.'
       );
+      return;
     }
 
     // sort data
@@ -119,6 +122,7 @@ class AuthorsModel {
         'AuthorsModel', 'getGenderDistPerField',
         'Expecting a `year` (number) as a parameter.'
       );
+      return;
     }
 
     // sort data
@@ -173,6 +177,7 @@ class AuthorsModel {
         'AuthorsModel', 'getFemaleAuthors',
         'Expecting a `year` (number) as a parameter.'
       );
+      return;
     }
 
     // sort data
@@ -190,6 +195,7 @@ class AuthorsModel {
         'AuthorsModel', 'getMaleAuthors',
         'Expecting a `year` (number) as a parameter.'
       );
+      return;
     }
 
     // sort data
@@ -207,6 +213,7 @@ class AuthorsModel {
         'AuthorsModel', 'getNumAuthors',
         'Expecting a `year` (number) as a parameter.'
       );
+      return;
     }
 
     let authors = this.authors[year];
@@ -221,6 +228,7 @@ class AuthorsModel {
         'AuthorsModel', 'getUniqueCountries',
         'Expecting a `year` (number) as a parameter.'
       );
+      return;
     }
 
     // sort data
@@ -253,6 +261,7 @@ class AuthorsModel {
         'AuthorsModel', 'getUniqueUniversities',
         'Expecting a `year` (number) as a parameter.'
       );
+      return;
     }
 
     // sort data
@@ -285,12 +294,14 @@ class AuthorsModel {
         'AuthorsModel', 'getUniversityCountry',
         'Expecting a `uni` (string) as a first parameter.'
       );
+      return;
     }
     if (_.isUndefined(year)) {
       Log.error(
         'AuthorsModel', 'getUniversityCountry',
         'Expecting a `year` (number) as a second parameter.'
       );
+      return;
     }
 
     // sort data
@@ -312,6 +323,7 @@ class AuthorsModel {
         'AuthorsModel', 'getUniversityDistribution',
         'Expecting a `year` (number) as a parameter.'
       );
+      return;
     }
 
     // loop through authors
@@ -371,6 +383,7 @@ class AuthorsModel {
         'AuthorsModel', 'parseAuthors',
         'Expecting a `year` (number) as a parameter.'
       );
+      return;
     }
 
     // init
