@@ -55,7 +55,44 @@ export default class App extends Component {
           <h1>Data Analysis</h1>
 
           <section>
-            <h2>Overview</h2>
+            <h2><a name="tableOfContents"></a>Table of Contents</h2>
+            <ul>
+              <li>
+                <a href="#overview">Overview</a>
+              </li>
+              <li>
+                <a href="#locationDiversity">Location Diversity</a>
+                <ul>
+                  <li><a href="#countryDist">Country Distribution</a></li>
+                  <li><a href="#continentDist">Continent Distribution</a></li>
+                  <li><a href="#institutionDist">Institution Distribution</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#genderDiversity">Gender Diversity</a>
+                <ul>
+                  <li><a href="#someNumbers">Some Numbers</a></li>
+                  <li><a href="#genderDist">Gender Distribution</a></li>
+                  <li><a href="#womenAs1stAuthor">Women as First Author</a></li>
+                  <li><a href="#genderDiversityByPaper">Gender Diversity by Paper</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#interdisciplinarity">Interdisciplinarity</a>
+                <ul>
+                  <li><a href="#fieldDist">Field Distribution</a></li>
+                  <li><a href="#genderDistPerField">Gender Distribution per Field</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#sourceCode">Source Code</a>
+              </li>
+            </ul>
+            <hr/>
+          </section>
+
+          <section>
+            <h2><a name="overview"></a>Overview</h2>
             <p>This analysis explores the gender diversity of authors of the papers and presentations of the <a href="http://www.ec-tel.eu/">European Conference on Technology Enhanced Learning (EC-TEL)</a> conferences and proceedings.</p>
             <p>The data was gathered from the proceedings books available on the conference's website.</p>
             <ul>
@@ -81,24 +118,24 @@ export default class App extends Component {
           </section>
 
           <section>
-            <h2>Location Diversity</h2>
+            <h2><a name="locationDiversity"></a>Location Diversity</h2>
 
             <section>
-              <h3>Country Distribution</h3>
+              <h3><a name="countryDist"></a>Country Distribution</h3>
               <p>Percentage of authors per country, sorted in descending order, based on cumulative percentage of authors over years covered by the analysis.</p>
               <CountryDistributionChart />
               <hr/>
             </section>
 
             <section>
-              <h3>Continent Distribution</h3>
+              <h3><a name="continentDist"></a>Continent Distribution</h3>
               <p>Percentage of authors per continent.</p>
               <ContinentDistributionChart />
               <hr/>
             </section>
 
             <section>
-              <h3>Institution Distribution</h3>
+              <h3><a name="institutionDist"></a>Institution Distribution</h3>
               <p>Number of authors per institution, sorted in descending order, based on cumulative number of authors over years covered by the analysis.</p>
               <UniDistributionChart />
               <hr/>
@@ -106,46 +143,46 @@ export default class App extends Component {
           </section>
 
           <section>
-            <h2>Gender Diversity</h2>
+            <h2><a name="genderDiversity"></a>Gender Diversity</h2>
 
             <section>
-              <h3>Some Numbers</h3>
+              <h3><a name="someNumbers"></a>Some Numbers</h3>
               <GenderDistOverview />
               <hr/>
             </section>
 
             <section>
-              <h3>Gender Distribution</h3>
+              <h3><a name="genderDist"></a>Gender Distribution</h3>
               <p>Percentage of unique authors of each gender.</p>
               <GenderDistributionChart />
               <hr/>
             </section>
 
             <section>
-              <h3>Women as First Author</h3>
+              <h3><a name="womenAs1stAuthor"></a>Women as First Author</h3>
               <p>Papers in which a woman's name is the first name in the author list.</p>
               <WomenFirstAuthorChart />
               <hr/>
             </section>
 
             <section>
-              <h3>Gender Diversity by Paper</h3>
+              <h3><a name="genderDiversityByPaper"></a>Gender Diversity by Paper</h3>
               <GenderDiversityChart />
               <hr/>
             </section>
           </section>
 
           <section>
-            <h2>Interdisciplinarity</h2>
+            <h2><a name="interdisciplinarity"></a>Interdisciplinarity</h2>
 
             <section>
-              <h3>Field Distribution</h3>
+              <h3><a name="fieldDist"></a>Field Distribution</h3>
               <FieldDistributionChart />
               <hr/>
             </section>
 
             <section>
-              <h3>Gender Distribution per Field</h3>
+              <h3><a name="genderDistPerField"></a>Gender Distribution per Field</h3>
               <GenderDistPerFieldChart />
               <hr/>
             </section>
@@ -182,7 +219,7 @@ export default class App extends Component {
            */}
 
            <section>
-             <h2>Source Code</h2>
+             <h2><a name="sourceCode"></a>Source Code</h2>
              <p>All sources for this page and the related data are hosted on a <a href="https://github.com/jansensan/ec-tel-proceedings-data-analysis">Github repository</a>, so that they can be available for review and reuse.</p>
              <hr/>
            </section>
