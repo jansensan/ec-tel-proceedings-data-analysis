@@ -1,5 +1,6 @@
 const Continents = {
   africa: {
+    id: "africa",
     name: "Africa",
     countries: [
       {
@@ -221,7 +222,8 @@ const Continents = {
     ],
   },
   asia: {
-    name: "asia",
+    id: "asia",
+    name: "Asia",
     countries: [
       {
         name: "Afghanistan",
@@ -402,6 +404,7 @@ const Continents = {
     ]
   },
   europe: {
+    id: "europe",
     name: "Europe",
     countries: [
       {
@@ -595,6 +598,7 @@ const Continents = {
     ]
   },
   northAmerica: {
+    id: "northAmerica",
     name: "North America",
     countries: [
       {
@@ -692,6 +696,7 @@ const Continents = {
     ]
   },
   oceania: {
+    id: "oceania",
     name: "Oceania",
     countries: [
       {
@@ -753,6 +758,7 @@ const Continents = {
     ]
   },
   southAmerica: {
+    id: "southAmerica",
     name: "South America",
     countries: [
       {

@@ -7,6 +7,7 @@ import papersModel from '../../models/papers-model';
 
 // components
 import AuthorDisplay from '../author-display/author-display.jsx';
+import ContinentDistributionChart from '../continent-distribution-chart/continent-distribution-chart.jsx';
 import CountryDistributionChart from '../country-distribution-chart/country-distribution-chart.jsx';
 import FieldDistributionChart from '../field-distribution-chart/field-distribution-chart.jsx';
 import GenderDistOverview from '../gender-dist-overview/gender-dist-overview.jsx';
@@ -86,6 +87,13 @@ export default class App extends Component {
               <h3>Country Distribution</h3>
               <p>Percentage of authors per country, sorted in descending order, based on cumulative percentage of authors over years covered by the analysis.</p>
               <CountryDistributionChart />
+              <hr/>
+            </section>
+
+            <section>
+              <h3>Continent Distribution</h3>
+              <p>Percentage of authors per continent.</p>
+              <ContinentDistributionChart />
               <hr/>
             </section>
 

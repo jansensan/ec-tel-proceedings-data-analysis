@@ -1,5 +1,6 @@
 const CSVFileNames = {
   COUNTRY_DISTRIBUTION: 'ec-tel-percentage-authors-per-country.csv',
+  CONTINENT_DISTRIBUTION: 'ec-tel-percentage-authors-per-continent.csv',
   FIELD_DISTRIBUTION: 'ec-tel-percentage-field-distribution.csv',
   GENDER_DISTRIBUTION_PER_FIELD: 'ec-tel-percentage-gender-distribution-per-field.csv',
   GENDER_DISTRIBUTION: 'ec-tel-percentage-gender-distribution.csv',
