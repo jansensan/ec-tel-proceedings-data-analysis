@@ -35,12 +35,14 @@ export default class ContinentDistributionChart extends Component {
         {
           (this.state.hasData > 0) &&
           <div>
-            <Bar
-              id={this.chartId}
-              data={continentDistModel.data}
-              options={continentDistModel.options}
-              redraw={true}
-            />
+            <div className="chart-container">
+              <Bar
+                id={this.chartId}
+                data={continentDistModel.data}
+                options={continentDistModel.options}
+                redraw={true}
+              />
+            </div>
             <DownloadChartButton
               targetId={this.chartId}
             />

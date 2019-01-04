@@ -36,12 +36,14 @@ export default class FieldDistributionChart extends Component {
         {
           (this.state.hasData) &&
           <div>
-            <Bar
-              id={this.chartId}
-              data={fieldDistModel.data}
-              options={fieldDistModel.options}
-              redraw={true}
-            />
+            <div className="chart-container">
+              <Bar
+                id={this.chartId}
+                data={fieldDistModel.data}
+                options={fieldDistModel.options}
+                redraw={true}
+              />
+            </div>
             <DownloadChartButton
               targetId={this.chartId}
             />

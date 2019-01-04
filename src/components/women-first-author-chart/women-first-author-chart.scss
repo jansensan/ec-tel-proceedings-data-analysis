@@ -1,9 +1,14 @@
+@import '../../styles/variables.scss';
+
+
 .women-first-author-chart {
   display: block;
   position: relative;
-
   width: 100%;
-  height: 400px;
+
+  .chart-container {
+    height: $chartContainerHeight;
+  }
 
   .download-csv-button {
     margin-left: 16px;

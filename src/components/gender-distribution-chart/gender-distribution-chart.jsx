@@ -36,12 +36,14 @@ export default class GenderDistributionChart extends Component {
         {
           (this.state.hasData) &&
           <div>
-            <Bar
-              id={this.chartId}
-              data={genderDistModel.data}
-              options={genderDistModel.options}
-              redraw={true}
-            />
+            <div className="chart-container">
+              <Bar
+                id={this.chartId}
+                data={genderDistModel.data}
+                options={genderDistModel.options}
+                redraw={true}
+              />
+            </div>
             <DownloadChartButton
               targetId={this.chartId}
             />
