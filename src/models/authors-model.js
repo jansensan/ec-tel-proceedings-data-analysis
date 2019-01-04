@@ -221,6 +221,56 @@ class AuthorsModel {
     return numAuthors;
   }
 
+  getNumAuthorsPerCountry(year) {
+    // error check
+    if (_.isUndefined(year)) {
+      Log.error(
+        'AuthorsModel', 'getNumAuthorsPerCountry',
+        'Expecting a `year` (number) as a parameter.'
+      );
+      return;
+    }
+
+    // loop through authors
+    let countries = [];
+    _.forEach(
+      this.authors[year],
+      (author) => {
+        countries.push(author.country);
+      }
+    );
+
+    // sort by name
+    countries = _.sortBy(countries);
+
+    // create dist
+    let uniqueCountries = this.getUniqueCountries(year);
+    let dist = [];
+    _.forEach(
+      uniqueCountries,
+      (c) => {
+        let sameCountry = _.filter(
+          countries,
+          (name) => {
+            return name === c;
+          }
+        );
+        dist.push({
+          name: c,
+          numAuthors: sameCountry.length
+        });
+      }
+    );
+
+    // sort by num of authors
+    dist = _.sortBy(dist, 'numAuthors');
+
+    // reverse to get biggest to smallest
+    dist = _.reverse(dist);
+
+    return dist;
+  }
+
   getUniqueCountries(year) {
     // error check
     if (_.isUndefined(year)) {
