@@ -33,6 +33,63 @@ class GenderDistPerFieldModel {
     }
   }
 
+  getCSV() {
+    let sep = '\t';
+    let rows = ['field', 'gender', '2018', '2017', '2016'];
+    let csvContent = 'data:text/csv;charset=utf-8,'
+      + rows.join(sep) + '\n';
+
+    // women in engineering row
+    let womenEngRow = 'engineering'
+      // gender
+      + sep + 'women'
+      // 2018
+      + sep + this.data.datasets[0].data[0]
+      // 2017
+      + sep + this.data.datasets[1].data[0]
+      // 2016
+      + sep + this.data.datasets[2].data[0];
+    csvContent += womenEngRow + '\n';
+
+    // men in engineering row
+    let menEngRow = 'engineering'
+      // gender
+      + sep + 'men'
+      // 2018
+      + sep + this.data.datasets[0].data[1]
+      // 2017
+      + sep + this.data.datasets[1].data[1]
+      // 2016
+      + sep + this.data.datasets[2].data[1];
+    csvContent += menEngRow + '\n';
+
+    // women in social sciences row
+    let womenSocRow = 'social sciences'
+      // gender
+      + sep + 'women'
+      // 2018
+      + sep + this.data.datasets[0].data[2]
+      // 2017
+      + sep + this.data.datasets[1].data[2]
+      // 2016
+      + sep + this.data.datasets[2].data[2];
+    csvContent += womenSocRow + '\n';
+
+    // men in social sciences row
+    let menSocRow = 'social sciences'
+      // gender
+      + sep + 'men'
+      // 2018
+      + sep + this.data.datasets[0].data[3]
+      // 2017
+      + sep + this.data.datasets[1].data[3]
+      // 2016
+      + sep + this.data.datasets[2].data[3];
+    csvContent += menSocRow + '\n';
+
+    return csvContent;
+  }
+
   getTooltipLabel(tooltipItem, data) {
     let val = data.datasets[tooltipItem.datasetIndex].data[tooltipItem.index];
     let year = data.datasets[tooltipItem.datasetIndex].label;

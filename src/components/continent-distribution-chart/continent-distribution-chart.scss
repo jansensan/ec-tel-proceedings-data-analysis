@@ -1,12 +1,9 @@
-.uni-distribution-chart {
+.continent-distribution-chart {
   display: inline-block;
   position: relative;
 
   width: 100%;
-
-  .chart-container {
-    height: 4800px;
-  }
+  height: 512px;
 
   .download-csv-button {
     margin-left: 16px;

@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import {Bar} from 'react-chartjs-2';
 
+// constants
+import CSVFileNames from '../../constants/csv-file-names';
+
 // models
 import authorsModel from '../../models/authors-model';
 import dataModel from '../../models/data-model';
@@ -8,6 +11,7 @@ import genderDistPerFieldModel from './gender-dist-per-field-model';
 
 // components
 import DownloadChartButton from '../download-chart-button/download-chart-button.jsx';
+import DownloadCSVButton from '../download-csv-button/download-csv-button.jsx';
 
 // styles
 require('./gender-dist-per-field-chart.scss');
@@ -40,6 +44,11 @@ export default class GenderDistPerFieldChart extends Component {
             />
             <DownloadChartButton
               targetId={this.chartId}
+            />
+            <DownloadCSVButton
+              buttonLabel="Download CSV"
+              fileName={CSVFileNames.GENDER_DISTRIBUTION_PER_FIELD}
+              getCSV={genderDistPerFieldModel.getCSV.bind(genderDistPerFieldModel)}
             />
           </div>
         }

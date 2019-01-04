@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {HorizontalBar} from 'react-chartjs-2';
+import {Bar} from 'react-chartjs-2';
 
 // constants
 import CSVFileNames from '../../constants/csv-file-names';
@@ -7,20 +7,20 @@ import CSVFileNames from '../../constants/csv-file-names';
 // models
 import authorsModel from '../../models/authors-model';
 import dataModel from '../../models/data-model';
-import uniDistModel from './uni-distribution-model';
+import continentDistModel from './continent-distribution-model';
 
 // components
 import DownloadChartButton from '../download-chart-button/download-chart-button.jsx';
 import DownloadCSVButton from '../download-csv-button/download-csv-button.jsx';
 
 // styles
-require('./uni-distribution-chart.scss');
+require('./continent-distribution-chart.scss');
 
 
-export default class UniDistributionChart extends Component {
+export default class ContinentDistributionChart extends Component {
   constructor(props) {
     super(props);
-    this.chartId = 'uniDistChart';
+    this.chartId = 'continentDistChart';
     this.state = {
       isComponentMounted: false,
     };
@@ -31,25 +31,23 @@ export default class UniDistributionChart extends Component {
   // react methods definitions
   render() {
     return (
-      <div className="uni-distribution-chart">
+      <div className="continent-distribution-chart">
         {
-          (this.state.hasData) &&
+          (this.state.hasData > 0) &&
           <div>
-            <div className="chart-container">
-              <HorizontalBar
-                id={this.chartId}
-                data={uniDistModel.data}
-                options={uniDistModel.options}
-                redraw={true}
-                />
-            </div>
+            <Bar
+              id={this.chartId}
+              data={continentDistModel.data}
+              options={continentDistModel.options}
+              redraw={true}
+            />
             <DownloadChartButton
               targetId={this.chartId}
             />
             <DownloadCSVButton
               buttonLabel="Download CSV"
-              fileName={CSVFileNames.UNIVERSITY_DISTRIBUTION}
-              getCSV={uniDistModel.getCSV.bind(uniDistModel)}
+              fileName={CSVFileNames.CONTINENT_DISTRIBUTION}
+              getCSV={continentDistModel.getCSV.bind(continentDistModel)}
             />
           </div>
         }
@@ -69,11 +67,10 @@ export default class UniDistributionChart extends Component {
     if (!dataModel.hasData()) {
       return;
     }
-
-    uniDistModel.updateData({
-      2016: authorsModel.getUniversityDistribution(2016),
-      2017: authorsModel.getUniversityDistribution(2017),
-      2018: authorsModel.getUniversityDistribution(2018)
+    continentDistModel.updateData({
+      2016: authorsModel.getNumAuthorsPerCountry(2016),
+      2017: authorsModel.getNumAuthorsPerCountry(2017),
+      2018: authorsModel.getNumAuthorsPerCountry(2018)
     });
 
     this.setState({

@@ -416,7 +416,7 @@
           "name": "Sein Minn",
           "gender": "m",
           "dept": "",
-          "uni": "Polytechnique Montreal",
+          "uni": "Polytechnique Montréal",
           "country": "CA",
           "field": "eng"
         },
@@ -424,7 +424,7 @@
           "name": "Michel C. Desmarais",
           "gender": "m",
           "dept": "",
-          "uni": "Polytechnique Montreal",
+          "uni": "Polytechnique Montréal",
           "country": "CA",
           "field": "eng"
         },
@@ -1348,7 +1348,7 @@
           "name": "Anna Mavroudi",
           "gender": "f",
           "dept": "",
-          "uni": "Norwegian University of Science and Technology",
+          "uni": "Norwegian University of Science and Technology (NTNU)",
           "country": "NO",
           "field": "eng"
         },
@@ -1526,17 +1526,17 @@
       "authors": [
         {
           "name": "Sobah Abbas Petersen",
-          "gender": "?",
+          "gender": "f",
           "dept": "Department of Information and Computer Science",
-          "uni": "NTNU",
+          "uni": "Norwegian University of Science and Technology (NTNU)",
           "country": "NO",
           "field": "eng"
         },
         {
           "name": "Ilaria Canova-Calori",
-          "gender": "?",
+          "gender": "f",
           "dept": "Department of Information and Computer Science",
-          "uni": "NTNU",
+          "uni": "Norwegian University of Science and Technology (NTNU)",
           "country": "NO",
           "field": "eng"
         },
@@ -1544,7 +1544,7 @@
           "name": "Birgit R. Krogstie",
           "gender": "f",
           "dept": "Department of Informatics and E-Learning",
-          "uni": "NTNU",
+          "uni": "Norwegian University of Science and Technology (NTNU)",
           "country": "NO",
           "field": "eng"
         },
@@ -1552,7 +1552,7 @@
           "name": "Monica Divitini",
           "gender": "f",
           "dept": "Department of Information and Computer Science",
-          "uni": "NTNU",
+          "uni": "Norwegian University of Science and Technology (NTNU)",
           "country": "NO",
           "field": "eng"
         }
@@ -1696,7 +1696,7 @@
           "name": "Michel C. Desmarais",
           "gender": "m",
           "dept": "",
-          "uni": "Polytechnique Montreal",
+          "uni": "Polytechnique Montréal",
           "country": "CA",
           "field": "eng"
         },
@@ -2026,7 +2026,7 @@
           "name": "Grégory Bourguin",
           "gender": "m",
           "dept": "ULCO, LISIC",
-          "uni": "University de Lille",
+          "uni": "Université de Lille",
           "country": "FR",
           "field": "eng"
         },
@@ -2034,7 +2034,7 @@
           "name": "Bénédicte Talon",
           "gender": "f",
           "dept": "ULCO, LISIC",
-          "uni": "University de Lille",
+          "uni": "Université de Lille",
           "country": "FR",
           "field": "eng"
         },
@@ -2042,7 +2042,7 @@
           "name": "Insaf Kerkeni",
           "gender": "m",
           "dept": "ULCO, LISIC",
-          "uni": "University de Lille",
+          "uni": "Université de Lille",
           "country": "FR",
           "field": "eng"
         },
@@ -2050,7 +2050,7 @@
           "name": "Arnaud Lewandowski",
           "gender": "m",
           "dept": "ULCO, LISIC",
-          "uni": "University de Lille",
+          "uni": "Université de Lille",
           "country": "FR",
           "field": "eng"
         }
@@ -2942,7 +2942,7 @@
           "name": "Hallvard Trætteberg",
           "gender": "m",
           "dept": "",
-          "uni": "Norwegian University of Science and Technology",
+          "uni": "Norwegian University of Science and Technology (NTNU)",
           "country": "NO",
           "field": "eng"
         },
@@ -2950,7 +2950,7 @@
           "name": "Anna Mavroudi",
           "gender": "f",
           "dept": "",
-          "uni": "Norwegian University of Science and Technology",
+          "uni": "Norwegian University of Science and Technology (NTNU)",
           "country": "NO",
           "field": "eng"
         },
@@ -2958,7 +2958,7 @@
           "name": "Michail Giannakos",
           "gender": "m",
           "dept": "",
-          "uni": "Norwegian University of Science and Technology",
+          "uni": "Norwegian University of Science and Technology (NTNU)",
           "country": "NO",
           "field": "eng"
         },
@@ -2966,7 +2966,7 @@
           "name": "John Krogstie",
           "gender": "m",
           "dept": "",
-          "uni": "Norwegian University of Science and Technology",
+          "uni": "Norwegian University of Science and Technology (NTNU)",
           "country": "NO",
           "field": "eng"
         }

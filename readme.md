@@ -36,6 +36,11 @@ See the [contribution guidelines](./contributing.md).
 ### Code
 
 - <http://tobiasahlin.com/blog/chartjs-charts-to-get-you-started/>
+- <https://d3-geomap.github.io/>
+- <https://d3-geomap.github.io/map/choropleth/custom-domain/>
+- <https://d3-geomap.github.io/map/choropleth/world/>
 - <https://github.com/jerairrest/react-chartjs-2/blob/master/example/src/components/bar.js>
 - <https://github.com/jerairrest/react-chartjs-2>
+- <https://stackoverflow.com/questions/14964035/how-to-export-javascript-array-info-to-csv-on-client-side>
 - <https://www.chartjs.org/docs/latest/>
+- <https://www.react-simple-maps.io/choropleth-map>

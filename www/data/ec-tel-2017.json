@@ -16,7 +16,7 @@
           "name": "Patricia Albacete",
           "gender": "f",
           "dept": "Learning Research and Development Center",
-          "uni": "University of Pittsburg",
+          "uni": "University of Pittsburgh",
           "country": "US",
           "field": "soc"
         },
@@ -24,7 +24,7 @@
           "name": "Pamela Jordan",
           "gender": "f",
           "dept": "Learning Research and Development Center",
-          "uni": "University of Pittsburg",
+          "uni": "University of Pittsburgh",
           "country": "US",
           "field": "soc"
         },
@@ -32,7 +32,7 @@
           "name": "Sandra Katz",
           "gender": "f",
           "dept": "Learning Research and Development Center",
-          "uni": "University of Pittsburg",
+          "uni": "University of Pittsburgh",
           "country": "US",
           "field": "soc"
         },
@@ -176,7 +176,7 @@
           "name": "Jesús Miguel García-Gorrostieta",
           "gender": "m",
           "dept": "",
-          "uni": "National Institute of Astrophysics, Optics and Electronics",
+          "uni": "Instituto Nacional de Astrofísica, Óptica y Electrónica",
           "country": "MX",
           "field": "eng"
         },
@@ -184,7 +184,7 @@
           "name": "Aurelio López-López",
           "gender": "m",
           "dept": "",
-          "uni": "National Institute of Astrophysics, Optics and Electronics",
+          "uni": "Instituto Nacional de Astrofísica, Óptica y Electrónica",
           "country": "MX",
           "field": "eng"
         },
@@ -1630,7 +1630,7 @@
           "name": "Himanshu Verma",
           "gender": "m",
           "dept": "Human-IST Research Centre",
-          "uni": "Universtiy of Fribourg",
+          "uni": "Universty of Fribourg",
           "country": "CH",
           "field": "soc"
         }
@@ -2400,7 +2400,7 @@
           "name": "Anna Mavroudi",
           "gender": "f",
           "dept": "",
-          "uni": "Norwegian University of Science and Technology",
+          "uni": "Norwegian University of Science and Technology (NTNU)",
           "country": "NO",
           "field": "eng"
         },
@@ -2408,7 +2408,7 @@
           "name": "Monica Divitini",
           "gender": "m",
           "dept": "",
-          "uni": "Norwegian University of Science and Technology",
+          "uni": "Norwegian University of Science and Technology (NTNU)",
           "country": "NO",
           "field": "eng"
         }
@@ -2422,7 +2422,7 @@
           "name": "Nicolae Nistor",
           "gender": "m",
           "dept": "Faculty of Psychology and Educational Sciences",
-          "uni": "Ludwig-Maximilians-Universität",
+          "uni": "Ludwig-Maximilians-Universität München",
           "country": "DE",
           "field": "soc"
         },
@@ -2462,7 +2462,7 @@
           "name": "Ashley Haberman-Lawson",
           "gender": "f",
           "dept": "Faculty of Medicine",
-          "uni": "Ludwig-Maximilians-Universität",
+          "uni": "Ludwig-Maximilians-Universität München",
           "country": "DE",
           "field": "soc"
         },
@@ -2470,7 +2470,7 @@
           "name": "Brigitte Angela Brands",
           "gender": "f",
           "dept": "Faculty of Medicine",
-          "uni": "Ludwig-Maximilians-Universität",
+          "uni": "Ludwig-Maximilians-Universität München",
           "country": "DE",
           "field": "soc"
         },
@@ -2478,7 +2478,7 @@
           "name": "Christian Körner",
           "gender": "m",
           "dept": "Faculty of Medicine",
-          "uni": "Ludwig-Maximilians-Universität",
+          "uni": "Ludwig-Maximilians-Universität München",
           "country": "DE",
           "field": "soc"
         },
@@ -2486,7 +2486,7 @@
           "name": "Berthold Koletzko",
           "gender": "m",
           "dept": "Faculty of Medicine",
-          "uni": "Ludwig-Maximilians-Universität",
+          "uni": "Ludwig-Maximilians-Universität München",
           "country": "DE",
           "field": "soc"
         }

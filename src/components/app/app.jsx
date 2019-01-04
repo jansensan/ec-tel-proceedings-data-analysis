@@ -7,6 +7,7 @@ import papersModel from '../../models/papers-model';
 
 // components
 import AuthorDisplay from '../author-display/author-display.jsx';
+import ContinentDistributionChart from '../continent-distribution-chart/continent-distribution-chart.jsx';
 import CountryDistributionChart from '../country-distribution-chart/country-distribution-chart.jsx';
 import FieldDistributionChart from '../field-distribution-chart/field-distribution-chart.jsx';
 import GenderDistOverview from '../gender-dist-overview/gender-dist-overview.jsx';
@@ -84,14 +85,21 @@ export default class App extends Component {
 
             <section>
               <h3>Country Distribution</h3>
-              <p>Percentage of authors per country, sorted in descending order, based on 2018's data.</p>
+              <p>Percentage of authors per country, sorted in descending order, based on cumulative percentage of authors over years covered by the analysis.</p>
               <CountryDistributionChart />
               <hr/>
             </section>
 
             <section>
-              <h3>Universities Distribution</h3>
-              <p>Number of authors per university, sorted in descending order, based on cumulative number of authors over years covered by the analysis.</p>
+              <h3>Continent Distribution</h3>
+              <p>Percentage of authors per continent.</p>
+              <ContinentDistributionChart />
+              <hr/>
+            </section>
+
+            <section>
+              <h3>Institution Distribution</h3>
+              <p>Number of authors per institution, sorted in descending order, based on cumulative number of authors over years covered by the analysis.</p>
               <UniDistributionChart />
               <hr/>
             </section>
@@ -108,6 +116,7 @@ export default class App extends Component {
 
             <section>
               <h3>Gender Distribution</h3>
+              <p>Percentage of unique authors of each gender.</p>
               <GenderDistributionChart />
               <hr/>
             </section>
