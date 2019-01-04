@@ -69,8 +69,6 @@ class ContinentDistributionModel {
   }
 
   getCSV() {
-    console.info('--- getCSV ---');
-
     let sep = '\t';
     let rows = ['continent', '2018', '2017', '2016'];
     let csvContent = 'data:text/csv;charset=utf-8,'
@@ -87,8 +85,6 @@ class ContinentDistributionModel {
         + sep + this.data.datasets[2].data[i];
       csvContent += row + '\n';
     }
-
-    console.log('csvContent: ', csvContent);
 
     return csvContent;
   }
