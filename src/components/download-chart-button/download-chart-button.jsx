@@ -25,7 +25,6 @@ export default class DownloadChartButton extends Component {
   onDownloadRequested() {
     let chart = document.getElementById(this.props.targetId);
     var img = chart.toDataURL('image/png');
-    let newWin = window.open();
-    newWin.document.write('<img src="' + img + '"/>');
+    window.open(img);
   }
 }
