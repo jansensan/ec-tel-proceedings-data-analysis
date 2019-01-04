@@ -84,14 +84,14 @@ export default class App extends Component {
 
             <section>
               <h3>Country Distribution</h3>
-              <p>Percentage of authors per country, sorted in descending order, based on 2018's data.</p>
+              <p>Percentage of authors per country, sorted in descending order, based on cumulative percentage of authors over years covered by the analysis.</p>
               <CountryDistributionChart />
               <hr/>
             </section>
 
             <section>
-              <h3>Universities Distribution</h3>
-              <p>Number of authors per university, sorted in descending order, based on cumulative number of authors over years covered by the analysis.</p>
+              <h3>Institution Distribution</h3>
+              <p>Number of authors per institution, sorted in descending order, based on cumulative number of authors over years covered by the analysis.</p>
               <UniDistributionChart />
               <hr/>
             </section>
@@ -108,6 +108,7 @@ export default class App extends Component {
 
             <section>
               <h3>Gender Distribution</h3>
+              <p>Percentage of unique authors of each gender.</p>
               <GenderDistributionChart />
               <hr/>
             </section>
