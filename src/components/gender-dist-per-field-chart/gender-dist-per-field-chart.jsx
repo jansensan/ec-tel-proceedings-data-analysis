@@ -36,12 +36,14 @@ export default class GenderDistPerFieldChart extends Component {
         {
           (this.state.hasData) &&
           <div>
-            <Bar
-              id={this.chartId}
-              data={genderDistPerFieldModel.data}
-              options={genderDistPerFieldModel.options}
-              redraw={true}
-            />
+            <div className="chart-container">
+              <Bar
+                id={this.chartId}
+                data={genderDistPerFieldModel.data}
+                options={genderDistPerFieldModel.options}
+                redraw={true}
+              />
+            </div>
             <DownloadChartButton
               targetId={this.chartId}
             />

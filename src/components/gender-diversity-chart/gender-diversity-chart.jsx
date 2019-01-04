@@ -36,12 +36,14 @@ export default class GenderDiversityChart extends Component {
         {
           (this.state.hasData) &&
           <div>
-            <Bar
-              id={this.chartId}
-              data={genderDiversityModel.data}
-              options={genderDiversityModel.options}
-              redraw={true}
-            />
+            <div className="chart-container">
+              <Bar
+                id={this.chartId}
+                data={genderDiversityModel.data}
+                options={genderDiversityModel.options}
+                redraw={true}
+              />
+            </div>
             <DownloadChartButton
               targetId={this.chartId}
             />

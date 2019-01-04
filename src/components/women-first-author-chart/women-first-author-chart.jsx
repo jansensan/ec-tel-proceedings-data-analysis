@@ -36,12 +36,14 @@ export default class WomenFirstAuthorChart extends Component {
         {
           (this.state.hasData) &&
           <div>
-            <Bar
-              id={this.chartId}
-              data={womenFirstAuthorModel.data}
-              options={womenFirstAuthorModel.options}
-              redraw={true}
-            />
+            <div className="chart-container">
+              <Bar
+                id={this.chartId}
+                data={womenFirstAuthorModel.data}
+                options={womenFirstAuthorModel.options}
+                redraw={true}
+              />
+            </div>
             <DownloadChartButton
               targetId={this.chartId}
             />
