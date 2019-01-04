@@ -1,9 +1,14 @@
+import _ from 'lodash';
+
+// constants
 import Continents from '../constants/continents';
 
 
 // public api
 let CountryService = {
-  getCountryName: getCountryName
+  getContinentIdWithCountryCode: getContinentIdWithCountryCode,
+  getContinentNameWithId: getContinentNameWithId,
+  getCountryName: getCountryName,
 }
 export default CountryService;
 
@@ -26,4 +31,89 @@ function getCountryName(code) {
   let name = country.name || 'undefined';
 
   return name;
+}
+
+function getContinentIdWithCountryCode(code) {
+  let id = undefined;
+
+  if (isAfricanCountry(code)) {
+    id = Continents.africa.id;
+  }
+  if (isAsianCountry(code)) {
+    id = Continents.asia.id;
+  }
+  if (isEuropeanCountry(code)) {
+    id = Continents.europe.id;
+  }
+  if (isNorthAmericanCountry(code)) {
+    id = Continents.northAmerica.id;
+  }
+  if (isOceanianCountry(code)) {
+    id = Continents.oceania.id;
+  }
+  if (isSouthAmericanCountry(code)) {
+    id = Continents.southAmerica.id;
+  }
+
+  return id;
+}
+
+function getContinentNameWithId(id) {
+  let name = '';
+
+  let continent = _.filter(Continents, {id: id})[0];
+
+  name = _.get(continent, 'name');
+
+  return name;
+}
+
+
+// utils
+function isAfricanCountry(code) {
+  let country = _.filter(
+    Continents.africa.countries,
+    {code: code}
+  );
+  return country.length > 0;
+}
+
+function isAsianCountry(code) {
+  let country = _.filter(
+    Continents.asia.countries,
+    {code: code}
+  );
+  return country.length > 0;
+}
+
+function isEuropeanCountry(code) {
+  let country = _.filter(
+    Continents.europe.countries,
+    {code: code}
+  );
+  return country.length > 0;
+}
+
+function isNorthAmericanCountry(code) {
+  let country = _.filter(
+    Continents.northAmerica.countries,
+    {code: code}
+  );
+  return country.length > 0;
+}
+
+function isOceanianCountry(code) {
+  let country = _.filter(
+    Continents.oceania.countries,
+    {code: code}
+  );
+  return country.length > 0;
+}
+
+function isSouthAmericanCountry(code) {
+  let country = _.filter(
+    Continents.southAmerica.countries,
+    {code: code}
+  );
+  return country.length > 0;
 }
