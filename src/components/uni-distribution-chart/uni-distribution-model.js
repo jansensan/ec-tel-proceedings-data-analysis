@@ -2,10 +2,12 @@ import _ from 'lodash';
 
 // services
 import DatasetFactory from '../../services/dataset-factory';
+import CountryService from '../../services/country-service';
 
 
 class UniDistributionModel {
   constructor() {
+    this.dataLength = -1;
     this.data = {
       labels: [],
       datasets: [
@@ -33,6 +35,34 @@ class UniDistributionModel {
       },
       maintainAspectRatio: false
     }
+  }
+
+  getCSV() {
+    let sep = '\t';
+    let rows = ['institution', 'country name', 'country code', '2018', '2017', '2016'];
+    let csvContent = 'data:text/csv;charset=utf-8,'
+      + rows.join(sep) + '\n';
+
+    for (let i = 0; i < this.dataLength; i++) {
+      let label = this.data.labels[i];
+      let institutionName = label.substring(0, label.length - 5);
+      let countryCode = label.substring(label.length - 3, label.length - 1);
+
+      let row = institutionName
+        // country name
+        + sep + CountryService.getCountryName(countryCode)
+        // country code
+        + sep + countryCode
+        // 2018
+        + sep + this.data.datasets[0].data[i]
+        // 2017
+        + sep + this.data.datasets[1].data[i]
+        // 2016
+        + sep + this.data.datasets[2].data[i];
+      csvContent += row + '\n';
+    }
+
+    return csvContent;
   }
 
   getTooltipLabel(tooltipItem, data) {
@@ -117,6 +147,8 @@ class UniDistributionModel {
     this.data.datasets[0].data = values2018;
     this.data.datasets[1].data = values2017;
     this.data.datasets[2].data = values2016;
+
+    this.dataLength = values2018.length;
   }
 }
 

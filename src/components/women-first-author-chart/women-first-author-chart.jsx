@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import {Bar} from 'react-chartjs-2';
 
+// constants
+import CSVFileNames from '../../constants/csv-file-names';
+
 // models
 import dataModel from '../../models/data-model';
 import papersModel from '../../models/papers-model';
@@ -8,6 +11,7 @@ import womenFirstAuthorModel from './women-first-author-model';
 
 // components
 import DownloadChartButton from '../download-chart-button/download-chart-button.jsx';
+import DownloadCSVButton from '../download-csv-button/download-csv-button.jsx';
 
 // styles
 require('./women-first-author-chart.scss');
@@ -40,6 +44,11 @@ export default class WomenFirstAuthorChart extends Component {
             />
             <DownloadChartButton
               targetId={this.chartId}
+            />
+            <DownloadCSVButton
+              buttonLabel="Download CSV"
+              fileName={CSVFileNames.WOMEN_1ST_AUTHORS_DISTRIBUTION}
+              getCSV={womenFirstAuthorModel.getCSV.bind(womenFirstAuthorModel)}
             />
           </div>
         }

@@ -2,10 +2,12 @@ import _ from 'lodash';
 
 // services
 import DatasetFactory from '../../services/dataset-factory';
+import CountryService from '../../services/country-service';
 
 
 class CountryDistributionModel {
   constructor() {
+    this.dataLength = -1;
     this.data = {
       labels: [],
       datasets: [
@@ -33,6 +35,28 @@ class CountryDistributionModel {
       },
       maintainAspectRatio: false
     }
+  }
+
+  getCSV() {
+    let sep = '\t';
+    let rows = ['country code', 'country name', '2018', '2017', '2016'];
+    let csvContent = 'data:text/csv;charset=utf-8,'
+      + rows.join(sep) + '\n';
+
+    for (let i = 0; i < this.dataLength; i++) {
+      let row = this.data.labels[i]
+        // country name
+        + sep + CountryService.getCountryName(this.data.labels[i])
+        // 2018
+        + sep + this.data.datasets[0].data[i]
+        // 2017
+        + sep + this.data.datasets[1].data[i]
+        // 2016
+        + sep + this.data.datasets[2].data[i];
+      csvContent += row + '\n';
+    }
+
+    return csvContent;
   }
 
   getTooltipLabel(tooltipItem) {
@@ -82,11 +106,12 @@ class CountryDistributionModel {
           2016: value2016,
           2017: value2017,
           2018: value2018,
+          sum: value2016 + value2017 + value2018,
         };
       }
     );
 
-    dist = _.sortBy(dist, 2018, 'desc');
+    dist = _.sortBy(dist, 'sum', 'desc');
     dist = _.reverse(dist);
 
     // set labels
@@ -111,6 +136,8 @@ class CountryDistributionModel {
     this.data.datasets[0].data = values2018;
     this.data.datasets[1].data = values2017;
     this.data.datasets[2].data = values2016;
+
+    this.dataLength = values2018.length;
   }
 }
 

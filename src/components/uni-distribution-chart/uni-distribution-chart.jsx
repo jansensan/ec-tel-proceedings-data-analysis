@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import {HorizontalBar} from 'react-chartjs-2';
 
+// constants
+import CSVFileNames from '../../constants/csv-file-names';
+
 // models
 import authorsModel from '../../models/authors-model';
 import dataModel from '../../models/data-model';
@@ -8,6 +11,7 @@ import uniDistModel from './uni-distribution-model';
 
 // components
 import DownloadChartButton from '../download-chart-button/download-chart-button.jsx';
+import DownloadCSVButton from '../download-csv-button/download-csv-button.jsx';
 
 // styles
 require('./uni-distribution-chart.scss');
@@ -41,6 +45,11 @@ export default class UniDistributionChart extends Component {
             </div>
             <DownloadChartButton
               targetId={this.chartId}
+            />
+            <DownloadCSVButton
+              buttonLabel="Download CSV"
+              fileName={CSVFileNames.UNIVERSITY_DISTRIBUTION}
+              getCSV={uniDistModel.getCSV.bind(uniDistModel)}
             />
           </div>
         }

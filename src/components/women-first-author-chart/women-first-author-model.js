@@ -4,6 +4,7 @@ import DatasetFactory from '../../services/dataset-factory';
 
 class WomenFirstAuthorModel {
   constructor() {
+    this.dataLength = -1;
     this.data = {
       labels: ['2018', '2017', '2016'],
       datasets: [
@@ -31,6 +32,35 @@ class WomenFirstAuthorModel {
       },
       maintainAspectRatio: false
     }
+  }
+
+  getCSV() {
+    let sep = '\t';
+    let rows = ['gender', '2018', '2017', '2016'];
+    let csvContent = 'data:text/csv;charset=utf-8,'
+      + rows.join(sep) + '\n';
+
+    // women row
+    let womenRow = 'women'
+      // 2018
+      + sep + this.data.datasets[0].data[0]
+      // 2017
+      + sep + this.data.datasets[1].data[0]
+      // 2016
+      + sep + this.data.datasets[2].data[0];
+    csvContent += womenRow + '\n';
+
+    // men row
+    let menRow = 'men'
+      // 2018
+      + sep + this.data.datasets[0].data[1]
+      // 2017
+      + sep + this.data.datasets[1].data[1]
+      // 2016
+      + sep + this.data.datasets[2].data[1];
+    csvContent += menRow + '\n';
+
+    return csvContent;
   }
 
   getTooltipLabel(tooltipItem, data) {

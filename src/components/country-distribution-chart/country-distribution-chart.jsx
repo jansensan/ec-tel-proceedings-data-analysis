@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import {Bar} from 'react-chartjs-2';
 
+// constants
+import CSVFileNames from '../../constants/csv-file-names';
+
 // models
 import authorsModel from '../../models/authors-model';
 import dataModel from '../../models/data-model';
@@ -8,6 +11,7 @@ import countryDistModel from './country-distribution-model';
 
 // components
 import DownloadChartButton from '../download-chart-button/download-chart-button.jsx';
+import DownloadCSVButton from '../download-csv-button/download-csv-button.jsx';
 
 // styles
 require('./country-distribution-chart.scss');
@@ -39,6 +43,11 @@ export default class CountryDistributionChart extends Component {
             />
             <DownloadChartButton
               targetId={this.chartId}
+            />
+            <DownloadCSVButton
+              buttonLabel="Download CSV"
+              fileName={CSVFileNames.COUNTRY_DISTRIBUTION}
+              getCSV={countryDistModel.getCSV.bind(countryDistModel)}
             />
           </div>
         }

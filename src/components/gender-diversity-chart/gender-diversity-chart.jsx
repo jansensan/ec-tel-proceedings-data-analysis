@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import {Bar} from 'react-chartjs-2';
 
+// constants
+import CSVFileNames from '../../constants/csv-file-names';
+
 // models
 import dataModel from '../../models/data-model';
 import genderDiversityModel from './gender-diversity-model';
@@ -8,6 +11,7 @@ import papersModel from '../../models/papers-model';
 
 // components
 import DownloadChartButton from '../download-chart-button/download-chart-button.jsx';
+import DownloadCSVButton from '../download-csv-button/download-csv-button.jsx';
 
 // styles
 require('./gender-diversity-chart.scss');
@@ -40,6 +44,11 @@ export default class GenderDiversityChart extends Component {
             />
             <DownloadChartButton
               targetId={this.chartId}
+            />
+            <DownloadCSVButton
+              buttonLabel="Download CSV"
+              fileName={CSVFileNames.GENDER_DIVERSITY_BY_PAPER}
+              getCSV={genderDiversityModel.getCSV.bind(genderDiversityModel)}
             />
           </div>
         }

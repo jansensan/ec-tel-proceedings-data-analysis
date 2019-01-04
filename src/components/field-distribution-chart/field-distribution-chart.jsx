@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import {Bar} from 'react-chartjs-2';
 
+// constants
+import CSVFileNames from '../../constants/csv-file-names';
+
 // models
 import authorsModel from '../../models/authors-model';
 import dataModel from '../../models/data-model';
@@ -8,6 +11,7 @@ import fieldDistModel from './field-distribution-model';
 
 // components
 import DownloadChartButton from '../download-chart-button/download-chart-button.jsx';
+import DownloadCSVButton from '../download-csv-button/download-csv-button.jsx';
 
 // styles
 require('./field-distribution-chart.scss');
@@ -40,6 +44,11 @@ export default class FieldDistributionChart extends Component {
             />
             <DownloadChartButton
               targetId={this.chartId}
+            />
+            <DownloadCSVButton
+              buttonLabel="Download CSV"
+              fileName={CSVFileNames.FIELD_DISTRIBUTION}
+              getCSV={fieldDistModel.getCSV.bind(fieldDistModel)}
             />
           </div>
         }
