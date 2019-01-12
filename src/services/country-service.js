@@ -9,7 +9,7 @@ let CountryService = {
   getContinentIdWithCountryCode: getContinentIdWithCountryCode,
   getContinentNameWithId: getContinentNameWithId,
   getCountryName: getCountryName,
-}
+};
 export default CountryService;
 
 
