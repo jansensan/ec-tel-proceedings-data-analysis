@@ -90,26 +90,18 @@ Number of authors per institution, sorted in descending order, based on cumulati
 
 #### Some Numbers
 
-- Number of authors:
-    - 2018: 213
-    - 2017: 241
-    - 2016: 272
-- Number of women authors: 
-    - 2018: 65
-    - 2017: 79
-    - 2016: 103
-- Number of men authors: 
-    - 2018: 148
-    - 2017: 162
-    - 2016: 169
-- Mean representation of women per paper: 
-    - 2018: 0.32
-    - 2017: 0.34
-    - 2016: 0.39
+| Year | Num. of authors | Num. of women authors | Num. of men authors |
+|:----:|:---:|:---:|:---:|
+| 2018 | 213 |  65 | 148 |
+| 2017 | 241 |  79 | 162 |
+| 2016 | 272 | 130 | 169 |
+
+*Table X: Number of authors of each gender per year*
+
+In order to obtain a list of unique authors, we used a script to loop through the paper dataset and extract all authors. We reduced the list by removing duplicated entries based on name. We recognize that if an author's name was spelled differently in different papers, the duplicated entry would remain in the final list.
+
 
 #### Gender Distribution
-
-Percentage of unique authors of each gender.
 
 ![](fig-04-gender-dist.png)
 
