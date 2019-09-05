@@ -10,7 +10,11 @@ The data was gathered from the proceedings books available on the conference's w
 - Fields of research and work were separated in two (2) broad categories: engineering and social sciences;</li>
 - For simplicity's sake, we only used the first university or institution mentioned when a researcher/academic listed more than one in their credit.</li>
 
-The results are published at <https://projects.jansensan.net/ec-tel-data-analysis/>.
+
+## Related Links
+
+- Read the methodology: <https://github.com/jansensan/ec-tel-proceedings-data-analysis/blob/master/report/report.md>
+- See the results: <https://projects.jansensan.net/ec-tel-data-analysis/>.
 
 
 ## Contribution
