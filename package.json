@@ -20,7 +20,7 @@
     "gulp-load-plugins": "^1.5.0",
     "gulp-sass": "^4.0.1",
     "jansensan-stylesheets": "^0.7.3",
-    "node-sass": "^4.9.0",
+    "node-sass": "^7.0.0",
     "normalize.css": "^8.0.0",
     "require-dir": "^1.0.0",
     "run-sequence": "^2.2.1",
