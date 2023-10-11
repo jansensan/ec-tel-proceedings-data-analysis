@@ -14,7 +14,7 @@ The data was gathered from the proceedings books available on the conference's w
 ## Related Links
 
 - Read the methodology: <https://github.com/jansensan/ec-tel-proceedings-data-analysis/blob/master/report/report.md>
-- See the results: <https://projects.jansensan.net/ec-tel-data-analysis/>.
+- See the results: <https://mat.jansonblanchet.com/archives/ec-tel-data-analysis/>.
 
 
 ## Contribution
